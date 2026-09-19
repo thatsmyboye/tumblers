@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1"
+    />
+    <title>Tumblers — crack the letter lock</title>
+    <meta name="description" content="A word puzzle about cracking a letter lock. Turn the wheels to spell words — but the wheels are linked." />
+    <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🔓</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <h1>Tumblers</h1>
+        <p class="subtitle" id="subtitle">Loading…</p>
+      </header>
+
+      <nav class="tabs" id="tabs" aria-label="Game mode">
+        <button type="button" data-mode="daily" class="tab">Daily</button>
+        <button type="button" data-mode="combination" class="tab">Combination</button>
+        <button type="button" data-mode="full" class="tab">Full Lock</button>
+      </nav>
+
+      <p class="goal" id="goal"></p>
+
+      <div class="practice" id="practice" hidden>
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button type="button" id="new-lock" class="ghost">New lock</button>
+      </div>
+
+      <div id="board"></div>
+
+      <div class="theme" id="theme-row" hidden>
+        <button type="button" id="theme-btn" class="ghost">💡 Reveal theme</button>
+        <span id="theme-clue" class="theme-clue"></span>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span>Moves</span><b id="stat-moves">0</b></div>
+        <div class="stat"><span>Par</span><b id="stat-par">—</b></div>
+        <div class="stat"><span>Undos</span><b id="stat-undos">0</b></div>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="undo" class="ghost">↩️ Undo</button>
+        <button type="button" id="reset" class="ghost">Reset lock</button>
+      </div>
+
+      <section class="result" id="result" hidden aria-live="polite">
+        <h2 id="result-title">Cracked it</h2>
+        <p class="stars" id="result-stars"></p>
+        <pre class="share" id="share-text"></pre>
+        <div class="result-actions">
+          <button type="button" id="continue" class="primary" hidden>Continue to Full Lock 🌟</button>
+          <button type="button" id="share" class="primary">Copy share text</button>
+          <button type="button" id="again" class="ghost">New lock</button>
+        </div>
+      </section>
+
+      <details class="help">
+        <summary>How to play</summary>
+        <p>
+          Five wheels, six letters each, three rows showing. Swipe a wheel or use the arrows to
+          turn it one step.
+        </p>
+        <p>
+          Wheels are chained: turning one turns another with it. <b>↑↑</b> means the linked wheel
+          turns the same way, <b>↑↓</b> means it turns the opposite way. A <b>seized</b> wheel has
+          no arrows — it only moves when something else drags it.
+        </p>
+        <p>
+          <b>Combination</b> needs the middle row to spell a word. <b>Full Lock</b> needs all three
+          rows at once. Par is the fewest moves possible; undos are free but counted.
+        </p>
+      </details>
+
+      <p class="loading" id="loading">Loading word list…</p>
+    </div>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

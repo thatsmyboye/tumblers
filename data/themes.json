@@ -1,0 +1,271 @@
+[
+  {
+    "clue": "In the kitchen",
+    "words": [
+      "bread",
+      "knife",
+      "plate",
+      "spoon",
+      "flour",
+      "sugar",
+      "stove",
+      "onion",
+      "grill",
+      "whisk",
+      "pasta",
+      "sauce",
+      "toast"
+    ]
+  },
+  {
+    "clue": "Weather report",
+    "words": [
+      "storm",
+      "cloud",
+      "sleet",
+      "frost",
+      "sunny",
+      "windy",
+      "rains",
+      "flood",
+      "drift",
+      "chill",
+      "gusts",
+      "muggy"
+    ]
+  },
+  {
+    "clue": "Make some noise",
+    "words": [
+      "chord",
+      "piano",
+      "flute",
+      "drums",
+      "tempo",
+      "lyric",
+      "banjo",
+      "organ",
+      "tunes",
+      "bugle",
+      "viola",
+      "cello"
+    ]
+  },
+  {
+    "clue": "On the water",
+    "words": [
+      "beach",
+      "ocean",
+      "tides",
+      "waves",
+      "coral",
+      "shore",
+      "delta",
+      "reefs",
+      "canoe",
+      "kayak",
+      "yacht",
+      "buoys"
+    ]
+  },
+  {
+    "clue": "Shades",
+    "words": [
+      "amber",
+      "beige",
+      "black",
+      "brown",
+      "coral",
+      "cream",
+      "green",
+      "ivory",
+      "lemon",
+      "olive",
+      "peach",
+      "white"
+    ]
+  },
+  {
+    "clue": "Game day",
+    "words": [
+      "arena",
+      "coach",
+      "medal",
+      "rugby",
+      "score",
+      "skate",
+      "sport",
+      "track",
+      "vault",
+      "pitch",
+      "relay",
+      "teams"
+    ]
+  },
+  {
+    "clue": "Green things",
+    "words": [
+      "birch",
+      "cedar",
+      "maple",
+      "aspen",
+      "roots",
+      "leafy",
+      "fruit",
+      "vines",
+      "bloom",
+      "petal",
+      "thorn",
+      "grass"
+    ]
+  },
+  {
+    "clue": "Look up",
+    "words": [
+      "comet",
+      "orbit",
+      "lunar",
+      "solar",
+      "stars",
+      "venus",
+      "pluto",
+      "space",
+      "moons",
+      "alien",
+      "probe"
+    ]
+  },
+  {
+    "clue": "Money matters",
+    "words": [
+      "asset",
+      "audit",
+      "banks",
+      "bonds",
+      "cents",
+      "coins",
+      "costs",
+      "funds",
+      "loans",
+      "wages",
+      "yield",
+      "price"
+    ]
+  },
+  {
+    "clue": "Getting dressed",
+    "words": [
+      "boots",
+      "cloak",
+      "dress",
+      "glove",
+      "jeans",
+      "scarf",
+      "shirt",
+      "shoes",
+      "skirt",
+      "socks",
+      "pants",
+      "tunic"
+    ]
+  },
+  {
+    "clue": "How you feel",
+    "words": [
+      "angry",
+      "bliss",
+      "dread",
+      "happy",
+      "jolly",
+      "proud",
+      "sorry",
+      "upset",
+      "weary",
+      "cheer",
+      "grief",
+      "joyed"
+    ]
+  },
+  {
+    "clue": "Anatomy",
+    "words": [
+      "ankle",
+      "brain",
+      "chest",
+      "elbow",
+      "heart",
+      "liver",
+      "mouth",
+      "nerve",
+      "spine",
+      "thumb",
+      "wrist",
+      "teeth"
+    ]
+  },
+  {
+    "clue": "Places to stay",
+    "words": [
+      "attic",
+      "cabin",
+      "condo",
+      "foyer",
+      "hotel",
+      "house",
+      "lobby",
+      "manor",
+      "motel",
+      "tower",
+      "villa",
+      "suite"
+    ]
+  },
+  {
+    "clue": "A hand of cards",
+    "words": [
+      "bluff",
+      "chips",
+      "deuce",
+      "hands",
+      "joker",
+      "poker",
+      "spade",
+      "heart",
+      "clubs",
+      "trump",
+      "deals",
+      "stack"
+    ]
+  },
+  {
+    "clue": "Whodunnit",
+    "words": [
+      "alibi",
+      "crime",
+      "clues",
+      "guilt",
+      "proof",
+      "thief",
+      "trail",
+      "raids",
+      "court",
+      "judge",
+      "sworn"
+    ]
+  },
+  {
+    "clue": "Tools",
+    "words": [
+      "clamp",
+      "drill",
+      "lathe",
+      "level",
+      "plane",
+      "punch",
+      "screw",
+      "spade",
+      "brace",
+      "gauge"
+    ]
+  }
+]
