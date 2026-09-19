@@ -1,7 +1,7 @@
 /** Wires the board, the game session, scoring and the daily pack together. */
 
 import { Board } from './board.js';
-import { WHEEL_COUNT, isSeized } from './engine.js';
+import { WHEEL_COUNT, driversOf, isSeized } from './engine.js';
 import { Game } from './game.js';
 import { DIFFICULTIES, generateLock } from './generator.js';
 import { createSearch, goalMask, search } from './solver.js';
@@ -19,6 +19,7 @@ const ui = {
   difficulty: $('difficulty'),
   newLock: $('new-lock'),
   board: $('board'),
+  lockInfo: $('lock-info'),
   themeRow: $('theme-row'),
   themeBtn: $('theme-btn'),
   themeClue: $('theme-clue'),
@@ -75,11 +76,32 @@ function startGame(lock, { mode, number, phase = mode === 'daily' ? 'combination
   state.par = lock.par?.[state.game.mode] ?? solveFromHere();
 
   board.setLock(lock);
+  describeSeized(lock);
   ui.result.hidden = true;
   ui.themeRow.hidden = !lock.theme;
   ui.themeBtn.hidden = false;
   ui.themeClue.textContent = '';
   render();
+}
+
+/**
+ * Name the seized wheels in words under the board. They are the one thing a
+ * player cannot work out by trying it — every other wheel just turns.
+ */
+function describeSeized(lock) {
+  const seized = lock.seized ?? [];
+  ui.lockInfo.hidden = seized.length === 0;
+  if (seized.length === 0) return;
+
+  const numbers = seized.map((wheel) => wheel + 1);
+  if (seized.length === 1) {
+    const chains = driversOf(lock, seized[0]).length === 1 ? 'its chain' : 'its chains';
+    ui.lockInfo.textContent = `🔒 Wheel ${numbers[0]} is seized — it only turns through ${chains}.`;
+    return;
+  }
+
+  const list = `${numbers.slice(0, -1).join(', ')} and ${numbers[numbers.length - 1]}`;
+  ui.lockInfo.textContent = `🔒 Wheels ${list} are seized — they only turn through their chains.`;
 }
 
 /** Exact optimal distance from where the board stands now. */

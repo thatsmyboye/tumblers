@@ -97,6 +97,48 @@ try {
     await page.waitForSelector('#result:not([hidden])', { timeout: 10000 });
   };
 
+  // The role strip must agree with the wiring, and pressing a wheel must light
+  // up exactly the columns that turn with it.
+  const roles = await page.evaluate(async () => {
+    const { wheelRole } = await import('/src/engine.js');
+    const { lock } = window.tumblers.state;
+    return {
+      shown: [...document.querySelectorAll('.role')].map((node) => node.className.replace('role role-', '')),
+      expected: lock.rings.map((_, wheel) => wheelRole(lock, wheel)),
+      seizedButtons: [...document.querySelectorAll('.turnrow-up .turn')].map((b) => b.disabled),
+      seized: lock.seized ?? [],
+    };
+  });
+  check(
+    'the role strip matches the wiring',
+    JSON.stringify(roles.shown) === JSON.stringify(roles.expected),
+    roles.shown.join(' / '),
+  );
+  check(
+    'only seized wheels have their arrows disabled',
+    roles.seizedButtons.every((disabled, wheel) => disabled === roles.seized.includes(wheel)),
+  );
+
+  const driver = await page.evaluate(() => window.tumblers.state.lock.links[0]?.from ?? 0);
+  await page.locator('.turnrow-up .turn').nth(driver).hover();
+  const preview = await page.evaluate((wheel) => {
+    const { lock } = window.tumblers.state;
+    const drums = [...document.querySelectorAll('.drum')];
+    return {
+      driver: drums.findIndex((d) => d.classList.contains('driver')),
+      dragged: drums.flatMap((d, i) => (d.classList.contains('dragged') ? [i] : [])),
+      expectedDragged: lock.links.filter((link) => link.from === wheel).map((link) => link.to).sort(),
+      wheel,
+    };
+  }, driver);
+  check(
+    'holding a wheel lights up what it drags',
+    preview.driver === preview.wheel &&
+      JSON.stringify(preview.dragged.sort()) === JSON.stringify(preview.expectedDragged),
+    `wheel ${preview.wheel + 1} drags ${preview.dragged.map((w) => w + 1).join(', ') || 'nothing'}`,
+  );
+  await page.mouse.move(0, 0);
+
   await page.locator('#reset').click();
   await solveLeg();
   check('combination leg finishes in par', await page.evaluate(() => document.getElementById('result-stars').textContent === '⭐⭐⭐'));

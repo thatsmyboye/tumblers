@@ -42,6 +42,8 @@
 
       <div id="board"></div>
 
+      <p class="lock-info" id="lock-info" hidden></p>
+
       <div class="theme" id="theme-row" hidden>
         <button type="button" id="theme-btn" class="ghost">💡 Reveal theme</button>
         <span id="theme-clue" class="theme-clue"></span>
@@ -76,9 +78,20 @@
           turn it one step.
         </p>
         <p>
-          Wheels are chained: turning one turns another with it. <b>↑↑</b> means the linked wheel
-          turns the same way, <b>↑↓</b> means it turns the opposite way. A <b>seized</b> wheel has
-          no arrows — it only moves when something else drags it.
+          Wheels are chained. A chain runs from an <b>open collar</b> — the wheel you turn — to an
+          <b>arrowhead</b> on the wheel it drags along. <b>↑↑</b> means that wheel turns the same
+          way, <b>↑↓</b> the opposite way.
+        </p>
+        <p>
+          The strip above the wheels says what each column can do.
+          <b class="k-free">free</b> turns alone.
+          <b class="k-linked">linked</b> still turns on its own — it just pulls, or gets pulled,
+          as well. <b class="k-seized">seized</b> has no arrows at all: it moves only in lockstep
+          with whatever drives it, and its chain is drawn as a thick bar-ended coupling.
+        </p>
+        <p>
+          Press and hold any wheel to light up exactly what moves with it. Hold a seized wheel to
+          see which wheel you have to turn instead.
         </p>
         <p>
           <b>Combination</b> needs the middle row to spell a word. <b>Full Lock</b> needs all three

@@ -12,7 +12,9 @@ import {
   mod,
   moveMatrix,
   rowStatus,
+  wheelRole,
   windowRows,
+  driversOf,
 } from '../src/engine.js';
 import { ringsFromRows, valid } from './helpers.js';
 
@@ -118,4 +120,47 @@ test('state packing round-trips every position', () => {
   assert.equal(encodeState([5, 5, 5, 5, 5]), STATE_COUNT - 1);
   assert.equal(decodeState(1)[0], 1);
   assert.equal(RING_SIZE ** 5, STATE_COUNT);
+});
+
+test('each wheel reports what it can do', () => {
+  const lock = {
+    ...plainLock,
+    links: [
+      { from: 0, to: 1, sign: 1 },
+      { from: 1, to: 2, sign: -1 },
+      { from: 3, to: 2, sign: 1 },
+    ],
+    seized: [2],
+  };
+  assert.equal(wheelRole(lock, 0), 'drives', 'nothing chains into wheel 1');
+  assert.equal(wheelRole(lock, 1), 'pulled', 'wheel 2 drives one and is driven by one');
+  assert.equal(wheelRole(lock, 2), 'seized', 'seized outranks being merely pulled');
+  assert.equal(wheelRole(lock, 3), 'drives');
+  assert.equal(wheelRole(lock, 4), 'free', 'no chain touches wheel 5');
+});
+
+test('a wheel knows which wheels can move it', () => {
+  const lock = {
+    ...plainLock,
+    links: [
+      { from: 0, to: 2, sign: 1 },
+      { from: 3, to: 2, sign: -1 },
+      { from: 3, to: 4, sign: 1 },
+    ],
+  };
+  assert.deepEqual(driversOf(lock, 2), [0, 3]);
+  assert.deepEqual(driversOf(lock, 4), [3]);
+  assert.deepEqual(driversOf(lock, 0), [], 'nothing drives wheel 1');
+});
+
+test('a pulled wheel really does drift when its driver turns', () => {
+  const lock = { ...plainLock, links: [{ from: 0, to: 3, sign: 1 }] };
+  assert.equal(wheelRole(lock, 3), 'pulled');
+  assert.notEqual(applyMove(lock, [0, 0, 0, 0, 0], 0, 1)[3], 0);
+
+  // A driver holds its position while other wheels turn.
+  assert.equal(wheelRole(lock, 0), 'drives');
+  for (const wheel of [1, 2, 3, 4]) {
+    assert.equal(applyMove(lock, [0, 0, 0, 0, 0], wheel, 1)[0], 0, `wheel ${wheel + 1} moved the driver`);
+  }
 });
