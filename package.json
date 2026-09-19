@@ -1,0 +1,16 @@
+{
+  "name": "tumblers",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A word puzzle about cracking a letter lock: turn the wheels to spell words, but the wheels are linked.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test \"test/*.test.js\"",
+    "bake": "node scripts/bake-dailies.mjs",
+    "gen": "node scripts/generate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

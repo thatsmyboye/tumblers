@@ -1,0 +1,459 @@
+/* Tumblers — mobile-first. One dark theme; the lock is the bright thing. */
+
+:root {
+  --bg: #0e1118;
+  --panel: #161b26;
+  --panel-2: #1e2533;
+  --edge: #2b3446;
+  --text: #e9edf5;
+  --muted: #8d99ad;
+  --brass: #e0a33a;
+  --steel: #9fb0c6;
+  --good: #5fd68a;
+  --cell: clamp(40px, 12.5vw, 56px);
+  --gap: clamp(4px, 1.6vw, 8px);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  background: radial-gradient(120% 60% at 50% 0%, #1a2233 0%, var(--bg) 60%);
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: max(12px, env(safe-area-inset-top)) 12px calc(24px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.topbar {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--brass);
+  text-indent: 0.26em;
+}
+
+.subtitle {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tabs */
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  padding: 4px;
+}
+
+.tab {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 4px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab[aria-selected="true"] {
+  background: var(--panel-2);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--edge);
+}
+
+.goal {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  min-height: 1.5em;
+}
+
+.goal b {
+  color: var(--text);
+}
+
+.practice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+select {
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 14px;
+}
+
+/* Board */
+.board {
+  position: relative;
+  background: linear-gradient(180deg, var(--panel) 0%, #121722 100%);
+  border: 1px solid var(--edge);
+  border-radius: 18px;
+  padding: 10px var(--gap) 12px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.chains {
+  display: block;
+  width: 100%;
+  height: 58px;
+}
+
+.chain {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+.chain-label {
+  font: 600 12px ui-sans-serif, system-ui, sans-serif;
+  text-anchor: middle;
+  /* Outline the glyphs in the panel colour so they stay readable over a chain. */
+  paint-order: stroke fill;
+  stroke: #161b26;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.turnrow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--gap);
+  padding-right: 22px;
+}
+
+.turn {
+  appearance: none;
+  border: 1px solid var(--edge);
+  background: var(--panel-2);
+  color: var(--steel);
+  border-radius: 8px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.turn:active:not(:disabled) {
+  background: #2a3346;
+  color: var(--brass);
+}
+
+.turn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.turnrow-up {
+  margin-bottom: 6px;
+}
+
+.turnrow-down {
+  margin-top: 6px;
+}
+
+.drums {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--gap);
+  padding-right: 22px;
+}
+
+.drum {
+  display: grid;
+  grid-template-rows: repeat(6, var(--cell));
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0b0e14 0%, #202939 18%, #2b3546 50%, #202939 82%, #0b0e14 100%);
+  overflow: hidden;
+  cursor: grab;
+}
+
+.drum.seized {
+  background: linear-gradient(90deg, #0b0e14 0%, #262323 18%, #3a3128 50%, #262323 82%, #0b0e14 100%);
+  cursor: not-allowed;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  font-size: calc(var(--cell) * 0.46);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--steel);
+}
+
+.cell-back {
+  color: #55637a;
+  font-size: calc(var(--cell) * 0.36);
+}
+
+.cell-window {
+  color: var(--text);
+}
+
+@keyframes turn-up {
+  from {
+    transform: translateY(var(--cell));
+  }
+}
+
+@keyframes turn-down {
+  from {
+    transform: translateY(calc(var(--cell) * -1));
+  }
+}
+
+.drum.turning-up .cell {
+  animation: turn-up 130ms ease-out;
+}
+
+.drum.turning-down .cell {
+  animation: turn-down 130ms ease-out;
+}
+
+/* The three-row window, framed over the drums. */
+.window {
+  position: absolute;
+  inset: var(--cell) 22px auto 0;
+  height: calc(var(--cell) * 3);
+  border: 2px solid var(--brass);
+  border-radius: 10px;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 22px rgb(224 163 58 / 0.12) inset;
+  transition: border-color 160ms, box-shadow 160ms;
+}
+
+.window-solved {
+  border-color: var(--good);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 26px rgb(95 214 138 / 0.22) inset;
+}
+
+.rowmark {
+  position: absolute;
+  right: 0;
+  top: calc(var(--cell) * (1 + var(--row)));
+  height: var(--cell);
+  width: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  color: var(--good);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rowmark.required {
+  opacity: 0.35;
+}
+
+.rowmark.required::before {
+  content: "•";
+  position: absolute;
+  color: var(--muted);
+}
+
+.rowmark.required.valid {
+  opacity: 1;
+}
+
+.rowmark.required.valid::before {
+  content: "";
+}
+
+/* Theme clue */
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.theme-clue {
+  color: var(--brass);
+  font-weight: 600;
+}
+
+/* Stats + controls */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.stat {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  padding: 8px 4px;
+}
+
+.stat span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stat b {
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button.ghost,
+button.primary {
+  appearance: none;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  color: var(--text);
+}
+
+button.primary {
+  background: var(--brass);
+  border: 1px solid var(--brass);
+  color: #21180a;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Result */
+.result {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  padding: 14px;
+  text-align: center;
+}
+
+.result h2 {
+  margin: 0 0 4px;
+  font-size: 19px;
+}
+
+.stars {
+  margin: 0 0 8px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+.share {
+  margin: 0 0 12px;
+  padding: 10px;
+  background: #0c1017;
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  text-align: left;
+  font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  color: var(--text);
+}
+
+.result-actions {
+  display: grid;
+  gap: 8px;
+}
+
+/* Help + loading */
+.help {
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--edge);
+  padding-top: 10px;
+}
+
+.help summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.help p {
+  margin: 8px 0 0;
+}
+
+.help b {
+  color: var(--steel);
+}
+
+.loading {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drum.turning-up .cell,
+  .drum.turning-down .cell {
+    animation: none;
+  }
+}
