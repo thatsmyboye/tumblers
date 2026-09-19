@@ -2,51 +2,51 @@
  "version": 1,
  "epoch": "2026-09-01",
  "seed": "tumblers-v0",
- "generated": "2026-09-19T21:03:31.718Z",
+ "generated": "2026-09-19T22:11:30.062Z",
  "puzzles": [
   {
    "number": 1,
    "date": "2026-09-01",
    "rings": [
     [
-     "G",
-     "D",
-     "B",
-     "W",
-     "R",
-     "E"
+     "C",
+     "S",
+     "M",
+     "T",
+     "C",
+     "H"
     ],
     [
      "R",
-     "U",
+     "O",
+     "R",
      "O",
      "E",
-     "I",
-     "I"
+     "H"
     ],
     [
-     "U",
-     "I",
-     "T",
-     "T",
      "O",
-     "T"
-    ],
-    [
-     "N",
-     "R",
-     "Z",
+     "P",
      "A",
-     "U",
-     "C"
+     "T",
+     "D",
+     "O"
     ],
     [
-     "H",
+     "P",
+     "E",
+     "Z",
+     "M",
+     "I",
+     "N"
+    ],
+    [
+     "G",
+     "S",
      "D",
-     "D",
-     "N",
-     "U",
-     "P"
+     "Y",
+     "Q",
+     "A"
     ]
    ],
    "links": [
@@ -63,27 +63,32 @@
    ],
    "seized": [],
    "start": [
-    0,
     2,
     0,
-    1,
-    5
+    3,
+    2,
+    1
    ],
    "par": {
-    "combination": 4,
+    "combination": 3,
     "full": 5
    },
    "id": "2026-09-01",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "THONG",
+    "CROPS",
+    "HOPED"
+   ]
   },
   {
    "number": 2,
    "date": "2026-09-02",
    "rings": [
     [
-     "R",
+     "F",
      "B",
-     "C",
+     "T",
      "D",
      "O",
      "P"
@@ -94,30 +99,30 @@
      "W",
      "M",
      "F",
-     "A"
+     "L"
     ],
     [
      "R",
-     "E",
+     "O",
      "M",
      "N",
      "H",
-     "L"
+     "U"
     ],
     [
      "D",
      "E",
-     "P",
+     "I",
      "S",
-     "C",
+     "S",
      "H"
     ],
     [
      "N",
      "T",
-     "H",
+     "D",
      "T",
-     "K",
+     "E",
      "N"
     ]
    ],
@@ -136,61 +141,66 @@
    "seized": [],
    "start": [
     1,
-    5,
-    0,
     4,
-    2
+    3,
+    2,
+    3
    ],
    "par": {
-    "combination": 3,
+    "combination": 4,
     "full": 5
    },
    "id": "2026-09-02",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "FLUID",
+    "BURST",
+    "THOSE"
+   ]
   },
   {
    "number": 3,
    "date": "2026-09-03",
    "rings": [
     [
-     "R",
-     "C",
      "T",
-     "P",
-     "T",
-     "S"
-    ],
-    [
+     "F",
+     "D",
      "O",
-     "E",
-     "E",
-     "I",
-     "N",
+     "A",
      "T"
     ],
     [
+     "H",
+     "I",
+     "L",
+     "R",
+     "R",
+     "D"
+    ],
+    [
+     "U",
+     "G",
+     "Y",
+     "O",
      "T",
-     "A",
-     "A",
+     "U"
+    ],
+    [
      "L",
+     "T",
      "M",
-     "A"
+     "A",
+     "G",
+     "S"
     ],
     [
+     "S",
      "N",
-     "L",
-     "R",
-     "S",
-     "L",
-     "P"
-    ],
-    [
-     "R",
-     "S",
-     "W",
-     "O",
-     "O",
-     "O"
+     "I",
+     "E",
+     "E",
+     "E"
     ]
    ],
    "links": [
@@ -210,62 +220,67 @@
     2,
     3,
     5,
-    1,
-    5
+    0,
+    2
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "theme": {
     "clue": "Make some noise"
    },
    "id": "2026-09-03",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "FLUTE",
+    "DRUMS",
+    "ORGAN"
+   ]
   },
   {
    "number": 4,
    "date": "2026-09-04",
    "rings": [
     [
-     "W",
-     "I",
-     "E",
-     "B",
-     "W",
-     "B"
-    ],
-    [
-     "V",
-     "E",
-     "I",
-     "E",
-     "O",
+     "K",
+     "L",
+     "A",
+     "D",
+     "T",
      "S"
     ],
     [
-     "N",
-     "A",
-     "U",
-     "Y",
-     "E",
-     "T"
-    ],
-    [
-     "C",
-     "L",
      "H",
      "N",
+     "O",
+     "Y",
+     "E",
+     "H"
+    ],
+    [
+     "A",
+     "E",
+     "A",
+     "O",
+     "V",
+     "H"
+    ],
+    [
+     "O",
      "T",
+     "M",
+     "L",
+     "W",
      "E"
     ],
     [
-     "E",
-     "T",
-     "Y",
-     "S",
+     "N",
      "H",
-     "D"
+     "E",
+     "L",
+     "N",
+     "R"
     ]
    ],
    "links": [
@@ -283,61 +298,66 @@
    "seized": [],
    "start": [
     1,
+    5,
+    3,
     0,
-    1,
-    1,
-    2
+    5
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-09-04",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "THEME",
+    "SHALL",
+    "KNOWN"
+   ]
   },
   {
    "number": 5,
    "date": "2026-09-05",
    "rings": [
     [
-     "O",
-     "H",
-     "A",
-     "G",
-     "D",
-     "A"
-    ],
-    [
-     "O",
-     "R",
-     "H",
-     "M",
-     "I",
-     "B"
-    ],
-    [
-     "R",
-     "O",
-     "I",
-     "I",
-     "C",
-     "A"
-    ],
-    [
+     "S",
+     "S",
      "E",
-     "U",
+     "E",
+     "W",
+     "C"
+    ],
+    [
+     "O",
+     "L",
+     "P",
+     "H",
      "N",
-     "E",
-     "B",
-     "H"
+     "L"
     ],
     [
-     "D",
+     "I",
+     "E",
+     "E",
      "T",
-     "G",
      "D",
-     "N",
-     "A"
+     "R"
+    ],
+    [
+     "L",
+     "C",
+     "A",
+     "E",
+     "R",
+     "T"
+    ],
+    [
+     "K",
+     "R",
+     "Y",
+     "E",
+     "D",
+     "K"
     ]
    ],
    "links": [
@@ -359,10 +379,10 @@
    ],
    "seized": [],
    "start": [
-    0,
+    4,
     2,
     2,
-    5,
+    3,
     3
    ],
    "par": {
@@ -370,51 +390,56 @@
     "full": 7
    },
    "id": "2026-09-05",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "WORLD",
+    "CLICK",
+    "SPEAK"
+   ]
   },
   {
    "number": 6,
    "date": "2026-09-06",
    "rings": [
     [
-     "D",
-     "R",
      "S",
      "R",
-     "D",
-     "I"
-    ],
-    [
-     "O",
-     "D",
-     "A",
-     "E",
-     "P",
-     "U"
-    ],
-    [
-     "Y",
-     "Q",
-     "C",
-     "L",
-     "O",
-     "G"
-    ],
-    [
-     "O",
-     "A",
+     "V",
+     "T",
      "R",
-     "B",
-     "R",
-     "E"
+     "T"
     ],
     [
      "W",
+     "A",
+     "R",
+     "U",
+     "H",
+     "E"
+    ],
+    [
+     "U",
+     "A",
+     "G",
+     "O",
+     "E",
+     "D"
+    ],
+    [
+     "N",
+     "D",
+     "C",
+     "L",
+     "C",
+     "B"
+    ],
+    [
+     "G",
+     "S",
+     "O",
      "T",
-     "Y",
-     "T",
-     "Y",
-     "C"
+     "K",
+     "Y"
     ]
    ],
    "links": [
@@ -443,11 +468,11 @@
     4
    ],
    "start": [
-    5,
-    3,
     2,
+    1,
     4,
-    0
+    0,
+    1
    ],
    "par": {
     "combination": 5,
@@ -457,83 +482,88 @@
     "clue": "Game day"
    },
    "id": "2026-09-06",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "VAULT",
+    "TRACK",
+    "RUGBY"
+   ]
   },
   {
    "number": 7,
    "date": "2026-09-07",
    "rings": [
     [
-     "P",
-     "F",
-     "J",
-     "C",
-     "N",
-     "K"
-    ],
-    [
+     "T",
+     "I",
+     "O",
      "A",
-     "I",
-     "A",
-     "S",
-     "S",
-     "E"
-    ],
-    [
-     "F",
-     "H",
-     "I",
-     "I",
      "R",
-     "M"
-    ],
-    [
-     "A",
-     "H",
-     "T",
-     "N",
-     "S",
-     "E"
+     "F"
     ],
     [
      "S",
      "I",
-     "S",
-     "H",
+     "C",
+     "U",
+     "A",
+     "W"
+    ],
+    [
+     "A",
      "T",
-     "T"
+     "R",
+     "C",
+     "I",
+     "S"
+    ],
+    [
+     "E",
+     "S",
+     "U",
+     "L",
+     "O",
+     "A"
+    ],
+    [
+     "L",
+     "D",
+     "T",
+     "E",
+     "M",
+     "R"
     ]
    ],
    "links": [
     {
-     "from": 1,
-     "to": 3,
+     "from": 4,
+     "to": 2,
+     "sign": 1
+    },
+    {
+     "from": 3,
+     "to": 0,
      "sign": 1
     },
     {
      "from": 0,
-     "to": 3,
-     "sign": -1
+     "to": 2,
+     "sign": 1
     },
     {
-     "from": 2,
+     "from": 1,
      "to": 4,
-     "sign": 1
-    },
-    {
-     "from": 2,
-     "to": 0,
-     "sign": 1
+     "sign": -1
     }
    ],
    "seized": [
-    3
+    2
    ],
    "start": [
-    5,
-    3,
-    5,
-    3,
+    2,
+    0,
+    1,
+    0,
     4
    ],
    "par": {
@@ -541,7 +571,12 @@
     "full": 10
    },
    "id": "2026-09-07",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "ACTOR",
+    "RURAL",
+    "FACED"
+   ]
   },
   {
    "number": 8,
@@ -549,16 +584,16 @@
    "rings": [
     [
      "H",
-     "R",
+     "F",
      "T",
-     "H",
+     "F",
      "W",
      "E"
     ],
     [
-     "A",
-     "H",
+     "I",
      "O",
+     "A",
      "E",
      "G",
      "P"
@@ -567,25 +602,25 @@
      "S",
      "A",
      "D",
+     "N",
      "D",
-     "R",
-     "S"
+     "U"
     ],
     [
      "T",
      "C",
      "E",
+     "D",
      "A",
-     "E",
-     "T"
+     "L"
     ],
     [
-     "E",
-     "S",
+     "Y",
+     "T",
      "N",
      "E",
      "V",
-     "R"
+     "S"
     ]
    ],
    "links": [
@@ -597,62 +632,67 @@
    ],
    "seized": [],
    "start": [
-    0,
-    5,
-    4,
     2,
-    3
+    1,
+    3,
+    4,
+    2
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-09-08",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "FINDS",
+    "TODAY",
+    "FAULT"
+   ]
   },
   {
    "number": 9,
    "date": "2026-09-09",
    "rings": [
     [
-     "C",
-     "C",
-     "T",
-     "U",
-     "A",
-     "C"
-    ],
-    [
      "S",
-     "O",
-     "O",
-     "A",
-     "I",
+     "E",
+     "B",
+     "F",
+     "L",
      "A"
     ],
     [
-     "N",
-     "M",
-     "S",
-     "S",
-     "S",
-     "I"
-    ],
-    [
-     "F",
-     "E",
-     "T",
-     "N",
      "O",
-     "E"
+     "N",
+     "P",
+     "M",
+     "O",
+     "U"
     ],
     [
      "S",
      "N",
+     "N",
+     "A",
+     "G",
+     "A"
+    ],
+    [
+     "D",
+     "D",
+     "N",
+     "E",
+     "N",
+     "L"
+    ],
+    [
+     "D",
+     "S",
+     "S",
+     "S",
      "R",
-     "W",
-     "T",
-     "S"
+     "K"
     ]
    ],
    "links": [
@@ -665,20 +705,25 @@
    "seized": [],
    "start": [
     2,
-    4,
     1,
-    5,
-    5
+    2,
+    1,
+    0
    ],
    "par": {
     "combination": 3,
-    "full": 6
+    "full": 5
    },
    "theme": {
     "clue": "Money matters"
    },
    "id": "2026-09-09",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "BONDS",
+    "FUNDS",
+    "LOANS"
+   ]
   },
   {
    "number": 10,
@@ -686,43 +731,43 @@
    "rings": [
     [
      "A",
-     "D",
-     "G",
-     "C",
+     "B",
+     "B",
+     "P",
      "R",
-     "A"
+     "P"
     ],
     [
      "R",
      "A",
-     "R",
+     "O",
      "B",
-     "A",
+     "I",
      "U"
     ],
     [
      "O",
+     "B",
+     "D",
+     "O",
      "T",
-     "A",
-     "A",
-     "T",
-     "E"
+     "K"
     ],
     [
-     "A",
-     "U",
      "E",
-     "R",
-     "Z",
+     "U",
+     "L",
+     "D",
+     "O",
      "R"
     ],
     [
      "T",
-     "S",
-     "D",
+     "E",
      "Y",
+     "F",
      "C",
-     "S"
+     "R"
     ]
    ],
    "links": [
@@ -744,62 +789,67 @@
    ],
    "seized": [],
    "start": [
-    0,
+    2,
     4,
+    2,
     5,
-    3,
-    2
+    4
    ],
    "par": {
-    "combination": 4,
+    "combination": 5,
     "full": 7
    },
    "id": "2026-09-10",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "BIBLE",
+    "BUDDY",
+    "PROOF"
+   ]
   },
   {
    "number": 11,
    "date": "2026-09-11",
    "rings": [
     [
-     "P",
-     "L",
-     "M",
-     "E",
-     "D",
-     "K"
-    ],
-    [
-     "I",
-     "G",
-     "W",
-     "N",
-     "L",
-     "O"
-    ],
-    [
+     "S",
      "A",
-     "L",
-     "E",
-     "N",
-     "O",
-     "A"
+     "R",
+     "B",
+     "R",
+     "S"
     ],
     [
      "T",
-     "W",
-     "N",
-     "N",
+     "I",
+     "M",
+     "T",
      "E",
-     "R"
+     "I"
     ],
     [
      "U",
      "A",
+     "G",
+     "U",
      "N",
-     "T",
+     "O"
+    ],
+    [
+     "N",
+     "A",
+     "R",
+     "H",
+     "D",
+     "C"
+    ],
+    [
+     "G",
+     "D",
      "S",
-     "S"
+     "T",
+     "Y",
+     "E"
     ]
    ],
    "links": [
@@ -821,18 +871,23 @@
    ],
    "seized": [],
    "start": [
-    5,
+    2,
     1,
-    3,
-    3,
-    5
+    2,
+    5,
+    1
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-09-11",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "RIGHT",
+    "STUDY",
+    "SINCE"
+   ]
   },
   {
    "number": 12,
@@ -844,10 +899,10 @@
      "T",
      "N",
      "W",
-     "Y"
+     "W"
     ],
     [
-     "E",
+     "H",
      "M",
      "N",
      "H",
@@ -859,7 +914,7 @@
      "U",
      "R",
      "I",
-     "A",
+     "E",
      "I"
     ],
     [
@@ -875,7 +930,7 @@
      "B",
      "E",
      "T",
-     "S",
+     "E",
      "E"
     ]
    ],
@@ -900,57 +955,62 @@
     3
    ],
    "par": {
-    "combination": 5,
+    "combination": 6,
     "full": 8
    },
    "theme": {
     "clue": "Anatomy"
    },
    "id": "2026-09-12",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "THUMB",
+    "NERVE",
+    "WRIST"
+   ]
   },
   {
    "number": 13,
    "date": "2026-09-13",
    "rings": [
     [
-     "T",
-     "I",
-     "V",
-     "W",
-     "C",
-     "R"
-    ],
-    [
-     "E",
-     "E",
-     "T",
-     "R",
-     "I",
-     "O"
-    ],
-    [
-     "H",
+     "K",
      "A",
-     "N",
-     "R",
-     "E",
-     "Y"
-    ],
-    [
+     "H",
      "M",
-     "N",
-     "Q",
-     "Y",
-     "L",
-     "P"
+     "X",
+     "Q"
     ],
     [
-     "I",
-     "L",
-     "D",
-     "D",
      "N",
+     "B",
+     "O",
+     "A",
+     "T",
+     "U"
+    ],
+    [
+     "E",
+     "O",
+     "O",
+     "T",
+     "P",
+     "T"
+    ],
+    [
+     "W",
+     "U",
+     "E",
+     "L",
+     "C",
+     "E"
+    ],
+    [
+     "N",
+     "T",
+     "L",
+     "E",
+     "T",
      "N"
     ]
    ],
@@ -975,18 +1035,23 @@
     3
    ],
    "start": [
-    4,
-    4,
-    4,
+    3,
     5,
+    4,
+    3,
     5
    ],
    "par": {
-    "combination": 7,
+    "combination": 5,
     "full": 10
    },
    "id": "2026-09-13",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "KNOWN",
+    "ABOUT",
+    "HOTEL"
+   ]
   },
   {
    "number": 14,
@@ -994,75 +1059,75 @@
    "rings": [
     [
      "E",
-     "F",
-     "C",
-     "W",
-     "J",
+     "A",
+     "H",
+     "P",
+     "T",
      "H"
     ],
     [
-     "A",
-     "U",
-     "N",
+     "H",
+     "O",
      "V",
-     "A",
-     "O"
-    ],
-    [
-     "L",
-     "N",
-     "E",
-     "C",
-     "L",
+     "H",
+     "O",
      "L"
     ],
     [
-     "R",
-     "T",
-     "O",
-     "L",
-     "I",
-     "S"
+     "U",
+     "A",
+     "E",
+     "M",
+     "E",
+     "N"
     ],
     [
+     "N",
+     "E",
      "S",
-     "R",
+     "Y",
+     "S",
+     "E"
+    ],
+    [
+     "I",
+     "E",
      "S",
      "E",
-     "I",
-     "Y"
+     "S",
+     "T"
     ]
    ],
    "links": [
     {
-     "from": 4,
+     "from": 3,
+     "to": 0,
+     "sign": 1
+    },
+    {
+     "from": 3,
+     "to": 2,
+     "sign": 1
+    },
+    {
+     "from": 1,
      "to": 3,
      "sign": 1
     },
     {
-     "from": 2,
-     "to": 4,
-     "sign": -1
-    },
-    {
-     "from": 1,
-     "to": 2,
-     "sign": -1
-    },
-    {
      "from": 4,
-     "to": 0,
+     "to": 3,
      "sign": 1
     }
    ],
    "seized": [
-    3
+    0
    ],
    "start": [
-    1,
+    5,
     2,
-    3,
-    4,
+    5,
+    5,
     5
    ],
    "par": {
@@ -1070,33 +1135,38 @@
     "full": 10
    },
    "id": "2026-09-14",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "PLAYS",
+    "THESE",
+    "HOMES"
+   ]
   },
   {
    "number": 15,
    "date": "2026-09-15",
    "rings": [
     [
-     "A",
+     "T",
      "L",
      "P",
      "C",
      "J",
-     "M"
+     "P"
     ],
     [
      "S",
      "R",
      "O",
      "U",
-     "I",
-     "M"
+     "A",
+     "R"
     ],
     [
      "U",
      "D",
-     "G",
-     "E",
+     "P",
+     "I",
      "E",
      "O"
     ],
@@ -1105,16 +1175,16 @@
      "O",
      "R",
      "G",
-     "H",
-     "N"
+     "E",
+     "E"
     ],
     [
-     "D",
+     "S",
      "L",
      "F",
      "T",
      "E",
-     "T"
+     "R"
     ]
    ],
    "links": [
@@ -1126,65 +1196,70 @@
    ],
    "seized": [],
    "start": [
-    2,
-    3,
     0,
+    1,
+    5,
     5,
     3
    ],
    "par": {
-    "combination": 4,
+    "combination": 3,
     "full": 5
    },
    "theme": {
     "clue": "Whodunnit"
    },
    "id": "2026-09-15",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "PROOF",
+    "COURT",
+    "JUDGE"
+   ]
   },
   {
    "number": 16,
    "date": "2026-09-16",
    "rings": [
     [
-     "F",
+     "R",
      "S",
      "U",
-     "T",
-     "L",
-     "A"
+     "F",
+     "H",
+     "S"
     ],
     [
-     "L",
-     "A",
      "H",
+     "A",
+     "O",
+     "A",
+     "T",
+     "I"
+    ],
+    [
+     "R",
+     "G",
+     "A",
+     "I",
+     "U",
+     "I"
+    ],
+    [
      "E",
      "N",
-     "O"
-    ],
-    [
-     "G",
      "R",
      "I",
-     "I",
-     "I",
-     "A"
+     "H",
+     "P"
     ],
     [
-     "E",
-     "N",
-     "S",
-     "L",
-     "U",
-     "D"
-    ],
-    [
-     "M",
+     "T",
      "E",
      "S",
-     "K",
-     "E",
-     "E"
+     "D",
+     "Y",
+     "P"
     ]
    ],
    "links": [
@@ -1201,62 +1276,67 @@
    ],
    "seized": [],
    "start": [
-    4,
+    3,
+    3,
     1,
-    0,
-    0,
-    2
+    5,
+    4
    ],
    "par": {
     "combination": 3,
-    "full": 4
+    "full": 5
    },
    "id": "2026-09-16",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "HAIRY",
+    "STRIP",
+    "RIGHT"
+   ]
   },
   {
    "number": 17,
    "date": "2026-09-17",
    "rings": [
     [
-     "C",
-     "I",
-     "N",
-     "I",
-     "B",
-     "K"
-    ],
-    [
-     "Y",
-     "D",
      "R",
-     "N",
-     "O",
-     "I"
+     "C",
+     "C",
+     "H",
+     "L",
+     "T"
     ],
     [
      "L",
-     "I",
      "L",
-     "E",
+     "I",
      "A",
-     "I"
+     "S",
+     "O"
     ],
     [
-     "I",
-     "F",
-     "I",
-     "P",
-     "O",
-     "W"
-    ],
-    [
-     "N",
-     "P",
-     "N",
      "E",
-     "N",
+     "U",
+     "R",
+     "B",
+     "O",
+     "O"
+    ],
+    [
+     "M",
+     "A",
+     "B",
+     "E",
+     "E",
      "R"
+    ],
+    [
+     "S",
+     "R",
+     "S",
+     "D",
+     "L",
+     "S"
     ]
    ],
    "links": [
@@ -1274,60 +1354,65 @@
    "seized": [],
    "start": [
     1,
+    2,
     4,
     3,
-    3,
-    1
+    0
    ],
    "par": {
-    "combination": 4,
-    "full": 8
+    "combination": 5,
+    "full": 7
    },
    "id": "2026-09-17",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "ROOMS",
+    "CLEAR",
+    "CLUBS"
+   ]
   },
   {
    "number": 18,
    "date": "2026-09-18",
    "rings": [
     [
-     "J",
+     "A",
      "G",
      "D",
-     "C",
+     "G",
      "S",
-     "A"
+     "M"
     ],
     [
-     "H",
-     "T",
-     "B",
      "U",
+     "T",
+     "O",
+     "N",
      "T",
      "R"
     ],
     [
-     "O",
-     "L",
+     "V",
+     "G",
      "T",
      "I",
-     "I",
+     "S",
      "O"
     ],
     [
-     "I",
+     "E",
      "H",
      "F",
-     "L",
+     "T",
      "R",
-     "V"
+     "I"
     ],
     [
      "E",
-     "A",
+     "R",
      "H",
      "T",
-     "L",
+     "S",
      "M"
     ]
    ],
@@ -1352,63 +1437,68 @@
    "start": [
     1,
     3,
-    0,
-    0,
+    1,
+    1,
     5
    ],
    "par": {
     "combination": 4,
-    "full": 7
+    "full": 8
    },
    "theme": {
     "clue": "Weather report"
    },
    "id": "2026-09-18",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "DRIFT",
+    "GUSTS",
+    "STORM"
+   ]
   },
   {
    "number": 19,
    "date": "2026-09-19",
    "rings": [
     [
-     "B",
-     "J",
+     "I",
+     "D",
+     "L",
+     "I",
+     "L",
+     "S"
+    ],
+    [
      "M",
-     "A",
+     "T",
      "U",
-     "H"
-    ],
-    [
-     "A",
-     "O",
+     "D",
      "E",
-     "P",
-     "R",
-     "D"
+     "U"
     ],
     [
-     "R",
+     "P",
      "A",
-     "U",
+     "L",
      "N",
-     "N",
+     "E",
+     "V"
+    ],
+    [
+     "E",
+     "E",
+     "G",
+     "E",
+     "C",
      "A"
     ],
     [
-     "K",
      "E",
-     "N",
-     "I",
-     "M",
-     "F"
-    ],
-    [
-     "T",
-     "L",
+     "R",
+     "H",
      "U",
-     "S",
-     "S",
-     "S"
+     "L",
+     "R"
     ]
    ],
    "links": [
@@ -1430,18 +1520,23 @@
    ],
    "seized": [],
    "start": [
-    3,
-    5,
+    1,
+    1,
+    2,
     0,
-    4,
-    0
+    3
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-09-19",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "LEVEL",
+    "SUPER",
+    "IMAGE"
+   ]
   },
   {
    "number": 20,
@@ -1450,42 +1545,42 @@
     [
      "R",
      "S",
-     "S",
-     "W",
+     "T",
+     "F",
      "H",
      "O"
     ],
     [
-     "T",
+     "I",
      "H",
-     "O",
+     "I",
      "O",
      "S",
      "E"
     ],
     [
-     "E",
-     "O",
-     "U",
+     "G",
+     "I",
+     "R",
      "L",
      "E",
      "T"
     ],
     [
-     "W",
-     "L",
+     "N",
+     "S",
      "T",
      "E",
      "A",
-     "A"
+     "M"
     ],
     [
      "U",
      "C",
      "P",
-     "M",
-     "S",
-     "D"
+     "A",
+     "G",
+     "T"
     ]
    ],
    "links": [
@@ -1514,7 +1609,7 @@
     4
    ],
    "start": [
-    2,
+    4,
     0,
     3,
     2,
@@ -1522,10 +1617,15 @@
    ],
    "par": {
     "combination": 5,
-    "full": 10
+    "full": 12
    },
    "id": "2026-09-20",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "SIGMA",
+    "THING",
+    "FIRST"
+   ]
   },
   {
    "number": 21,
@@ -1533,125 +1633,130 @@
    "rings": [
     [
      "T",
-     "O",
-     "L",
+     "U",
+     "B",
      "W",
+     "G",
+     "R"
+    ],
+    [
+     "R",
      "N",
+     "T",
+     "S",
+     "L",
      "H"
     ],
     [
-     "A",
-     "H",
+     "Y",
      "L",
-     "E",
-     "H",
-     "O"
-    ],
-    [
-     "I",
-     "O",
-     "I",
-     "M",
-     "I",
-     "U"
-    ],
-    [
-     "H",
-     "V",
-     "O",
-     "T",
      "A",
-     "O"
+     "I",
+     "E",
+     "T"
+    ],
+    [
+     "C",
+     "T",
+     "E",
+     "E",
+     "H",
+     "W"
     ],
     [
      "E",
-     "E",
+     "N",
+     "N",
      "R",
-     "O",
-     "E",
-     "N"
+     "D",
+     "K"
     ]
    ],
    "links": [
     {
-     "from": 2,
-     "to": 1,
+     "from": 3,
+     "to": 4,
+     "sign": -1
+    },
+    {
+     "from": 1,
+     "to": 3,
      "sign": 1
     },
     {
      "from": 0,
-     "to": 1,
-     "sign": 1
-    },
-    {
-     "from": 2,
-     "to": 4,
-     "sign": 1
+     "to": 2,
+     "sign": -1
     }
    ],
    "seized": [
-    1
+    4
    ],
    "start": [
-    5,
     4,
     0,
-    4,
-    5
+    3,
+    5,
+    2
    ],
    "par": {
-    "combination": 7,
+    "combination": 5,
     "full": 10
    },
    "theme": {
     "clue": "Shades"
    },
    "id": "2026-09-21",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "BLACK",
+    "WHITE",
+    "GREEN"
+   ]
   },
   {
    "number": 22,
    "date": "2026-09-22",
    "rings": [
     [
-     "E",
+     "B",
      "C",
      "O",
      "N",
-     "T",
-     "W"
+     "Y",
+     "B"
     ],
     [
      "T",
      "D",
+     "A",
+     "L",
      "O",
-     "H",
-     "X",
-     "Y"
+     "A"
     ],
     [
      "H",
      "A",
+     "R",
+     "O",
+     "N",
+     "R"
+    ],
+    [
+     "R",
+     "E",
+     "L",
+     "D",
+     "C",
+     "E"
+    ],
+    [
      "K",
-     "O",
-     "A",
-     "C"
-    ],
-    [
-     "L",
-     "E",
-     "L",
+     "S",
      "Y",
-     "S",
-     "M"
-    ],
-    [
-     "E",
-     "S",
-     "E",
      "R",
      "S",
-     "O"
+     "S"
     ]
    ],
    "links": [
@@ -1668,27 +1773,32 @@
    ],
    "seized": [],
    "start": [
-    3,
-    3,
-    3,
-    1,
-    5
+    2,
+    2,
+    5,
+    4,
+    3
    ],
    "par": {
     "combination": 3,
     "full": 6
    },
    "id": "2026-09-22",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "BLOCK",
+    "BONES",
+    "CARRY"
+   ]
   },
   {
    "number": 23,
    "date": "2026-09-23",
    "rings": [
     [
-     "S",
-     "W",
      "D",
+     "L",
+     "T",
      "T",
      "V",
      "A"
@@ -1697,29 +1807,29 @@
      "I",
      "H",
      "B",
-     "I",
-     "O",
-     "E"
+     "R",
+     "U",
+     "R"
     ],
     [
      "G",
      "O",
-     "Z",
-     "R",
-     "L",
+     "E",
+     "C",
+     "U",
      "I"
     ],
     [
-     "E",
-     "R",
-     "T",
+     "S",
+     "K",
+     "C",
      "T",
      "S",
      "U"
     ],
     [
      "Y",
-     "A",
+     "K",
      "T",
      "B",
      "T",
@@ -1740,62 +1850,67 @@
    ],
    "seized": [],
    "start": [
-    1,
-    1,
-    2,
     5,
-    0
+    5,
+    0,
+    1,
+    4
    ],
    "par": {
     "combination": 3,
-    "full": 5
+    "full": 4
    },
    "id": "2026-09-23",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "DRESS",
+    "LUCKY",
+    "TRUCK"
+   ]
   },
   {
    "number": 24,
    "date": "2026-09-24",
    "rings": [
     [
-     "S",
-     "E",
+     "L",
      "A",
-     "M",
-     "V",
+     "Y",
+     "S",
+     "P",
+     "P"
+    ],
+    [
+     "P",
+     "H",
+     "L",
+     "R",
+     "U",
      "O"
     ],
     [
+     "N",
+     "I",
+     "S",
+     "O",
+     "U",
+     "O"
+    ],
+    [
+     "B",
+     "A",
      "R",
+     "T",
+     "W",
+     "T"
+    ],
+    [
+     "A",
+     "N",
      "O",
      "E",
      "R",
-     "N",
-     "U"
-    ],
-    [
-     "L",
-     "H",
-     "O",
-     "N",
-     "B",
-     "I"
-    ],
-    [
-     "I",
-     "S",
-     "I",
-     "I",
-     "N",
-     "U"
-    ],
-    [
-     "S",
-     "S",
-     "T",
-     "Y",
-     "G",
-     "S"
+     "G"
     ]
    ],
    "links": [
@@ -1818,63 +1933,68 @@
    "seized": [],
    "start": [
     5,
-    3,
     5,
-    0,
-    4
+    5,
+    3,
+    2
    ],
    "par": {
-    "combination": 5,
-    "full": 8
+    "combination": 4,
+    "full": 7
    },
    "theme": {
     "clue": "Look up"
    },
    "id": "2026-09-24",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "PLUTO",
+    "PROBE",
+    "LUNAR"
+   ]
   },
   {
    "number": 25,
    "date": "2026-09-25",
    "rings": [
     [
-     "W",
-     "P",
      "A",
+     "G",
      "A",
-     "F",
+     "B",
+     "S",
      "E"
     ],
     [
      "L",
-     "H",
-     "U",
+     "F",
+     "R",
      "B",
-     "L",
-     "I"
+     "R",
+     "P"
     ],
     [
-     "L",
-     "R",
-     "N",
+     "O",
      "E",
-     "P",
+     "N",
+     "T",
+     "A",
      "O"
     ],
     [
      "W",
-     "R",
-     "P",
+     "E",
+     "V",
      "U",
-     "A",
-     "E"
+     "O",
+     "L"
     ],
     [
+     "R",
      "E",
-     "Y",
      "T",
-     "N",
-     "D",
+     "K",
+     "L",
      "P"
     ]
    ],
@@ -1892,61 +2012,66 @@
    ],
    "seized": [],
    "start": [
-    4,
     3,
-    5,
-    5,
-    4
+    0,
+    2,
+    0,
+    2
    ],
    "par": {
-    "combination": 4,
+    "combination": 5,
     "full": 8
    },
    "id": "2026-09-25",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "AFTER",
+    "GRAVE",
+    "ABOUT"
+   ]
   },
   {
    "number": 26,
    "date": "2026-09-26",
    "rings": [
     [
-     "W",
+     "D",
+     "B",
+     "S",
+     "S",
      "C",
-     "Q",
-     "E",
-     "N",
-     "C"
+     "F"
     ],
     [
      "H",
-     "U",
-     "X",
-     "M",
-     "R",
+     "L",
+     "S",
+     "L",
+     "A",
+     "U"
+    ],
+    [
+     "P",
+     "E",
+     "O",
+     "T",
+     "E",
      "L"
     ],
     [
+     "C",
+     "O",
      "I",
-     "A",
-     "V",
-     "A",
-     "T",
+     "N",
+     "E",
      "E"
     ],
     [
-     "M",
-     "T",
-     "F",
      "R",
+     "K",
+     "D",
      "V",
-     "T"
-    ],
-    [
-     "L",
-     "T",
-     "L",
-     "Y",
-     "E",
+     "D",
      "S"
     ]
    ],
@@ -1964,148 +2089,158 @@
    ],
    "seized": [],
    "start": [
-    0,
-    2,
     3,
-    5,
-    5
+    2,
+    2,
+    2,
+    1
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "id": "2026-09-26",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "SALES",
+    "SUPER",
+    "CHECK"
+   ]
   },
   {
    "number": 27,
    "date": "2026-09-27",
    "rings": [
     [
-     "W",
+     "R",
+     "S",
      "A",
-     "J",
-     "L",
-     "N",
-     "H"
-    ],
-    [
-     "R",
-     "E",
-     "N",
-     "O",
-     "R",
-     "H"
-    ],
-    [
-     "G",
-     "L",
-     "T",
-     "E",
-     "L",
+     "B",
+     "S",
      "A"
     ],
     [
+     "D",
+     "T",
+     "N",
      "L",
-     "B",
-     "H",
-     "C",
-     "R",
-     "R"
+     "O",
+     "D"
     ],
     [
-     "Y",
      "R",
-     "T",
-     "A",
+     "O",
+     "I",
+     "I",
+     "G",
+     "I"
+    ],
+    [
+     "R",
+     "S",
+     "R",
+     "B",
+     "P",
+     "L"
+    ],
+    [
+     "S",
      "Y",
+     "E",
+     "I",
+     "L",
      "Y"
     ]
    ],
    "links": [
     {
-     "from": 1,
-     "to": 0,
-     "sign": 1
-    },
-    {
-     "from": 1,
-     "to": 2,
-     "sign": 1
-    },
-    {
-     "from": 4,
-     "to": 2,
+     "from": 2,
+     "to": 4,
      "sign": -1
     },
     {
-     "from": 3,
-     "to": 2,
+     "from": 2,
+     "to": 3,
      "sign": 1
+    },
+    {
+     "from": 0,
+     "to": 4,
+     "sign": 1
+    },
+    {
+     "from": 1,
+     "to": 2,
+     "sign": -1
     }
    ],
    "seized": [
-    0
+    4
    ],
    "start": [
-    3,
+    5,
     4,
-    3,
+    5,
     1,
-    2
+    5
    ],
    "par": {
-    "combination": 6,
+    "combination": 5,
     "full": 10
    },
    "theme": {
     "clue": "How you feel"
    },
    "id": "2026-09-27",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "ANGRY",
+    "BLISS",
+    "SORRY"
+   ]
   },
   {
    "number": 28,
    "date": "2026-09-28",
    "rings": [
     [
-     "O",
-     "F",
-     "R",
-     "M",
-     "T",
-     "I"
-    ],
-    [
-     "U",
-     "L",
-     "I",
-     "R",
-     "N",
-     "F"
-    ],
-    [
      "E",
-     "G",
-     "O",
-     "D",
-     "F",
-     "N"
-    ],
-    [
-     "O",
-     "H",
-     "U",
-     "I",
-     "E",
-     "N"
-    ],
-    [
-     "R",
      "Y",
-     "G",
+     "K",
      "T",
+     "L",
+     "L"
+    ],
+    [
+     "E",
+     "N",
+     "E",
+     "L",
+     "A",
+     "E"
+    ],
+    [
+     "M",
+     "R",
+     "X",
+     "M",
+     "L",
+     "H"
+    ],
+    [
      "T",
+     "O",
+     "S",
+     "P",
+     "E",
+     "M"
+    ],
+    [
+     "S",
+     "N",
+     "V",
+     "Y",
+     "B",
      "A"
     ]
    ],
@@ -2135,62 +2270,67 @@
     0
    ],
    "start": [
-    1,
-    3,
-    4,
     5,
-    1
+    4,
+    4,
+    1,
+    2
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
    "id": "2026-09-28",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "KARMA",
+    "TEXTS",
+    "LEMON"
+   ]
   },
   {
    "number": 29,
    "date": "2026-09-29",
    "rings": [
     [
-     "N",
-     "G",
-     "N",
-     "G",
-     "L",
-     "B"
-    ],
-    [
-     "R",
-     "A",
-     "U",
-     "N",
-     "R",
-     "I"
-    ],
-    [
-     "I",
-     "S",
-     "I",
-     "H",
-     "A",
-     "V"
-    ],
-    [
-     "E",
-     "N",
      "T",
-     "D",
-     "O",
-     "N"
+     "T",
+     "N",
+     "B",
+     "S",
+     "R"
     ],
     [
-     "Y",
+     "O",
+     "W",
+     "H",
+     "N",
+     "R",
+     "T"
+    ],
+    [
+     "O",
+     "I",
+     "R",
+     "H",
+     "O",
+     "E"
+    ],
+    [
+     "E",
+     "M",
+     "N",
+     "E",
+     "O",
+     "W"
+    ],
+    [
+     "S",
      "E",
      "A",
-     "D",
-     "S",
-     "G"
+     "N",
+     "L",
+     "S"
     ]
    ],
    "links": [
@@ -2202,9 +2342,9 @@
    ],
    "seized": [],
    "start": [
+    3,
     0,
-    5,
-    0,
+    4,
     3,
     4
    ],
@@ -2213,7 +2353,12 @@
     "full": 5
    },
    "id": "2026-09-29",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "ROOMS",
+    "TWINS",
+    "THREE"
+   ]
   },
   {
    "number": 30,
@@ -2276,58 +2421,63 @@
     1
    ],
    "par": {
-    "combination": 3,
+    "combination": 4,
     "full": 5
    },
    "theme": {
     "clue": "A hand of cards"
    },
    "id": "2026-09-30",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "JOKER",
+    "SPADE",
+    "STACK"
+   ]
   },
   {
    "number": 31,
    "date": "2026-10-01",
    "rings": [
     [
-     "G",
-     "E",
+     "C",
      "T",
-     "P",
-     "S",
+     "H",
+     "A",
+     "C",
+     "T"
+    ],
+    [
+     "H",
+     "H",
+     "E",
+     "U",
+     "B",
+     "A"
+    ],
+    [
+     "E",
+     "A",
+     "N",
+     "M",
+     "O",
      "R"
     ],
     [
-     "T",
-     "T",
-     "N",
-     "M",
-     "A",
-     "L"
-    ],
-    [
-     "O",
-     "A",
-     "B",
-     "A",
-     "O",
-     "M"
-    ],
-    [
+     "R",
+     "S",
      "I",
-     "L",
-     "C",
-     "C",
-     "Z",
-     "M"
+     "E",
+     "A",
+     "U"
     ],
     [
-     "L",
-     "E",
-     "E",
-     "K",
+     "F",
+     "N",
      "T",
-     "E"
+     "Y",
+     "E",
+     "N"
     ]
    ],
    "links": [
@@ -2344,10 +2494,10 @@
    ],
    "seized": [],
    "start": [
-    1,
-    4,
     4,
     3,
+    0,
+    1,
     4
    ],
    "par": {
@@ -2355,7 +2505,12 @@
     "full": 7
    },
    "id": "2026-10-01",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "ABOUT",
+    "CARRY",
+    "THESE"
+   ]
   },
   {
    "number": 32,
@@ -2363,43 +2518,43 @@
    "rings": [
     [
      "I",
-     "I",
+     "W",
      "T",
      "B",
-     "J",
-     "M"
+     "W",
+     "Q"
     ],
     [
      "E",
-     "M",
-     "E",
-     "L",
+     "A",
      "O",
-     "I"
+     "R",
+     "O",
+     "U"
     ],
     [
+     "E",
+     "A",
+     "T",
+     "P",
+     "I",
+     "R"
+    ],
+    [
+     "I",
      "N",
-     "A",
-     "A",
-     "X",
-     "O",
-     "K"
-    ],
-    [
-     "A",
-     "C",
-     "E",
+     "S",
      "U",
      "H",
-     "G"
+     "E"
     ],
     [
-     "S",
-     "K",
-     "S",
-     "S",
+     "C",
+     "G",
+     "E",
+     "E",
      "I",
-     "E"
+     "R"
     ]
    ],
    "links": [
@@ -2432,7 +2587,12 @@
     "full": 8
    },
    "id": "2026-10-02",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "WATER",
+    "TOPIC",
+    "BRING"
+   ]
   },
   {
    "number": 33,
@@ -2440,42 +2600,42 @@
    "rings": [
     [
      "S",
-     "I",
-     "C",
+     "B",
+     "P",
      "A",
-     "F",
+     "S",
      "K"
     ],
     [
-     "S",
+     "E",
      "R",
      "N",
-     "L",
+     "U",
      "N",
      "T"
     ],
     [
      "N",
-     "O",
+     "G",
      "I",
      "O",
-     "S",
-     "A"
+     "L",
+     "O"
     ],
     [
      "O",
-     "U",
+     "A",
      "F",
      "V",
-     "U",
-     "Z"
+     "O",
+     "O"
     ],
     [
      "R",
      "E",
      "E",
-     "E",
-     "Y",
+     "W",
+     "F",
      "G"
     ]
    ],
@@ -2498,28 +2658,33 @@
    ],
    "seized": [],
    "start": [
-    2,
-    5,
+    0,
+    1,
+    0,
     4,
-    2,
-    3
+    1
    ],
    "par": {
     "combination": 4,
-    "full": 7
+    "full": 8
    },
    "theme": {
     "clue": "In the kitchen"
    },
    "id": "2026-10-03",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "SUGAR",
+    "KNIFE",
+    "STOVE"
+   ]
   },
   {
    "number": 34,
    "date": "2026-10-04",
    "rings": [
     [
-     "G",
+     "P",
      "S",
      "L",
      "E",
@@ -2529,31 +2694,31 @@
     [
      "I",
      "S",
-     "R",
-     "A",
-     "A",
+     "I",
+     "T",
+     "I",
      "E"
     ],
     [
      "E",
      "Y",
-     "A",
      "L",
-     "B",
+     "I",
+     "V",
      "A"
     ],
     [
      "P",
-     "S",
+     "L",
+     "L",
      "E",
-     "O",
      "H",
      "I"
     ],
     [
      "S",
+     "L",
      "S",
-     "R",
      "T",
      "I",
      "C"
@@ -2596,72 +2761,72 @@
     "full": 10
    },
    "id": "2026-10-04",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "PILLS",
+    "STILL",
+    "LIVES"
+   ]
   },
   {
    "number": 35,
    "date": "2026-10-05",
    "rings": [
     [
-     "B",
-     "P",
+     "Q",
+     "D",
+     "C",
+     "S",
+     "S",
+     "N"
+    ],
+    [
+     "C",
+     "A",
+     "U",
+     "A",
      "L",
-     "G",
-     "D",
      "H"
     ],
     [
-     "T",
      "I",
+     "P",
+     "R",
+     "M",
      "I",
-     "I",
-     "A",
-     "H"
+     "D"
     ],
     [
-     "V",
-     "F",
-     "V",
-     "A",
-     "T",
-     "A"
-    ],
-    [
-     "N",
      "E",
-     "T",
-     "I",
-     "H",
-     "O"
+     "C",
+     "D",
+     "C",
+     "O",
+     "E"
     ],
     [
-     "S",
-     "S",
-     "D",
-     "B",
-     "S",
-     "O"
+     "K",
+     "Y",
+     "K",
+     "K",
+     "W",
+     "S"
     ]
    ],
    "links": [
     {
-     "from": 2,
+     "from": 1,
      "to": 0,
-     "sign": 1
+     "sign": -1
     },
     {
      "from": 2,
-     "to": 1,
-     "sign": 1
+     "to": 4,
+     "sign": -1
     },
     {
-     "from": 3,
-     "to": 1,
-     "sign": 1
-    },
-    {
-     "from": 3,
-     "to": 0,
+     "from": 1,
+     "to": 2,
      "sign": -1
     }
    ],
@@ -2669,51 +2834,56 @@
     0
    ],
    "start": [
-    1,
-    0,
-    2,
-    3,
-    2
+    4,
+    4,
+    5,
+    4,
+    1
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
    "id": "2026-10-05",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "QUICK",
+    "DADDY",
+    "CLICK"
+   ]
   },
   {
    "number": 36,
    "date": "2026-10-06",
    "rings": [
     [
-     "V",
+     "M",
      "U",
-     "T",
+     "W",
      "Y",
      "S",
      "D"
     ],
     [
      "E",
-     "I",
+     "U",
      "R",
-     "H",
+     "O",
      "A",
      "H"
     ],
     [
      "O",
      "L",
-     "D",
+     "S",
      "I",
-     "E",
+     "U",
      "C"
     ],
     [
+     "I",
      "E",
-     "E",
-     "S",
+     "L",
      "H",
      "R",
      "T"
@@ -2721,9 +2891,9 @@
     [
      "E",
      "A",
-     "O",
+     "C",
      "D",
-     "E",
+     "D",
      "T"
     ]
    ],
@@ -2742,20 +2912,25 @@
    "seized": [],
    "start": [
     5,
-    2,
-    0,
-    2,
-    5
+    1,
+    5,
+    3,
+    4
    ],
    "par": {
     "combination": 3,
-    "full": 5
+    "full": 4
    },
    "theme": {
     "clue": "On the water"
    },
    "id": "2026-10-06",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "YACHT",
+    "SHORE",
+    "DELTA"
+   ]
   },
   {
    "number": 37,
@@ -2763,43 +2938,43 @@
    "rings": [
     [
      "U",
-     "A",
-     "J",
-     "A",
-     "A",
-     "C"
-    ],
-    [
-     "A",
-     "D",
-     "W",
+     "O",
+     "F",
      "R",
-     "K",
+     "M",
      "P"
     ],
     [
-     "L",
-     "P",
-     "S",
-     "M",
-     "A",
-     "E"
-    ],
-    [
+     "R",
      "O",
      "I",
-     "R",
-     "S",
-     "E",
-     "L"
+     "U",
+     "K",
+     "W"
     ],
     [
-     "T",
-     "C",
-     "E",
+     "L",
      "N",
-     "T",
+     "U",
+     "L",
+     "N",
+     "R"
+    ],
+    [
+     "I",
+     "L",
+     "O",
+     "S",
+     "E",
      "E"
+    ],
+    [
+     "E",
+     "C",
+     "R",
+     "T",
+     "S",
+     "R"
     ]
    ],
    "links": [
@@ -2816,61 +2991,66 @@
    ],
    "seized": [],
    "start": [
-    3,
+    2,
     5,
-    3,
+    2,
     3,
     1
    ],
    "par": {
     "combination": 3,
-    "full": 6
+    "full": 5
    },
    "id": "2026-10-07",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "FRUIT",
+    "ROLLS",
+    "MINOR"
+   ]
   },
   {
    "number": 38,
    "date": "2026-10-08",
    "rings": [
     [
-     "T",
-     "F",
-     "O",
-     "A",
+     "C",
      "E",
-     "E"
-    ],
-    [
-     "O",
-     "E",
-     "U",
-     "B",
-     "M",
-     "A"
-    ],
-    [
-     "R",
+     "G",
      "W",
-     "R",
-     "T",
-     "O",
-     "J"
+     "A",
+     "T"
     ],
     [
-     "S",
-     "T",
      "N",
+     "O",
      "R",
-     "E",
-     "U"
+     "R",
+     "R",
+     "I"
     ],
     [
+     "R",
+     "G",
+     "U",
+     "A",
+     "G",
+     "O"
+    ],
+    [
+     "W",
+     "E",
+     "E",
+     "G",
+     "F",
+     "D"
+    ],
+    [
+     "H",
      "T",
      "I",
-     "H",
+     "N",
      "S",
-     "Y",
      "R"
     ]
    ],
@@ -2893,61 +3073,66 @@
    ],
    "seized": [],
    "start": [
-    0,
+    1,
+    1,
+    2,
     3,
-    4,
-    3,
-    0
+    4
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-10-08",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "WIRES",
+    "ANGER",
+    "TOUGH"
+   ]
   },
   {
    "number": 39,
    "date": "2026-10-09",
    "rings": [
     [
+     "L",
+     "F",
      "B",
-     "M",
-     "T",
-     "V",
-     "S",
-     "R"
+     "F",
+     "E",
+     "A"
     ],
     [
-     "A",
+     "D",
+     "E",
      "R",
-     "V",
-     "P",
-     "O",
-     "I"
+     "L",
+     "I",
+     "O"
     ],
     [
      "U",
-     "S",
-     "A",
      "O",
+     "A",
+     "D",
+     "N",
+     "A"
+    ],
+    [
+     "I",
+     "I",
+     "F",
+     "I",
+     "O",
+     "T"
+    ],
+    [
      "R",
-     "P"
-    ],
-    [
-     "T",
-     "C",
-     "L",
-     "N",
-     "T",
-     "I"
-    ],
-    [
      "E",
-     "K",
-     "B",
-     "N",
-     "S",
+     "Y",
+     "T",
+     "M",
      "H"
     ]
    ],
@@ -2965,11 +3150,11 @@
    ],
    "seized": [],
    "start": [
-    2,
-    1,
     3,
-    4,
-    0
+    5,
+    0,
+    5,
+    3
    ],
    "par": {
     "combination": 4,
@@ -2979,7 +3164,12 @@
     "clue": "Green things"
    },
    "id": "2026-10-09",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "LEAFY",
+    "FRUIT",
+    "BLOOM"
+   ]
   },
   {
    "number": 40,
@@ -2987,43 +3177,43 @@
    "rings": [
     [
      "S",
-     "R",
-     "S",
-     "E",
-     "N",
+     "V",
+     "T",
+     "B",
+     "W",
      "P"
     ],
     [
      "H",
      "T",
+     "I",
+     "H",
      "O",
-     "M",
-     "X",
+     "O"
+    ],
+    [
+     "O",
+     "O",
+     "O",
+     "K",
+     "S",
      "I"
     ],
     [
-     "A",
-     "K",
-     "O",
-     "K",
-     "L",
-     "A"
-    ],
-    [
-     "M",
-     "O",
+     "T",
+     "D",
      "T",
      "O",
-     "E",
-     "L"
+     "T",
+     "N"
     ],
     [
+     "H",
      "S",
-     "N",
      "H",
      "U",
-     "S",
-     "L"
+     "A",
+     "K"
     ]
    ],
    "links": [
@@ -3040,18 +3230,23 @@
    ],
    "seized": [],
    "start": [
-    4,
-    2,
-    4,
-    3,
-    1
+    1,
+    5,
+    1,
+    5,
+    2
    ],
    "par": {
     "combination": 4,
-    "full": 7
+    "full": 8
    },
    "id": "2026-10-10",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "VISTA",
+    "THINK",
+    "BOOTH"
+   ]
   },
   {
    "number": 41,
@@ -3059,122 +3254,43 @@
    "rings": [
     [
      "W",
-     "T",
-     "M",
-     "M",
-     "E",
-     "M"
-    ],
-    [
-     "C",
-     "E",
-     "L",
-     "E",
-     "A",
-     "D"
-    ],
-    [
-     "A",
-     "S",
-     "P",
-     "E",
-     "D",
-     "D"
-    ],
-    [
-     "I",
-     "E",
-     "N",
-     "T",
-     "O",
-     "X"
-    ],
-    [
-     "E",
-     "I",
-     "B",
-     "A",
      "R",
-     "S"
-    ]
-   ],
-   "links": [
-    {
-     "from": 2,
-     "to": 0,
-     "sign": 1
-    },
-    {
-     "from": 4,
-     "to": 0,
-     "sign": 1
-    },
-    {
-     "from": 2,
-     "to": 4,
-     "sign": -1
-    }
-   ],
-   "seized": [
-    0
-   ],
-   "start": [
-    5,
-    4,
-    1,
-    3,
-    5
-   ],
-   "par": {
-    "combination": 5,
-    "full": 10
-   },
-   "id": "2026-10-11",
-   "difficulty": "hard"
-  },
-  {
-   "number": 42,
-   "date": "2026-10-12",
-   "rings": [
-    [
-     "E",
-     "N",
-     "E",
-     "C",
-     "D",
-     "T"
+     "T",
+     "A",
+     "Y",
+     "C"
     ],
     [
+     "I",
+     "R",
+     "O",
+     "T",
+     "L",
+     "I"
+    ],
+    [
+     "V",
+     "A",
+     "O",
      "U",
-     "E",
-     "D",
-     "L",
-     "R",
-     "U"
+     "O",
+     "D"
     ],
     [
+     "C",
+     "R",
      "N",
+     "C",
      "T",
-     "A",
-     "M",
-     "O",
      "E"
     ],
     [
-     "D",
-     "T",
-     "O",
-     "A",
-     "S",
-     "I"
-    ],
-    [
+     "K",
      "R",
      "T",
      "K",
-     "S",
-     "C",
-     "I"
+     "H",
+     "R"
     ]
    ],
    "links": [
@@ -3184,25 +3300,119 @@
      "sign": 1
     },
     {
-     "from": 4,
+     "from": 0,
      "to": 1,
      "sign": -1
     },
     {
-     "from": 0,
+     "from": 1,
      "to": 2,
      "sign": 1
+    },
+    {
+     "from": 3,
+     "to": 1,
+     "sign": -1
     }
    ],
    "seized": [
     2
    ],
    "start": [
-    0,
+    2,
+    2,
     4,
-    5,
     1,
-    4
+    1
+   ],
+   "par": {
+    "combination": 5,
+    "full": 10
+   },
+   "id": "2026-10-11",
+   "difficulty": "hard",
+   "answer": [
+    "WIDTH",
+    "RIVER",
+    "TRACK"
+   ]
+  },
+  {
+   "number": 42,
+   "date": "2026-10-12",
+   "rings": [
+    [
+     "S",
+     "P",
+     "T",
+     "S",
+     "T",
+     "C"
+    ],
+    [
+     "L",
+     "P",
+     "L",
+     "I",
+     "K",
+     "U"
+    ],
+    [
+     "H",
+     "I",
+     "N",
+     "O",
+     "E",
+     "A"
+    ],
+    [
+     "E",
+     "Z",
+     "R",
+     "R",
+     "I",
+     "A"
+    ],
+    [
+     "A",
+     "T",
+     "T",
+     "C",
+     "K",
+     "D"
+    ]
+   ],
+   "links": [
+    {
+     "from": 2,
+     "to": 1,
+     "sign": -1
+    },
+    {
+     "from": 4,
+     "to": 1,
+     "sign": -1
+    },
+    {
+     "from": 0,
+     "to": 1,
+     "sign": 1
+    },
+    {
+     "from": 3,
+     "to": 1,
+     "sign": 1
+    }
+   ],
+   "seized": [
+    1
+   ],
+   "start": [
+    0,
+    2,
+    5,
+    5,
+    5
    ],
    "par": {
     "combination": 5,
@@ -3212,49 +3422,54 @@
     "clue": "Getting dressed"
    },
    "id": "2026-10-12",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "SKIRT",
+    "TUNIC",
+    "CLOAK"
+   ]
   },
   {
    "number": 43,
    "date": "2026-10-13",
    "rings": [
     [
-     "P",
-     "R",
-     "F",
-     "R",
      "T",
-     "O"
-    ],
-    [
-     "U",
-     "I",
-     "R",
-     "R",
-     "E",
-     "O"
-    ],
-    [
-     "R",
-     "I",
-     "P",
-     "C",
-     "R",
-     "T"
-    ],
-    [
      "L",
-     "E",
+     "V",
      "C",
-     "L",
-     "U",
-     "A"
-    ],
-    [
-     "E",
-     "Y",
      "S",
+     "O"
+    ],
+    [
+     "O",
+     "I",
+     "R",
+     "H",
+     "E",
+     "I"
+    ],
+    [
+     "R",
+     "E",
+     "V",
+     "E",
+     "D",
+     "N"
+    ],
+    [
+     "C",
+     "E",
+     "S",
+     "E",
+     "W",
+     "E"
+    ],
+    [
+     "E",
      "L",
+     "S",
+     "S",
      "E",
      "G"
     ]
@@ -3269,61 +3484,66 @@
    "seized": [],
    "start": [
     2,
+    3,
+    1,
     5,
-    0,
-    2,
-    2
+    4
    ],
    "par": {
-    "combination": 3,
+    "combination": 4,
     "full": 5
    },
    "id": "2026-10-13",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "LEVEL",
+    "VIEWS",
+    "CODES"
+   ]
   },
   {
    "number": 44,
    "date": "2026-10-14",
    "rings": [
     [
-     "R",
-     "O",
-     "W",
-     "T",
-     "L",
-     "B"
+     "S",
+     "P",
+     "D",
+     "P",
+     "H",
+     "V"
     ],
     [
-     "M",
      "O",
      "H",
+     "A",
      "O",
-     "E",
-     "U"
+     "M",
+     "O"
     ],
     [
-     "C",
      "I",
      "L",
+     "O",
+     "I",
+     "R",
+     "T"
+    ],
+    [
+     "I",
+     "C",
+     "A",
+     "T",
+     "L",
+     "T"
+    ],
+    [
      "E",
      "R",
-     "E"
-    ],
-    [
-     "K",
+     "O",
+     "Y",
      "S",
-     "A",
-     "N",
-     "E",
-     "S"
-    ],
-    [
-     "G",
-     "S",
-     "N",
-     "S",
-     "E",
-     "L"
+     "M"
     ]
    ],
    "links": [
@@ -3335,62 +3555,67 @@
    ],
    "seized": [],
    "start": [
+    2,
     0,
-    2,
-    4,
-    2,
-    3
+    1,
+    1,
+    5
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-10-14",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "SOLAR",
+    "PHOTO",
+    "DAILY"
+   ]
   },
   {
    "number": 45,
    "date": "2026-10-15",
    "rings": [
     [
-     "F",
-     "I",
-     "E",
-     "R",
+     "C",
      "H",
-     "S"
+     "H",
+     "S",
+     "B",
+     "T"
     ],
     [
-     "U",
+     "H",
+     "E",
+     "B",
      "O",
-     "U",
-     "N",
-     "M",
+     "O",
      "O"
     ],
     [
+     "A",
+     "H",
+     "N",
      "T",
-     "I",
-     "Y",
-     "L",
-     "I",
-     "R"
-    ],
-    [
-     "I",
-     "E",
-     "L",
-     "E",
-     "T",
+     "U",
      "E"
     ],
     [
-     "U",
-     "N",
+     "S",
+     "Z",
+     "D",
+     "E",
+     "S",
+     "I"
+    ],
+    [
      "L",
      "E",
-     "R",
-     "A"
+     "H",
+     "T",
+     "E",
+     "O"
     ]
    ],
    "links": [
@@ -3407,11 +3632,11 @@
    ],
    "seized": [],
    "start": [
-    1,
     2,
+    1,
+    5,
     4,
-    4,
-    2
+    4
    ],
    "par": {
     "combination": 4,
@@ -3421,51 +3646,56 @@
     "clue": "Places to stay"
    },
    "id": "2026-10-15",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "CONDO",
+    "HOTEL",
+    "HOUSE"
+   ]
   },
   {
    "number": 46,
    "date": "2026-10-16",
    "rings": [
     [
-     "N",
+     "F",
      "A",
      "L",
      "L",
-     "F",
-     "B"
+     "M",
+     "S"
     ],
     [
-     "I",
-     "O",
+     "T",
+     "A",
      "B",
      "Y",
      "B",
-     "R"
+     "A"
     ],
     [
      "O",
      "O",
      "A",
+     "K",
      "A",
-     "B",
-     "T"
-    ],
-    [
-     "E",
-     "U",
-     "T",
-     "A",
-     "U",
      "L"
     ],
     [
+     "S",
+     "U",
+     "T",
+     "A",
      "E",
-     "D",
+     "G"
+    ],
+    [
+     "E",
+     "E",
      "T",
      "W",
      "T",
-     "D"
+     "R"
     ]
    ],
    "links": [
@@ -3487,62 +3717,67 @@
    ],
    "seized": [],
    "start": [
-    2,
+    0,
+    1,
     0,
     2,
-    4,
-    3
+    2
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-10-16",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "STAGE",
+    "FALSE",
+    "ABOUT"
+   ]
   },
   {
    "number": 47,
    "date": "2026-10-17",
    "rings": [
     [
-     "W",
-     "R",
-     "S",
-     "H",
-     "J",
-     "O"
+     "P",
+     "O",
+     "B",
+     "C",
+     "O",
+     "T"
     ],
     [
-     "J",
-     "E",
-     "F",
+     "M",
      "I",
      "E",
-     "B"
+     "X",
+     "R",
+     "H"
     ],
     [
-     "N",
-     "N",
-     "M",
-     "J",
-     "N",
-     "F"
+     "A",
+     "I",
+     "E",
+     "T",
+     "E",
+     "I"
     ],
     [
-     "U",
+     "G",
+     "D",
      "N",
+     "L",
+     "G",
+     "L"
+    ],
+    [
      "E",
      "D",
+     "D",
+     "A",
      "E",
-     "Y"
-    ],
-    [
-     "W",
-     "O",
-     "M",
-     "Y",
-     "R",
-     "S"
+     "H"
     ]
    ],
    "links": [
@@ -3564,94 +3799,99 @@
    ],
    "seized": [],
    "start": [
-    4,
-    4,
-    3,
     5,
-    5
+    5,
+    2,
+    1,
+    1
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "id": "2026-10-17",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "BRAND",
+    "CHILD",
+    "OMEGA"
+   ]
   },
   {
    "number": 48,
    "date": "2026-10-18",
    "rings": [
     [
-     "G",
-     "P",
      "B",
-     "O",
-     "U",
-     "N"
+     "P",
+     "D",
+     "T",
+     "E",
+     "F"
     ],
     [
-     "A",
+     "O",
+     "P",
+     "G",
+     "E",
      "L",
-     "R",
-     "N",
-     "N",
-     "C"
+     "R"
     ],
     [
      "K",
+     "S",
      "U",
-     "A",
-     "A",
+     "N",
      "A",
      "I"
     ],
     [
-     "O",
-     "G",
-     "N",
+     "A",
      "C",
+     "N",
+     "L",
      "E",
-     "O"
+     "H"
     ],
     [
-     "D",
+     "H",
      "E",
-     "E",
-     "E",
-     "A",
-     "N"
+     "L",
+     "N",
+     "T",
+     "C"
     ]
    ],
    "links": [
     {
      "from": 2,
-     "to": 0,
+     "to": 1,
+     "sign": 1
+    },
+    {
+     "from": 0,
+     "to": 3,
      "sign": -1
     },
     {
-     "from": 1,
-     "to": 2,
-     "sign": -1
-    },
-    {
-     "from": 3,
+     "from": 2,
      "to": 4,
      "sign": 1
     },
     {
-     "from": 3,
-     "to": 1,
-     "sign": -1
+     "from": 0,
+     "to": 2,
+     "sign": 1
     }
    ],
    "seized": [
-    0
+    1
    ],
    "start": [
-    4,
+    3,
     0,
-    0,
-    4,
+    3,
+    1,
     2
    ],
    "par": {
@@ -3662,86 +3902,101 @@
     "clue": "Tools"
    },
    "id": "2026-10-18",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "BENCH",
+    "PLANE",
+    "DRILL"
+   ]
   },
   {
    "number": 49,
    "date": "2026-10-19",
    "rings": [
     [
-     "A",
-     "A",
      "O",
+     "M",
+     "G",
      "T",
      "E",
-     "M"
+     "E"
     ],
     [
-     "P",
-     "N",
-     "O",
-     "H",
-     "X",
-     "A"
-    ],
-    [
+     "B",
      "I",
-     "K",
-     "P",
-     "G",
-     "S",
-     "A"
+     "R",
+     "R",
+     "X",
+     "X"
     ],
     [
-     "E",
-     "L",
-     "E",
+     "T",
      "F",
      "N",
-     "S"
+     "A",
+     "A",
+     "C"
+    ],
+    [
+     "E",
+     "R",
+     "A",
+     "U",
+     "V",
+     "C"
     ],
     [
      "S",
-     "Y",
-     "R",
-     "I",
+     "E",
      "K",
-     "T"
+     "L",
+     "A",
+     "I"
     ]
    ],
    "links": [
     {
-     "from": 4,
-     "to": 3,
+     "from": 1,
+     "to": 0,
+     "sign": 1
+    },
+    {
+     "from": 2,
+     "to": 1,
      "sign": -1
     },
     {
-     "from": 4,
+     "from": 3,
      "to": 0,
      "sign": -1
     },
     {
-     "from": 1,
-     "to": 2,
+     "from": 4,
+     "to": 1,
      "sign": -1
     }
    ],
    "seized": [
-    3
+    0
    ],
    "start": [
-    3,
-    1,
-    5,
     2,
-    2
+    5,
+    1,
+    1,
+    3
    ],
    "par": {
-    "combination": 5,
+    "combination": 6,
     "full": 10
    },
    "id": "2026-10-19",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "GRAVE",
+    "TRACK",
+    "EXCEL"
+   ]
   },
   {
    "number": 50,
@@ -3749,43 +4004,43 @@
    "rings": [
     [
      "T",
-     "L",
-     "T",
-     "O",
-     "B",
-     "H"
-    ],
-    [
-     "E",
-     "U",
      "H",
-     "E",
-     "E",
+     "U",
+     "O",
+     "C",
      "T"
     ],
     [
      "A",
+     "O",
+     "H",
      "U",
-     "A",
-     "M",
-     "E",
-     "G"
+     "R",
+     "T"
     ],
     [
-     "V",
-     "C",
-     "A",
+     "B",
+     "U",
      "R",
-     "A",
+     "O",
+     "E",
      "M"
     ],
     [
-     "G",
-     "H",
-     "N",
-     "E",
+     "V",
+     "D",
      "L",
-     "S"
+     "R",
+     "A",
+     "A"
+    ],
+    [
+     "G",
+     "S",
+     "S",
+     "E",
+     "N",
+     "N"
     ]
    ],
    "links": [
@@ -3802,62 +4057,67 @@
    ],
    "seized": [],
    "start": [
-    1,
-    0,
-    4,
-    0,
-    1
+    2,
+    2,
+    3,
+    3,
+    4
    ],
    "par": {
     "combination": 3,
-    "full": 6
+    "full": 4
    },
    "id": "2026-10-20",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "TOOLS",
+    "THERE",
+    "HUMAN"
+   ]
   },
   {
    "number": 51,
    "date": "2026-10-21",
    "rings": [
     [
-     "T",
-     "P",
-     "B",
-     "B",
-     "A",
-     "W"
-    ],
-    [
      "U",
-     "B",
-     "A",
-     "D",
-     "I",
-     "A"
-    ],
-    [
-     "E",
-     "A",
-     "N",
-     "G",
-     "O",
-     "L"
-    ],
-    [
-     "N",
-     "J",
+     "Q",
      "L",
-     "U",
-     "K",
+     "T",
+     "T",
      "H"
     ],
     [
-     "W",
-     "O",
-     "O",
      "E",
-     "T",
+     "U",
+     "E",
+     "R",
+     "E",
+     "Y"
+    ],
+    [
+     "M",
+     "N",
+     "B",
+     "B",
+     "C",
+     "R"
+    ],
+    [
+     "I",
+     "P",
+     "E",
+     "N",
+     "A",
      "S"
+    ],
+    [
+     "A",
+     "C",
+     "O",
+     "S",
+     "N",
+     "N"
     ]
    ],
    "links": [
@@ -3869,11 +4129,11 @@
    ],
    "seized": [],
    "start": [
-    5,
     2,
     1,
-    0,
-    2
+    4,
+    4,
+    3
    ],
    "par": {
     "combination": 3,
@@ -3883,7 +4143,12 @@
     "clue": "Make some noise"
    },
    "id": "2026-10-21",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "LYRIC",
+    "TEMPO",
+    "TUNES"
+   ]
   },
   {
    "number": 52,
@@ -3891,43 +4156,43 @@
    "rings": [
     [
      "C",
-     "T",
-     "S",
-     "A",
-     "I",
-     "A"
-    ],
-    [
+     "F",
      "O",
-     "S",
-     "S",
-     "P",
      "T",
-     "G"
+     "H",
+     "P"
     ],
     [
-     "A",
-     "P",
+     "H",
      "E",
      "A",
-     "M",
-     "A"
-    ],
-    [
-     "M",
-     "I",
-     "I",
-     "W",
-     "O",
-     "L"
-    ],
-    [
-     "Y",
-     "S",
-     "N",
+     "U",
      "C",
-     "S",
-     "W"
+     "N"
+    ],
+    [
+     "G",
+     "B",
+     "N",
+     "E",
+     "E",
+     "D"
+    ],
+    [
+     "E",
+     "L",
+     "N",
+     "A",
+     "V",
+     "S"
+    ],
+    [
+     "N",
+     "O",
+     "H",
+     "E",
+     "Y",
+     "N"
     ]
    ],
    "links": [
@@ -3944,62 +4209,67 @@
    ],
    "seized": [],
    "start": [
-    3,
-    0,
+    1,
     4,
-    2,
-    4
+    0,
+    1,
+    5
    ],
    "par": {
-    "combination": 5,
-    "full": 7
+    "combination": 4,
+    "full": 8
    },
    "id": "2026-10-22",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "CABLE",
+    "FUNNY",
+    "OCEAN"
+   ]
   },
   {
    "number": 53,
    "date": "2026-10-23",
    "rings": [
     [
-     "T",
-     "E",
-     "O",
-     "B",
      "S",
-     "P"
-    ],
-    [
-     "E",
-     "E",
-     "G",
-     "W",
-     "R",
-     "T"
-    ],
-    [
-     "U",
+     "S",
      "A",
-     "L",
-     "S",
-     "G",
-     "N"
+     "P",
+     "E",
+     "U"
+    ],
+    [
+     "E",
+     "E",
+     "O",
+     "T",
+     "T",
+     "B"
     ],
     [
      "O",
-     "E",
-     "C",
-     "F",
-     "D",
-     "E"
+     "X",
+     "A",
+     "I",
+     "O",
+     "A"
     ],
     [
-     "G",
-     "D",
-     "E",
+     "R",
      "F",
+     "N",
      "T",
-     "T"
+     "L",
+     "U"
+    ],
+    [
+     "T",
+     "L",
+     "A",
+     "B",
+     "E",
+     "L"
     ]
    ],
    "links": [
@@ -4021,88 +4291,93 @@
    ],
    "seized": [],
    "start": [
-    4,
+    5,
+    0,
+    0,
     2,
-    4,
-    4,
-    3
+    2
    ],
    "par": {
-    "combination": 5,
+    "combination": 4,
     "full": 8
    },
    "id": "2026-10-23",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "STILL",
+    "ABOUT",
+    "PEARL"
+   ]
   },
   {
    "number": 54,
    "date": "2026-10-24",
    "rings": [
     [
+     "R",
+     "R",
+     "R",
      "T",
-     "P",
-     "I",
-     "S",
-     "E",
-     "S"
-    ],
-    [
-     "K",
-     "E",
-     "I",
-     "T",
-     "A",
-     "B"
-    ],
-    [
-     "A",
-     "T",
-     "T",
-     "L",
-     "Y",
+     "C",
      "A"
     ],
     [
-     "C",
-     "A",
      "E",
+     "R",
      "E",
-     "T",
-     "M"
+     "I",
+     "O",
+     "R"
     ],
     [
-     "M",
-     "H",
+     "I",
+     "G",
+     "A",
      "E",
-     "S",
-     "H",
+     "L",
      "E"
+    ],
+    [
+     "L",
+     "E",
+     "C",
+     "N",
+     "A",
+     "D"
+    ],
+    [
+     "A",
+     "R",
+     "H",
+     "A",
+     "Y",
+     "S"
     ]
    ],
    "links": [
     {
      "from": 4,
-     "to": 3,
+     "to": 0,
      "sign": 1
     },
     {
-     "from": 4,
-     "to": 0,
+     "from": 2,
+     "to": 3,
      "sign": -1
     },
     {
-     "from": 1,
-     "to": 0,
-     "sign": 1
+     "from": 4,
+     "to": 3,
+     "sign": -1
     }
    ],
    "seized": [],
    "start": [
-    1,
-    5,
-    1,
-    5,
-    5
+    3,
+    2,
+    0,
+    4,
+    3
    ],
    "par": {
     "combination": 4,
@@ -4112,76 +4387,81 @@
     "clue": "Game day"
    },
    "id": "2026-10-24",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "COACH",
+    "ARENA",
+    "RELAY"
+   ]
   },
   {
    "number": 55,
    "date": "2026-10-25",
    "rings": [
     [
-     "W",
-     "S",
-     "I",
-     "A",
+     "G",
      "T",
-     "F"
-    ],
-    [
-     "H",
+     "L",
+     "W",
      "F",
-     "R",
-     "O",
+     "T"
+    ],
+    [
      "H",
-     "L"
-    ],
-    [
-     "I",
-     "E",
-     "U",
-     "I",
      "O",
-     "R"
-    ],
-    [
-     "C",
-     "E",
-     "E",
      "O",
-     "U",
+     "A",
+     "A",
      "U"
     ],
     [
-     "M",
-     "H",
-     "P",
+     "U",
+     "B",
+     "B",
+     "A",
+     "E",
+     "A"
+    ],
+    [
+     "I",
+     "L",
+     "C",
      "O",
+     "R",
+     "M"
+    ],
+    [
+     "S",
      "H",
-     "T"
+     "R",
+     "L",
+     "G",
+     "R"
     ]
    ],
    "links": [
     {
-     "from": 2,
-     "to": 3,
-     "sign": 1
+     "from": 0,
+     "to": 2,
+     "sign": -1
     },
     {
-     "from": 2,
-     "to": 0,
-     "sign": 1
+     "from": 3,
+     "to": 1,
+     "sign": -1
     },
     {
      "from": 4,
-     "to": 3,
+     "to": 0,
      "sign": 1
     }
    ],
    "seized": [
-    3
+    2
    ],
    "start": [
-    3,
     0,
+    5,
     0,
     3,
     2
@@ -4191,51 +4471,56 @@
     "full": 10
    },
    "id": "2026-10-25",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "THEIR",
+    "GOALS",
+    "TOUCH"
+   ]
   },
   {
    "number": 56,
    "date": "2026-10-26",
    "rings": [
     [
-     "M",
-     "B",
-     "S",
+     "I",
+     "O",
+     "P",
+     "O",
      "T",
-     "A",
-     "Y"
-    ],
-    [
-     "R",
-     "O",
-     "A",
-     "K",
-     "O",
-     "D"
-    ],
-    [
-     "S",
-     "S",
-     "I",
-     "N",
-     "I",
-     "A"
-    ],
-    [
-     "E",
-     "E",
-     "R",
-     "M",
-     "H",
      "N"
     ],
     [
-     "T",
-     "T",
+     "A",
+     "H",
      "N",
+     "K",
      "T",
+     "A"
+    ],
+    [
+     "T",
+     "H",
+     "R",
      "S",
+     "I",
      "D"
+    ],
+    [
+     "N",
+     "R",
+     "W",
+     "E",
+     "T",
+     "I"
+    ],
+    [
+     "C",
+     "I",
+     "R",
+     "Y",
+     "S",
+     "K"
     ]
    ],
    "links": [
@@ -4259,25 +4544,30 @@
     1
    ],
    "start": [
-    2,
     4,
     0,
-    2,
-    5
+    0,
+    5,
+    1
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
    "id": "2026-10-26",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "OTHER",
+    "PARTY",
+    "OASIS"
+   ]
   },
   {
    "number": 57,
    "date": "2026-10-27",
    "rings": [
     [
-     "T",
+     "O",
      "O",
      "E",
      "W",
@@ -4286,14 +4576,14 @@
     ],
     [
      "O",
-     "R",
+     "C",
      "T",
      "G",
      "A",
      "O"
     ],
     [
-     "U",
+     "C",
      "T",
      "C",
      "G",
@@ -4301,7 +4591,7 @@
      "S"
     ],
     [
-     "L",
+     "U",
      "R",
      "O",
      "E",
@@ -4310,7 +4600,7 @@
     ],
     [
      "S",
-     "Y",
+     "R",
      "U",
      "O",
      "S",
@@ -4331,65 +4621,70 @@
    ],
    "seized": [],
    "start": [
+    5,
     0,
     4,
-    3,
-    1,
+    4,
     4
    ],
    "par": {
-    "combination": 3,
+    "combination": 4,
     "full": 5
    },
    "theme": {
     "clue": "Money matters"
    },
    "id": "2026-10-27",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "WAGES",
+    "BONDS",
+    "COSTS"
+   ]
   },
   {
    "number": 58,
    "date": "2026-10-28",
    "rings": [
     [
-     "O",
-     "B",
-     "M",
-     "E",
-     "M",
-     "H"
-    ],
-    [
+     "I",
+     "T",
+     "F",
+     "N",
      "A",
-     "O",
-     "A",
-     "E",
-     "O",
-     "D"
+     "P"
     ],
     [
      "I",
-     "N",
-     "G",
-     "R",
-     "N",
+     "O",
+     "D",
+     "H",
+     "D",
      "I"
     ],
     [
-     "D",
-     "N",
-     "T",
-     "A",
+     "G",
+     "E",
+     "B",
      "I",
+     "O",
+     "R"
+    ],
+    [
+     "L",
+     "L",
+     "F",
+     "N",
+     "H",
      "E"
     ],
     [
-     "R",
      "E",
-     "Y",
-     "D",
+     "T",
+     "E",
      "G",
-     "H"
+     "R",
+     "D"
     ]
    ],
    "links": [
@@ -4406,18 +4701,23 @@
    ],
    "seized": [],
    "start": [
-    2,
     3,
     1,
     1,
-    1
+    5,
+    4
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-10-28",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "TIGER",
+    "FIELD",
+    "NOBLE"
+   ]
   },
   {
    "number": 59,
@@ -4425,24 +4725,24 @@
    "rings": [
     [
      "S",
-     "S",
-     "C",
      "W",
-     "W",
+     "M",
+     "B",
+     "F",
      "R"
     ],
     [
-     "T",
-     "R",
-     "A",
      "H",
+     "O",
+     "R",
+     "I",
      "V",
      "G"
     ],
     [
+     "D",
      "A",
-     "L",
-     "O",
+     "N",
      "T",
      "E",
      "I"
@@ -4450,18 +4750,18 @@
     [
      "T",
      "E",
-     "L",
-     "I",
+     "T",
      "E",
-     "L"
+     "I",
+     "A"
     ],
     [
-     "G",
      "S",
-     "E",
+     "N",
+     "L",
      "A",
      "I",
-     "L"
+     "E"
     ]
    ],
    "links": [
@@ -4483,62 +4783,67 @@
    ],
    "seized": [],
    "start": [
-    3,
-    4,
-    2,
     5,
-    3
+    5,
+    3,
+    3,
+    2
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-10-29",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "WHITE",
+    "MODES",
+    "BRAIN"
+   ]
   },
   {
    "number": 60,
    "date": "2026-10-30",
    "rings": [
     [
-     "E",
+     "O",
+     "L",
+     "S",
      "T",
-     "E",
-     "N",
-     "E",
-     "W"
+     "M",
+     "B"
     ],
     [
-     "G",
-     "E",
+     "H",
+     "H",
+     "O",
+     "R",
+     "U",
+     "N"
+    ],
+    [
      "L",
+     "S",
      "E",
-     "E",
+     "U",
+     "U",
      "A"
     ],
     [
-     "Y",
-     "E",
-     "B",
+     "T",
+     "I",
+     "T",
      "R",
-     "P",
-     "Y"
+     "L",
+     "M"
     ],
     [
-     "T",
-     "O",
-     "V",
-     "U",
-     "N",
-     "P"
-    ],
-    [
-     "E",
-     "A",
-     "E",
-     "T",
+     "F",
+     "B",
      "H",
-     "W"
+     "N",
+     "N",
+     "E"
     ]
    ],
    "links": [
@@ -4555,65 +4860,70 @@
    ],
    "seized": [],
    "start": [
-    2,
-    4,
     5,
-    2,
-    0
+    0,
+    0,
+    5,
+    1
    ],
    "par": {
-    "combination": 4,
-    "full": 7
+    "combination": 5,
+    "full": 8
    },
    "theme": {
     "clue": "Anatomy"
    },
    "id": "2026-10-30",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "THUMB",
+    "MOUTH",
+    "BRAIN"
+   ]
   },
   {
    "number": 61,
    "date": "2026-10-31",
    "rings": [
     [
-     "M",
-     "P",
-     "A",
-     "B",
-     "D",
-     "V"
-    ],
-    [
-     "B",
-     "O",
-     "R",
-     "D",
-     "I",
-     "E"
-    ],
-    [
-     "A",
-     "M",
      "L",
-     "R",
-     "O",
-     "O"
+     "V",
+     "H",
+     "H",
+     "I",
+     "A"
     ],
     [
-     "W",
-     "S",
+     "I",
      "E",
      "H",
+     "T",
      "U",
-     "T"
+     "A"
     ],
     [
-     "S",
+     "D",
      "A",
-     "S",
+     "H",
+     "E",
+     "D",
+     "N"
+    ],
+    [
      "I",
-     "T",
-     "Y"
+     "C",
+     "E",
+     "D",
+     "D",
+     "M"
+    ],
+    [
+     "E",
+     "O",
+     "S",
+     "N",
+     "S",
+     "O"
     ]
    ],
    "links": [
@@ -4630,156 +4940,72 @@
    ],
    "seized": [],
    "start": [
-    1,
+    3,
     2,
     5,
-    2,
-    4
+    3,
+    3
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-10-31",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "ITEMS",
+    "AUDIO",
+    "LANCE"
+   ]
   },
   {
    "number": 62,
    "date": "2026-11-01",
    "rings": [
     [
+     "O",
      "A",
-     "M",
-     "G",
      "L",
-     "B",
-     "C"
+     "N",
+     "L",
+     "A"
     ],
     [
-     "S",
-     "O",
-     "O",
-     "E",
-     "E",
-     "H"
-    ],
-    [
+     "D",
+     "L",
      "I",
+     "O",
+     "O",
+     "L"
+    ],
+    [
+     "N",
+     "R",
+     "C",
+     "O",
+     "N",
+     "I"
+    ],
+    [
+     "K",
      "T",
-     "L",
-     "H",
-     "I",
-     "U"
-    ],
-    [
-     "O",
-     "Y",
-     "D",
+     "K",
      "S",
-     "N",
-     "O"
-    ],
-    [
-     "F",
-     "E",
-     "E",
-     "G",
-     "I",
-     "W"
-    ]
-   ],
-   "links": [
-    {
-     "from": 1,
-     "to": 4,
-     "sign": -1
-    },
-    {
-     "from": 1,
-     "to": 2,
-     "sign": 1
-    },
-    {
-     "from": 3,
-     "to": 1,
-     "sign": -1
-    },
-    {
-     "from": 3,
-     "to": 0,
-     "sign": -1
-    }
-   ],
-   "seized": [
-    4
-   ],
-   "start": [
-    0,
-    5,
-    4,
-    0,
-    4
-   ],
-   "par": {
-    "combination": 5,
-    "full": 10
-   },
-   "id": "2026-11-01",
-   "difficulty": "hard"
-  },
-  {
-   "number": 63,
-   "date": "2026-11-02",
-   "rings": [
-    [
-     "L",
-     "F",
-     "C",
-     "S",
-     "R",
-     "E"
-    ],
-    [
      "W",
-     "A",
-     "E",
-     "Z",
-     "L",
-     "L"
+     "A"
     ],
     [
      "S",
-     "A",
-     "U",
-     "O",
-     "I",
-     "L"
-    ],
-    [
-     "R",
-     "D",
-     "E",
-     "E",
-     "S",
-     "E"
-    ],
-    [
-     "C",
      "H",
      "S",
-     "N",
-     "S",
-     "O"
+     "E",
+     "L",
+     "S"
     ]
    ],
    "links": [
     {
-     "from": 4,
-     "to": 0,
-     "sign": 1
-    },
-    {
-     "from": 4,
+     "from": 2,
      "to": 3,
      "sign": 1
     },
@@ -4787,17 +5013,111 @@
      "from": 1,
      "to": 2,
      "sign": 1
+    },
+    {
+     "from": 2,
+     "to": 4,
+     "sign": 1
     }
    ],
    "seized": [
-    0
+    3
    ],
    "start": [
+    5,
+    5,
+    1,
     4,
-    2,
-    3,
-    4,
-    4
+    2
+   ],
+   "par": {
+    "combination": 7,
+    "full": 10
+   },
+   "id": "2026-11-01",
+   "difficulty": "hard",
+   "answer": [
+    "LINKS",
+    "NORTH",
+    "LOCKS"
+   ]
+  },
+  {
+   "number": 63,
+   "date": "2026-11-02",
+   "rings": [
+    [
+     "A",
+     "L",
+     "C",
+     "S",
+     "P",
+     "C"
+    ],
+    [
+     "A",
+     "R",
+     "O",
+     "L",
+     "I",
+     "D"
+    ],
+    [
+     "I",
+     "K",
+     "H",
+     "L",
+     "O",
+     "U"
+    ],
+    [
+     "O",
+     "R",
+     "B",
+     "E",
+     "P",
+     "A"
+    ],
+    [
+     "I",
+     "D",
+     "S",
+     "D",
+     "F",
+     "T"
+    ]
+   ],
+   "links": [
+    {
+     "from": 3,
+     "to": 1,
+     "sign": 1
+    },
+    {
+     "from": 2,
+     "to": 1,
+     "sign": 1
+    },
+    {
+     "from": 4,
+     "to": 1,
+     "sign": -1
+    },
+    {
+     "from": 3,
+     "to": 2,
+     "sign": 1
+    }
+   ],
+   "seized": [
+    1
+   ],
+   "start": [
+    1,
+    0,
+    0,
+    5,
+    1
    ],
    "par": {
     "combination": 5,
@@ -4807,51 +5127,56 @@
     "clue": "Whodunnit"
    },
    "id": "2026-11-02",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "PROOF",
+    "COURT",
+    "ALIBI"
+   ]
   },
   {
    "number": 64,
    "date": "2026-11-03",
    "rings": [
     [
+     "P",
      "B",
-     "S",
-     "D",
-     "H",
-     "H",
-     "B"
+     "E",
+     "W",
+     "K",
+     "T"
     ],
     [
-     "E",
      "N",
-     "A",
      "O",
-     "O",
-     "L"
-    ],
-    [
-     "A",
-     "E",
-     "D",
-     "U",
      "N",
+     "E",
+     "A",
      "A"
     ],
     [
-     "C",
-     "R",
-     "D",
-     "R",
-     "E",
-     "S"
+     "I",
+     "T",
+     "A",
+     "T",
+     "U",
+     "O"
     ],
     [
-     "Y",
-     "T",
+     "D",
+     "E",
+     "L",
+     "W",
+     "B",
+     "C"
+    ],
+    [
+     "D",
+     "N",
+     "B",
      "H",
-     "O",
-     "Y",
-     "S"
+     "I",
+     "R"
     ]
    ],
    "links": [
@@ -4868,18 +5193,23 @@
    ],
    "seized": [],
    "start": [
-    5,
-    1,
-    4,
     3,
-    0
+    5,
+    3,
+    2,
+    3
    ],
    "par": {
-    "combination": 3,
-    "full": 4
+    "combination": 4,
+    "full": 5
    },
    "id": "2026-11-03",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "ENTER",
+    "WOULD",
+    "KNOWN"
+   ]
   },
   {
    "number": 65,
@@ -4887,43 +5217,43 @@
    "rings": [
     [
      "O",
-     "W",
+     "H",
      "E",
-     "T",
-     "S",
-     "F"
+     "W",
+     "W",
+     "L"
     ],
     [
-     "H",
-     "T",
      "O",
+     "A",
+     "I",
      "T",
      "O",
      "L"
     ],
     [
      "H",
-     "R",
+     "N",
      "P",
-     "E",
      "U",
-     "R"
+     "T",
+     "N"
     ],
     [
-     "S",
-     "F",
-     "M",
+     "L",
+     "C",
      "E",
-     "S",
+     "E",
+     "O",
      "C"
     ],
     [
      "H",
-     "E",
-     "F",
+     "D",
+     "H",
      "S",
      "R",
-     "E"
+     "R"
     ]
    ],
    "links": [
@@ -4935,62 +5265,67 @@
    ],
    "seized": [],
    "start": [
-    0,
-    2,
-    0,
+    4,
     1,
-    0
+    2,
+    4,
+    2
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-11-04",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "LINES",
+    "OTHER",
+    "HONOR"
+   ]
   },
   {
    "number": 66,
    "date": "2026-11-05",
    "rings": [
     [
-     "F",
-     "U",
-     "O",
+     "B",
+     "W",
+     "S",
+     "S",
      "H",
-     "F",
-     "R"
+     "N"
     ],
     [
-     "A",
+     "O",
      "R",
-     "G",
-     "I",
-     "E",
-     "L"
-    ],
-    [
-     "N",
-     "O",
-     "I",
-     "O",
-     "P",
+     "D",
+     "U",
+     "L",
      "U"
     ],
     [
-     "S",
-     "T",
-     "U",
-     "O",
      "N",
-     "S"
+     "E",
+     "M",
+     "I",
+     "U",
+     "W"
+    ],
+    [
+     "S",
+     "S",
+     "N",
+     "N",
+     "E",
+     "I"
     ],
     [
      "D",
-     "S",
+     "E",
+     "H",
      "T",
-     "T",
-     "U",
-     "U"
+     "Y",
+     "T"
     ]
    ],
    "links": [
@@ -5012,11 +5347,11 @@
    ],
    "seized": [],
    "start": [
-    1,
-    1,
     3,
     1,
-    2
+    4,
+    4,
+    5
    ],
    "par": {
     "combination": 4,
@@ -5026,51 +5361,56 @@
     "clue": "Weather report"
    },
    "id": "2026-11-05",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "SUNNY",
+    "SLEET",
+    "HUMID"
+   ]
   },
   {
    "number": 67,
    "date": "2026-11-06",
    "rings": [
     [
-     "C",
-     "S",
-     "G",
      "A",
-     "N",
+     "A",
+     "T",
+     "L",
+     "L",
+     "P"
+    ],
+    [
+     "U",
+     "R",
+     "E",
+     "R",
+     "W",
+     "B"
+    ],
+    [
+     "O",
+     "A",
+     "O",
+     "T",
+     "E",
      "O"
     ],
     [
-     "O",
-     "T",
+     "M",
      "R",
-     "D",
-     "E",
-     "W"
-    ],
-    [
-     "O",
-     "E",
-     "R",
-     "F",
-     "N",
-     "A"
-    ],
-    [
-     "C",
      "U",
-     "C",
-     "V",
-     "I",
-     "S"
+     "E",
+     "S",
+     "T"
     ],
     [
-     "P",
-     "Y",
-     "E",
+     "N",
+     "L",
+     "O",
      "E",
      "T",
-     "K"
+     "P"
     ]
    ],
    "links": [
@@ -5092,60 +5432,65 @@
    ],
    "seized": [],
    "start": [
-    4,
-    0,
+    3,
     2,
-    5,
-    2
+    4,
+    2,
+    5
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-11-06",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "PROMO",
+    "AWARE",
+    "ABOUT"
+   ]
   },
   {
    "number": 68,
    "date": "2026-11-07",
    "rings": [
     [
+     "B",
      "S",
-     "T",
-     "H",
-     "A",
-     "L",
-     "H"
-    ],
-    [
-     "O",
-     "A",
-     "R",
-     "M",
-     "E",
-     "I"
-    ],
-    [
-     "R",
-     "M",
-     "W",
-     "P",
-     "G",
-     "P"
-    ],
-    [
-     "P",
-     "U",
+     "I",
      "D",
-     "H",
-     "O",
-     "E"
+     "T",
+     "A"
     ],
     [
      "O",
-     "N",
+     "O",
+     "E",
      "R",
+     "E",
+     "T"
+    ],
+    [
+     "U",
+     "A",
+     "U",
+     "E",
+     "G",
+     "A"
+    ],
+    [
+     "D",
+     "S",
+     "B",
+     "N",
+     "U",
+     "C"
+    ],
+    [
      "Y",
+     "E",
+     "T",
+     "S",
      "E",
      "H"
     ]
@@ -5164,77 +5509,82 @@
    ],
    "seized": [],
    "start": [
-    4,
-    2,
     5,
-    2,
+    5,
+    5,
+    1,
     5
    ],
    "par": {
-    "combination": 5,
+    "combination": 4,
     "full": 7
    },
    "id": "2026-11-07",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "ARGUE",
+    "BEACH",
+    "STUDY"
+   ]
   },
   {
    "number": 69,
    "date": "2026-11-08",
    "rings": [
     [
-     "E",
-     "R",
-     "W",
-     "G",
-     "C",
-     "L"
-    ],
-    [
-     "R",
-     "R",
-     "E",
-     "T",
-     "E",
-     "N"
-    ],
-    [
-     "E",
-     "M",
-     "D",
      "A",
-     "L",
-     "E"
+     "C",
+     "R",
+     "C",
+     "R",
+     "I"
     ],
     [
-     "O",
+     "V",
+     "M",
      "R",
-     "D",
-     "N",
-     "E",
+     "R",
+     "L",
      "A"
     ],
     [
+     "B",
+     "E",
+     "Y",
+     "I",
      "N",
-     "P",
-     "S",
-     "H",
-     "N",
-     "M"
+     "O"
+    ],
+    [
+     "G",
+     "R",
+     "E",
+     "A",
+     "G",
+     "C"
+    ],
+    [
+     "M",
+     "T",
+     "K",
+     "E",
+     "Y",
+     "R"
     ]
    ],
    "links": [
     {
-     "from": 2,
+     "from": 1,
      "to": 4,
-     "sign": -1
-    },
-    {
-     "from": 3,
-     "to": 2,
      "sign": 1
     },
     {
      "from": 1,
+     "to": 0,
+     "sign": -1
+    },
+    {
+     "from": 3,
      "to": 4,
      "sign": 1
     }
@@ -5243,10 +5593,10 @@
     4
    ],
    "start": [
-    5,
     4,
-    5,
-    1,
+    4,
+    3,
+    4,
     5
    ],
    "par": {
@@ -5257,130 +5607,145 @@
     "clue": "Shades"
    },
    "id": "2026-11-08",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "IVORY",
+    "AMBER",
+    "CREAM"
+   ]
   },
   {
    "number": 70,
    "date": "2026-11-09",
    "rings": [
     [
+     "K",
+     "D",
+     "S",
+     "T",
      "P",
-     "F",
-     "M",
-     "A",
-     "P",
-     "O"
+     "A"
     ],
     [
-     "E",
      "O",
-     "B",
-     "L",
-     "M",
-     "N"
-    ],
-    [
      "A",
      "P",
      "R",
-     "E",
-     "U",
-     "O"
-    ],
-    [
-     "U",
-     "L",
-     "N",
-     "U",
-     "N",
-     "E"
-    ],
-    [
      "H",
+     "B"
+    ],
+    [
+     "O",
+     "O",
+     "H",
+     "I",
      "E",
-     "S",
+     "I"
+    ],
+    [
+     "L",
+     "E",
+     "B",
+     "N",
+     "U",
+     "S"
+    ],
+    [
+     "D",
+     "E",
+     "E",
      "T",
-     "T",
-     "T"
+     "L",
+     "Y"
     ]
    ],
    "links": [
     {
      "from": 4,
-     "to": 0,
-     "sign": -1
-    },
-    {
-     "from": 2,
-     "to": 0,
-     "sign": -1
+     "to": 2,
+     "sign": 1
     },
     {
      "from": 3,
-     "to": 0,
+     "to": 2,
+     "sign": -1
+    },
+    {
+     "from": 0,
+     "to": 3,
      "sign": 1
+    },
+    {
+     "from": 1,
+     "to": 2,
+     "sign": -1
     }
    ],
    "seized": [
-    0
+    2
    ],
    "start": [
-    1,
-    4,
     0,
-    5,
-    5
+    4,
+    4,
+    2,
+    4
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
    "id": "2026-11-09",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "TRIBE",
+    "PHONE",
+    "ABOUT"
+   ]
   },
   {
    "number": 71,
    "date": "2026-11-10",
    "rings": [
     [
-     "I",
+     "P",
+     "L",
+     "A",
      "S",
-     "F",
-     "B",
-     "Y",
-     "A"
+     "W",
+     "M"
     ],
     [
-     "O",
-     "C",
-     "T",
-     "H",
+     "M",
+     "A",
+     "R",
+     "A",
+     "L",
+     "H"
+    ],
+    [
+     "R",
+     "P",
+     "A",
+     "E",
      "G",
-     "R"
+     "O"
     ],
     [
-     "A",
-     "A",
-     "U",
-     "R",
-     "E",
-     "A"
-    ],
-    [
-     "I",
-     "R",
-     "E",
      "H",
      "L",
+     "W",
+     "I",
+     "M",
      "G"
     ],
     [
-     "R",
      "L",
-     "R",
-     "N",
-     "S",
-     "S"
+     "O",
+     "C",
+     "O",
+     "E",
+     "A"
     ]
    ],
    "links": [
@@ -5392,10 +5757,10 @@
    ],
    "seized": [],
    "start": [
-    5,
-    1,
-    1,
-    1,
+    2,
+    0,
+    4,
+    3,
     3
    ],
    "par": {
@@ -5403,7 +5768,12 @@
     "full": 5
    },
    "id": "2026-11-10",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "MAGIC",
+    "PROMO",
+    "LARGE"
+   ]
   },
   {
    "number": 72,
@@ -5415,18 +5785,18 @@
      "V",
      "C",
      "S",
-     "L"
+     "H"
     ],
     [
      "O",
      "O",
-     "E",
+     "U",
      "M",
      "H",
      "E"
     ],
     [
-     "G",
+     "M",
      "W",
      "E",
      "N",
@@ -5445,7 +5815,7 @@
      "S",
      "T",
      "R",
-     "L",
+     "N",
      "P",
      "R"
     ]
@@ -5460,10 +5830,10 @@
    "seized": [],
    "start": [
     1,
-    5,
-    0,
-    4,
-    0
+    1,
+    3,
+    3,
+    2
    ],
    "par": {
     "combination": 3,
@@ -5473,51 +5843,56 @@
     "clue": "Look up"
    },
    "id": "2026-11-11",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "VENUS",
+    "COMET",
+    "SOLAR"
+   ]
   },
   {
    "number": 73,
    "date": "2026-11-12",
    "rings": [
     [
-     "W",
-     "F",
-     "L",
-     "V",
-     "M",
-     "C"
-    ],
-    [
-     "I",
      "E",
-     "H",
-     "H",
-     "U",
-     "S"
-    ],
-    [
      "T",
-     "D",
-     "D",
-     "I",
-     "S",
-     "L"
+     "L",
+     "T",
+     "A",
+     "D"
     ],
     [
-     "L",
-     "W",
+     "R",
+     "O",
+     "O",
+     "B",
      "E",
-     "I",
-     "C",
+     "A"
+    ],
+    [
+     "E",
+     "V",
+     "O",
+     "O",
+     "V",
      "T"
     ],
     [
-     "C",
-     "O",
-     "A",
-     "K",
+     "M",
+     "R",
+     "E",
+     "L",
+     "U",
+     "I"
+    ],
+    [
+     "L",
      "W",
-     "Y"
+     "R",
+     "D",
+     "S",
+     "T"
     ]
    ],
    "links": [
@@ -5534,62 +5909,67 @@
    ],
    "seized": [],
    "start": [
+    5,
     1,
-    3,
-    3,
-    1,
-    2
+    5,
+    2,
+    5
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "id": "2026-11-12",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "TOOLS",
+    "ABOUT",
+    "DEVIL"
+   ]
   },
   {
    "number": 74,
    "date": "2026-11-13",
    "rings": [
     [
-     "S",
-     "D",
-     "P",
-     "H",
-     "C",
-     "B"
-    ],
-    [
+     "N",
      "M",
-     "O",
-     "U",
-     "P",
-     "O",
-     "H"
-    ],
-    [
-     "H",
-     "R",
-     "N",
-     "A",
-     "L",
-     "O"
-    ],
-    [
-     "E",
+     "W",
      "T",
-     "H",
-     "A",
-     "N",
-     "N"
+     "E",
+     "M"
     ],
     [
-     "K",
-     "N",
-     "O",
+     "D",
      "A",
+     "O",
+     "H",
+     "E",
+     "A"
+    ],
+    [
+     "T",
+     "G",
+     "E",
+     "Y",
+     "U",
+     "E"
+    ],
+    [
+     "I",
+     "T",
+     "B",
      "L",
-     "Y"
+     "I",
+     "R"
+    ],
+    [
+     "D",
+     "R",
+     "L",
+     "C",
+     "U",
+     "E"
     ]
    ],
    "links": [
@@ -5606,62 +5986,67 @@
    ],
    "seized": [],
    "start": [
-    1,
+    5,
+    5,
+    5,
     2,
-    4,
-    1,
-    2
+    5
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-11-13",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "MAYBE",
+    "WOULD",
+    "THEIR"
+   ]
   },
   {
    "number": 75,
    "date": "2026-11-14",
    "rings": [
     [
-     "F",
-     "B",
-     "H",
-     "U",
-     "L",
-     "N"
+     "P",
+     "G",
+     "M",
+     "M",
+     "Y",
+     "U"
     ],
     [
-     "I",
-     "L",
      "A",
-     "P",
+     "A",
      "O",
-     "O"
+     "P",
+     "R",
+     "R"
     ],
     [
-     "R",
+     "O",
+     "I",
+     "G",
+     "N",
+     "I",
+     "S"
+    ],
+    [
+     "U",
      "E",
      "I",
-     "P",
-     "S",
-     "B"
-    ],
-    [
-     "B",
-     "E",
-     "L",
-     "S",
-     "P",
+     "G",
+     "T",
      "E"
     ],
     [
-     "T",
-     "Y",
-     "O",
      "D",
-     "S",
-     "Y"
+     "F",
+     "C",
+     "A",
+     "I",
+     "T"
     ]
    ],
    "links": [
@@ -5678,11 +6063,11 @@
    ],
    "seized": [],
    "start": [
-    2,
-    2,
+    4,
     0,
-    5,
-    0
+    4,
+    1,
+    2
    ],
    "par": {
     "combination": 4,
@@ -5692,72 +6077,77 @@
     "clue": "How you feel"
    },
    "id": "2026-11-14",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "UPSET",
+    "PROUD",
+    "GRIEF"
+   ]
   },
   {
    "number": 76,
    "date": "2026-11-15",
    "rings": [
     [
-     "S",
+     "M",
+     "E",
      "C",
-     "D",
-     "E",
-     "I",
-     "C"
+     "U",
+     "F",
+     "G"
     ],
     [
      "O",
-     "I",
-     "R",
-     "I",
+     "O",
+     "A",
      "H",
-     "E"
+     "H",
+     "N"
     ],
     [
-     "A",
-     "V",
-     "P",
-     "Y",
-     "E",
-     "T"
-    ],
-    [
-     "L",
      "O",
-     "A",
-     "E",
-     "S",
+     "H",
+     "C",
+     "I",
+     "J",
      "O"
     ],
     [
-     "N",
-     "B",
      "I",
-     "M",
-     "S",
-     "E"
+     "A",
+     "N",
+     "O",
+     "N",
+     "S"
+    ],
+    [
+     "R",
+     "E",
+     "E",
+     "H",
+     "L",
+     "G"
     ]
    ],
    "links": [
     {
-     "from": 0,
+     "from": 4,
      "to": 3,
-     "sign": 1
-    },
-    {
-     "from": 1,
-     "to": 3,
-     "sign": 1
+     "sign": -1
     },
     {
      "from": 0,
-     "to": 1,
-     "sign": 1
+     "to": 2,
+     "sign": -1
     },
     {
      "from": 1,
      "to": 2,
+     "sign": -1
+    },
+    {
+     "from": 0,
+     "to": 4,
      "sign": 1
     }
    ],
@@ -5765,102 +6155,112 @@
     3
    ],
    "start": [
-    2,
-    2,
+    0,
+    3,
+    0,
     5,
-    2,
-    0
+    2
    ],
    "par": {
-    "combination": 5,
+    "combination": 6,
     "full": 10
    },
    "id": "2026-11-15",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "FOCAL",
+    "GOING",
+    "MAJOR"
+   ]
   },
   {
    "number": 77,
    "date": "2026-11-16",
    "rings": [
     [
-     "W",
-     "E",
-     "C",
+     "B",
+     "A",
+     "B",
+     "X",
      "S",
-     "F",
-     "E"
+     "T"
     ],
     [
-     "M",
+     "G",
+     "Y",
+     "P",
+     "A",
+     "L",
+     "B"
+    ],
+    [
+     "I",
      "O",
      "R",
-     "Z",
-     "A",
-     "E"
-    ],
-    [
-     "A",
-     "U",
-     "O",
-     "E",
-     "U",
-     "E"
-    ],
-    [
-     "D",
-     "I",
-     "L",
-     "D",
-     "C",
-     "D"
-    ],
-    [
-     "H",
-     "H",
-     "I",
      "S",
+     "E",
+     "S"
+    ],
+    [
+     "Y",
      "L",
-     "D"
+     "T",
+     "N",
+     "U",
+     "U"
+    ],
+    [
+     "H",
+     "A",
+     "L",
+     "E",
+     "K",
+     "T"
     ]
    ],
    "links": [
     {
-     "from": 3,
-     "to": 4,
-     "sign": -1
-    },
-    {
-     "from": 1,
-     "to": 4,
-     "sign": -1
-    },
-    {
      "from": 1,
      "to": 3,
-     "sign": -1
+     "sign": 1
     },
     {
-     "from": 2,
+     "from": 0,
+     "to": 2,
+     "sign": 1
+    },
+    {
+     "from": 4,
+     "to": 1,
+     "sign": 1
+    },
+    {
+     "from": 1,
      "to": 0,
-     "sign": -1
+     "sign": 1
     }
    ],
    "seized": [
-    4
-   ],
-   "start": [
-    0,
-    2,
-    1,
-    0,
     3
    ],
+   "start": [
+    5,
+    3,
+    5,
+    5,
+    0
+   ],
    "par": {
-    "combination": 6,
-    "full": 10
+    "combination": 8,
+    "full": 12
    },
    "id": "2026-11-16",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "TASTE",
+    "BLINK",
+    "ABOUT"
+   ]
   },
   {
    "number": 78,
@@ -5870,37 +6270,37 @@
      "S",
      "T",
      "J",
-     "V",
-     "P",
+     "B",
+     "T",
      "I"
     ],
     [
-     "H",
+     "E",
      "H",
      "P",
      "R",
      "O",
-     "O"
+     "U"
     ],
     [
      "K",
      "I",
-     "O",
+     "R",
      "E",
      "A",
      "U"
     ],
     [
      "E",
-     "C",
-     "N",
+     "L",
+     "M",
      "H",
      "D",
      "M"
     ],
     [
-     "E",
-     "E",
+     "D",
+     "S",
      "T",
      "E",
      "P",
@@ -5935,51 +6335,56 @@
     "clue": "A hand of cards"
    },
    "id": "2026-11-17",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "SPADE",
+    "TRUMP",
+    "JOKER"
+   ]
   },
   {
    "number": 79,
    "date": "2026-11-18",
    "rings": [
     [
-     "O",
-     "C",
-     "T",
-     "R",
-     "S",
-     "C"
-    ],
-    [
-     "A",
-     "A",
-     "E",
-     "E",
-     "L",
-     "H"
-    ],
-    [
-     "M",
-     "E",
-     "I",
-     "H",
-     "T",
-     "E"
-    ],
-    [
-     "C",
-     "P",
-     "I",
-     "K",
-     "M",
-     "T"
-    ],
-    [
-     "X",
-     "S",
-     "B",
      "N",
+     "N",
+     "G",
+     "A",
+     "R",
+     "M"
+    ],
+    [
+     "Y",
+     "I",
+     "U",
+     "F",
+     "A",
+     "O"
+    ],
+    [
+     "I",
+     "T",
+     "T",
+     "V",
+     "A",
+     "G"
+    ],
+    [
      "H",
-     "E"
+     "D",
+     "E",
+     "E",
+     "I",
+     "L"
+    ],
+    [
+     "E",
+     "R",
+     "D",
+     "E",
+     "E",
+     "T"
     ]
    ],
    "links": [
@@ -5991,51 +6396,56 @@
    ],
    "seized": [],
    "start": [
+    5,
+    3,
     0,
-    1,
-    1,
-    1,
-    0
+    5,
+    5
    ],
    "par": {
-    "combination": 3,
+    "combination": 4,
     "full": 5
    },
    "id": "2026-11-18",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "NIGHT",
+    "GUIDE",
+    "AFTER"
+   ]
   },
   {
    "number": 80,
    "date": "2026-11-19",
    "rings": [
     [
-     "P",
-     "C",
-     "R",
+     "B",
+     "B",
+     "T",
      "B",
      "M",
-     "C"
+     "S"
     ],
     [
-     "O",
-     "H",
-     "L",
-     "I",
+     "T",
+     "E",
+     "A",
+     "A",
      "E",
      "V"
     ],
     [
      "S",
-     "U",
-     "O",
      "A",
-     "V",
+     "I",
+     "T",
+     "K",
      "E"
     ],
     [
      "N",
-     "T",
-     "R",
+     "N",
+     "H",
      "E",
      "N",
      "T"
@@ -6043,10 +6453,10 @@
     [
      "H",
      "N",
-     "T",
-     "O",
-     "A",
-     "R"
+     "D",
+     "G",
+     "S",
+     "N"
     ]
    ],
    "links": [
@@ -6063,6 +6473,168 @@
     {
      "from": 0,
      "to": 4,
+     "sign": -1
+    }
+   ],
+   "seized": [],
+   "start": [
+    1,
+    5,
+    1,
+    2,
+    5
+   ],
+   "par": {
+    "combination": 4,
+    "full": 7
+   },
+   "id": "2026-11-19",
+   "difficulty": "medium",
+   "answer": [
+    "BEING",
+    "BATHS",
+    "TAKEN"
+   ]
+  },
+  {
+   "number": 81,
+   "date": "2026-11-20",
+   "rings": [
+    [
+     "S",
+     "P",
+     "V",
+     "E",
+     "C",
+     "S"
+    ],
+    [
+     "I",
+     "V",
+     "W",
+     "A",
+     "P",
+     "L"
+    ],
+    [
+     "A",
+     "D",
+     "E",
+     "I",
+     "U",
+     "O"
+    ],
+    [
+     "E",
+     "R",
+     "D",
+     "C",
+     "O",
+     "T"
+    ],
+    [
+     "N",
+     "E",
+     "O",
+     "Y",
+     "A",
+     "E"
+    ]
+   ],
+   "links": [
+    {
+     "from": 1,
+     "to": 3,
+     "sign": 1
+    },
+    {
+     "from": 1,
+     "to": 4,
+     "sign": -1
+    },
+    {
+     "from": 0,
+     "to": 3,
+     "sign": -1
+    }
+   ],
+   "seized": [],
+   "start": [
+    0,
+    1,
+    3,
+    3,
+    0
+   ],
+   "par": {
+    "combination": 4,
+    "full": 8
+   },
+   "theme": {
+    "clue": "In the kitchen"
+   },
+   "id": "2026-11-20",
+   "difficulty": "medium",
+   "answer": [
+    "SAUCE",
+    "SPOON",
+    "PLATE"
+   ]
+  },
+  {
+   "number": 82,
+   "date": "2026-11-21",
+   "rings": [
+    [
+     "G",
+     "D",
+     "A",
+     "T",
+     "M",
+     "Y"
+    ],
+    [
+     "H",
+     "A",
+     "E",
+     "N",
+     "O",
+     "O"
+    ],
+    [
+     "I",
+     "J",
+     "E",
+     "J",
+     "A",
+     "B"
+    ],
+    [
+     "N",
+     "E",
+     "R",
+     "O",
+     "R",
+     "A"
+    ],
+    [
+     "G",
+     "D",
+     "E",
+     "R",
+     "S",
+     "O"
+    ]
+   ],
+   "links": [
+    {
+     "from": 0,
+     "to": 3,
+     "sign": 1
+    },
+    {
+     "from": 2,
+     "to": 0,
      "sign": -1
     }
    ],
@@ -6070,319 +6642,182 @@
    "start": [
     0,
     4,
-    3,
-    3,
-    5
-   ],
-   "par": {
-    "combination": 4,
-    "full": 8
-   },
-   "id": "2026-11-19",
-   "difficulty": "medium"
-  },
-  {
-   "number": 81,
-   "date": "2026-11-20",
-   "rings": [
-    [
-     "B",
-     "W",
-     "T",
-     "E",
-     "E",
-     "N"
-    ],
-    [
-     "H",
-     "O",
-     "M",
-     "A",
-     "A",
-     "R"
-    ],
-    [
-     "M",
-     "E",
-     "V",
-     "E",
-     "I",
-     "A"
-    ],
-    [
-     "S",
-     "C",
-     "W",
-     "A",
-     "A",
-     "S"
-    ],
-    [
-     "I",
-     "D",
-     "L",
-     "D",
-     "K",
-     "T"
-    ]
-   ],
-   "links": [
-    {
-     "from": 1,
-     "to": 3,
-     "sign": 1
-    },
-    {
-     "from": 1,
-     "to": 4,
-     "sign": -1
-    },
-    {
-     "from": 0,
-     "to": 3,
-     "sign": -1
-    }
-   ],
-   "seized": [],
-   "start": [
-    3,
-    1,
-    1,
-    1,
-    0
+    4,
+    2,
+    4
    ],
    "par": {
     "combination": 5,
     "full": 8
    },
-   "theme": {
-    "clue": "In the kitchen"
-   },
-   "id": "2026-11-20",
-   "difficulty": "medium"
-  },
-  {
-   "number": 82,
-   "date": "2026-11-21",
-   "rings": [
-    [
-     "W",
-     "Y",
-     "A",
-     "S",
-     "M",
-     "O"
-    ],
-    [
-     "E",
-     "O",
-     "N",
-     "T",
-     "I",
-     "N"
-    ],
-    [
-     "U",
-     "I",
-     "U",
-     "N",
-     "O",
-     "L"
-    ],
-    [
-     "R",
-     "E",
-     "S",
-     "R",
-     "T",
-     "I"
-    ],
-    [
-     "S",
-     "W",
-     "D",
-     "H",
-     "E",
-     "M"
-    ]
-   ],
-   "links": [
-    {
-     "from": 0,
-     "to": 3,
-     "sign": 1
-    },
-    {
-     "from": 2,
-     "to": 0,
-     "sign": -1
-    }
-   ],
-   "seized": [],
-   "start": [
-    0,
-    5,
-    3,
-    0,
-    0
-   ],
-   "par": {
-    "combination": 4,
-    "full": 8
-   },
    "id": "2026-11-21",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "THERE",
+    "MAJOR",
+    "YEARS"
+   ]
   },
   {
    "number": 83,
    "date": "2026-11-22",
    "rings": [
     [
-     "A",
-     "D",
-     "A",
-     "B",
-     "T",
-     "C"
+     "H",
+     "R",
+     "E",
+     "S",
+     "R",
+     "P"
     ],
     [
+     "N",
+     "I",
      "O",
-     "B",
-     "D",
+     "E",
      "A",
+     "T"
+    ],
+    [
+     "M",
+     "M",
      "R",
+     "A",
+     "D",
+     "L"
+    ],
+    [
+     "I",
+     "T",
+     "F",
+     "R",
+     "O",
      "E"
     ],
     [
-     "T",
-     "R",
-     "E",
-     "R",
-     "M",
-     "O"
-    ],
-    [
-     "M",
-     "E",
-     "U",
-     "U",
-     "O",
-     "A"
-    ],
-    [
-     "K",
      "S",
-     "S",
-     "T",
-     "O",
-     "N"
+     "X",
+     "H",
+     "F",
+     "G",
+     "T"
     ]
    ],
    "links": [
-    {
-     "from": 3,
-     "to": 4,
-     "sign": -1
-    },
     {
      "from": 2,
      "to": 3,
      "sign": -1
     },
     {
-     "from": 2,
+     "from": 0,
      "to": 4,
+     "sign": 1
+    },
+    {
+     "from": 4,
+     "to": 1,
+     "sign": -1
+    },
+    {
+     "from": 4,
+     "to": 2,
      "sign": -1
     }
    ],
    "seized": [
-    4
+    3
    ],
    "start": [
     0,
     1,
     5,
-    5,
-    0
+    1,
+    3
    ],
    "par": {
     "combination": 5,
-    "full": 12
+    "full": 10
    },
    "id": "2026-11-22",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "PILOT",
+    "HOMES",
+    "REMIX"
+   ]
   },
   {
    "number": 84,
    "date": "2026-11-23",
    "rings": [
     [
-     "D",
-     "A",
-     "W",
-     "I",
-     "T",
-     "O"
-    ],
-    [
-     "T",
-     "H",
-     "E",
-     "I",
-     "C",
-     "E"
-    ],
-    [
-     "T",
-     "D",
-     "E",
-     "L",
-     "H",
-     "E"
-    ],
-    [
-     "E",
-     "A",
-     "T",
-     "G",
      "R",
-     "A"
+     "G",
+     "S",
+     "S",
+     "Y",
+     "D"
     ],
     [
-     "N",
-     "A",
+     "D",
+     "R",
      "I",
-     "E",
+     "H",
+     "A",
+     "E"
+    ],
+    [
+     "F",
+     "A",
+     "Q",
+     "O",
      "C",
-     "S"
+     "L"
+    ],
+    [
+     "P",
+     "O",
+     "R",
+     "H",
+     "T",
+     "E"
+    ],
+    [
+     "H",
+     "A",
+     "E",
+     "T",
+     "A",
+     "H"
     ]
    ],
    "links": [
     {
-     "from": 0,
-     "to": 2,
+     "from": 4,
+     "to": 1,
      "sign": -1
     },
     {
-     "from": 1,
-     "to": 2,
-     "sign": 1
+     "from": 2,
+     "to": 3,
+     "sign": -1
     },
     {
-     "from": 4,
-     "to": 3,
+     "from": 3,
+     "to": 0,
      "sign": 1
     }
    ],
    "seized": [
-    2
+    1
    ],
    "start": [
-    1,
-    5,
+    2,
     0,
     5,
-    1
+    3,
+    5
    ],
    "par": {
     "combination": 5,
@@ -6392,51 +6827,56 @@
     "clue": "On the water"
    },
    "id": "2026-11-23",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "SHORE",
+    "YACHT",
+    "DELTA"
+   ]
   },
   {
    "number": 85,
    "date": "2026-11-24",
    "rings": [
     [
-     "P",
-     "P",
+     "E",
+     "G",
+     "T",
      "O",
-     "S",
-     "U",
-     "S"
+     "L",
+     "D"
     ],
     [
-     "D",
-     "H",
-     "I",
-     "A",
      "O",
+     "N",
+     "A",
+     "H",
+     "C",
      "A"
     ],
     [
-     "E",
+     "B",
      "I",
-     "U",
-     "E",
-     "D",
-     "R"
-    ],
-    [
-     "H",
-     "L",
-     "A",
-     "A",
+     "W",
      "M",
-     "R"
+     "E",
+     "E"
     ],
     [
-     "N",
-     "F",
-     "C",
-     "H",
+     "O",
+     "E",
+     "R",
+     "A",
+     "O",
+     "N"
+    ],
+    [
+     "R",
+     "G",
+     "T",
      "S",
-     "S"
+     "W",
+     "N"
     ]
    ],
    "links": [
@@ -6453,18 +6893,23 @@
    ],
    "seized": [],
    "start": [
-    0,
-    2,
-    0,
+    5,
     3,
-    5
+    5,
+    3,
+    3
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-11-24",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "OCEAN",
+    "LABOR",
+    "DOING"
+   ]
   },
   {
    "number": 86,
@@ -6472,42 +6917,42 @@
    "rings": [
     [
      "T",
-     "C",
-     "S",
-     "D",
+     "E",
+     "M",
+     "P",
      "H",
-     "I"
+     "T"
     ],
     [
-     "R",
+     "M",
      "O",
      "R",
      "E",
-     "N",
+     "R",
      "A"
     ],
     [
-     "A",
-     "L",
-     "A",
+     "P",
+     "D",
+     "I",
      "F",
-     "N",
+     "E",
      "E"
     ],
     [
-     "Z",
-     "V",
-     "F",
+     "T",
      "E",
+     "M",
      "E",
+     "A",
      "O"
     ],
     [
      "Y",
+     "S",
      "E",
-     "T",
      "A",
-     "R",
+     "T",
      "O"
     ]
    ],
@@ -6536,51 +6981,56 @@
     "full": 5
    },
    "id": "2026-11-25",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "EMPTY",
+    "MODES",
+    "PRIME"
+   ]
   },
   {
    "number": 87,
    "date": "2026-11-26",
    "rings": [
     [
-     "P",
-     "T",
+     "B",
+     "B",
+     "C",
+     "C",
+     "G",
+     "Y"
+    ],
+    [
+     "A",
+     "I",
+     "L",
+     "E",
+     "A",
+     "O"
+    ],
+    [
+     "D",
+     "U",
+     "I",
+     "E",
+     "R",
+     "O"
+    ],
+    [
      "O",
      "A",
-     "C",
-     "L"
-    ],
-    [
-     "E",
-     "E",
-     "C",
-     "I",
-     "D",
-     "S"
-    ],
-    [
-     "R",
-     "T",
-     "R",
-     "P",
-     "D",
-     "A"
-    ],
-    [
-     "E",
-     "A",
-     "F",
      "S",
-     "L",
-     "N"
+     "N",
+     "N",
+     "C"
     ],
     [
-     "A",
-     "E",
-     "A",
-     "N",
+     "H",
+     "M",
      "R",
-     "Y"
+     "E",
+     "G",
+     "R"
     ]
    ],
    "links": [
@@ -6598,64 +7048,69 @@
    "seized": [],
    "start": [
     4,
-    3,
-    1,
-    1,
-    1
+    0,
+    5,
+    2,
+    3
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "theme": {
     "clue": "Green things"
    },
    "id": "2026-11-26",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "BIRCH",
+    "BLOOM",
+    "CEDAR"
+   ]
   },
   {
    "number": 88,
    "date": "2026-11-27",
    "rings": [
     [
-     "S",
-     "G",
-     "F",
-     "F",
-     "O",
-     "H"
-    ],
-    [
-     "G",
-     "I",
-     "E",
-     "O",
      "T",
-     "F"
-    ],
-    [
-     "H",
-     "R",
-     "T",
-     "A",
-     "E",
-     "U"
-    ],
-    [
+     "O",
      "N",
+     "L",
      "D",
-     "N",
-     "E",
-     "A",
-     "P"
+     "S"
     ],
     [
-     "R",
+     "I",
+     "D",
+     "A",
      "O",
-     "N",
+     "E",
+     "T"
+    ],
+    [
+     "P",
+     "A",
      "T",
+     "T",
+     "V",
+     "G"
+    ],
+    [
+     "C",
+     "L",
      "S",
-     "D"
+     "A",
+     "I",
+     "O"
+    ],
+    [
+     "E",
+     "T",
+     "L",
+     "C",
+     "T",
+     "K"
     ]
    ],
    "links": [
@@ -6672,62 +7127,67 @@
    ],
    "seized": [],
    "start": [
-    3,
     4,
-    4,
-    4,
-    1
+    1,
+    5,
+    0,
+    3
    ],
    "par": {
-    "combination": 4,
+    "combination": 5,
     "full": 8
    },
    "id": "2026-11-27",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "NAVAL",
+    "LOGIC",
+    "DEPOT"
+   ]
   },
   {
    "number": 89,
    "date": "2026-11-28",
    "rings": [
     [
-     "A",
+     "E",
      "W",
-     "T",
-     "O",
-     "S",
-     "D"
-    ],
-    [
-     "T",
-     "O",
-     "G",
-     "T",
-     "O",
-     "N"
-    ],
-    [
-     "N",
-     "I",
-     "I",
      "D",
-     "I",
-     "O"
+     "T",
+     "M",
+     "L"
     ],
     [
-     "E",
-     "E",
+     "H",
+     "I",
+     "Y",
      "O",
-     "L",
-     "E",
-     "N"
+     "A",
+     "E"
     ],
     [
-     "G",
      "I",
-     "S",
+     "E",
+     "X",
+     "I",
+     "E",
+     "T"
+    ],
+    [
+     "E",
      "N",
-     "L",
-     "U"
+     "S",
+     "C",
+     "A",
+     "I"
+    ],
+    [
+     "R",
+     "D",
+     "G",
+     "S",
+     "H",
+     "M"
     ]
    ],
    "links": [
@@ -6749,155 +7209,73 @@
    ],
    "seized": [],
    "start": [
-    1,
-    5,
-    5,
     4,
-    3
+    2,
+    0,
+    5,
+    5
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-11-28",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "THEIR",
+    "MIXED",
+    "LYING"
+   ]
   },
   {
    "number": 90,
    "date": "2026-11-29",
    "rings": [
     [
-     "R",
-     "B",
-     "S",
-     "S",
+     "U",
+     "J",
      "C",
-     "P"
-    ],
-    [
-     "K",
-     "L",
-     "I",
-     "A",
-     "L",
-     "C"
-    ],
-    [
-     "A",
-     "I",
-     "O",
-     "L",
-     "P",
-     "O"
-    ],
-    [
-     "R",
-     "A",
-     "O",
-     "H",
-     "N",
-     "R"
-    ],
-    [
-     "T",
      "S",
-     "D",
-     "F",
-     "T",
-     "K"
-    ]
-   ],
-   "links": [
-    {
-     "from": 1,
-     "to": 3,
-     "sign": -1
-    },
-    {
-     "from": 2,
-     "to": 3,
-     "sign": 1
-    },
-    {
-     "from": 2,
-     "to": 0,
-     "sign": 1
-    }
-   ],
-   "seized": [
-    3
-   ],
-   "start": [
-    3,
-    2,
-    3,
-    5,
-    1
-   ],
-   "par": {
-    "combination": 5,
-    "full": 10
-   },
-   "theme": {
-    "clue": "Getting dressed"
-   },
-   "id": "2026-11-29",
-   "difficulty": "hard"
-  },
-  {
-   "number": 91,
-   "date": "2026-11-30",
-   "rings": [
-    [
-     "F",
-     "A",
-     "X",
-     "H",
-     "E",
-     "P"
-    ],
-    [
-     "N",
-     "L",
-     "L",
-     "A",
-     "L",
-     "E"
-    ],
-    [
      "O",
-     "H",
-     "A",
-     "A",
-     "U",
-     "B"
-    ],
-    [
-     "S",
-     "I",
-     "N",
-     "L",
-     "U",
      "N"
     ],
     [
      "E",
-     "T",
-     "T",
-     "M",
      "L",
-     "B"
+     "C",
+     "L",
+     "B",
+     "F"
+    ],
+    [
+     "B",
+     "A",
+     "O",
+     "A",
+     "R",
+     "W"
+    ],
+    [
+     "N",
+     "A",
+     "R",
+     "R",
+     "L",
+     "L"
+    ],
+    [
+     "F",
+     "O",
+     "O",
+     "S",
+     "K",
+     "F"
     ]
    ],
    "links": [
     {
-     "from": 2,
+     "from": 3,
      "to": 1,
-     "sign": 1
-    },
-    {
-     "from": 4,
-     "to": 2,
      "sign": 1
     },
     {
@@ -6907,8 +7285,13 @@
     },
     {
      "from": 3,
-     "to": 2,
-     "sign": -1
+     "to": 0,
+     "sign": 1
+    },
+    {
+     "from": 3,
+     "to": 4,
+     "sign": 1
     }
    ],
    "seized": [
@@ -6917,60 +7300,152 @@
    "start": [
     0,
     5,
-    1,
     4,
+    5,
+    5
+   ],
+   "par": {
+    "combination": 6,
+    "full": 10
+   },
+   "theme": {
+    "clue": "Getting dressed"
+   },
+   "id": "2026-11-29",
+   "difficulty": "hard",
+   "answer": [
+    "JEANS",
+    "CLOAK",
+    "SCARF"
+   ]
+  },
+  {
+   "number": 91,
+   "date": "2026-11-30",
+   "rings": [
+    [
+     "I",
+     "T",
+     "M",
+     "G",
+     "R",
+     "G"
+    ],
+    [
+     "U",
+     "H",
+     "M",
+     "E",
+     "R",
+     "E"
+    ],
+    [
+     "E",
+     "A",
+     "A",
+     "E",
+     "L",
+     "T"
+    ],
+    [
+     "S",
+     "A",
+     "R",
+     "A",
+     "D",
+     "R"
+    ],
+    [
+     "D",
+     "B",
+     "V",
+     "O",
+     "T",
+     "Y"
+    ]
+   ],
+   "links": [
+    {
+     "from": 1,
+     "to": 4,
+     "sign": 1
+    },
+    {
+     "from": 1,
+     "to": 3,
+     "sign": -1
+    },
+    {
+     "from": 3,
+     "to": 4,
+     "sign": -1
+    }
+   ],
+   "seized": [
     4
+   ],
+   "start": [
+    0,
+    0,
+    3,
+    2,
+    3
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
    "id": "2026-11-30",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "METRO",
+    "GREAT",
+    "READY"
+   ]
   },
   {
    "number": 92,
    "date": "2026-12-01",
    "rings": [
     [
-     "Y",
-     "H",
-     "C",
-     "T",
-     "P",
-     "T"
-    ],
-    [
-     "E",
-     "E",
-     "O",
-     "L",
-     "O",
-     "A"
-    ],
-    [
-     "E",
+     "R",
+     "B",
+     "M",
      "D",
-     "N",
-     "E",
-     "A",
-     "U"
+     "F",
+     "H"
     ],
     [
-     "R",
-     "R",
      "A",
-     "E",
      "I",
-     "N"
+     "P",
+     "E",
+     "A",
+     "E"
+    ],
+    [
+     "U",
+     "I",
+     "B",
+     "R",
+     "I",
+     "R"
+    ],
+    [
+     "C",
+     "L",
+     "S",
+     "C",
+     "A",
+     "E"
     ],
     [
      "S",
-     "S",
-     "N",
-     "E",
-     "C",
-     "S"
+     "Y",
+     "Y",
+     "T",
+     "D",
+     "I"
     ]
    ],
    "links": [
@@ -6987,18 +7462,23 @@
    ],
    "seized": [],
    "start": [
-    2,
+    0,
+    1,
+    0,
     4,
-    2,
-    5,
-    3
+    1
    ],
    "par": {
     "combination": 3,
-    "full": 4
+    "full": 5
    },
    "id": "2026-12-01",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "MERCY",
+    "DAILY",
+    "FIRST"
+   ]
   },
   {
    "number": 93,
@@ -7059,11 +7539,11 @@
    ],
    "seized": [],
    "start": [
-    2,
     5,
-    3,
-    3,
-    0
+    1,
+    2,
+    2,
+    4
    ],
    "par": {
     "combination": 3,
@@ -7073,51 +7553,56 @@
     "clue": "Places to stay"
    },
    "id": "2026-12-02",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "MANOR",
+    "VILLA",
+    "HOUSE"
+   ]
   },
   {
    "number": 94,
    "date": "2026-12-03",
    "rings": [
     [
-     "N",
-     "W",
-     "R",
-     "C",
-     "E",
-     "I"
-    ],
-    [
-     "A",
-     "O",
-     "I",
-     "N",
-     "N",
-     "E"
-    ],
-    [
-     "I",
-     "R",
-     "D",
-     "C",
-     "O",
-     "V"
-    ],
-    [
-     "H",
-     "F",
-     "C",
-     "L",
      "T",
-     "G"
+     "E",
+     "H",
+     "B",
+     "L",
+     "T"
     ],
     [
      "U",
-     "S",
+     "I",
+     "I",
      "H",
+     "R",
+     "L"
+    ],
+    [
+     "I",
      "E",
+     "T",
+     "M",
+     "K",
+     "N"
+    ],
+    [
+     "O",
+     "E",
+     "E",
+     "N",
+     "N",
+     "H"
+    ],
+    [
+     "R",
+     "S",
+     "S",
+     "G",
      "D",
-     "M"
+     "H"
     ]
    ],
    "links": [
@@ -7134,62 +7619,67 @@
    ],
    "seized": [],
    "start": [
-    4,
-    5,
-    4,
-    1,
-    4
+    3,
+    3,
+    0,
+    3,
+    5
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "id": "2026-12-03",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "BIKES",
+    "LINES",
+    "THING"
+   ]
   },
   {
    "number": 95,
    "date": "2026-12-04",
    "rings": [
     [
-     "U",
-     "C",
-     "Y",
-     "L",
      "W",
-     "C"
+     "P",
+     "C",
+     "O",
+     "O",
+     "U"
+    ],
+    [
+     "P",
+     "O",
+     "O",
+     "E",
+     "S",
+     "W"
     ],
     [
      "H",
-     "L",
+     "N",
      "P",
-     "O",
-     "A",
-     "R"
-    ],
-    [
-     "P",
-     "L",
-     "W",
-     "A",
-     "I",
-     "I"
-    ],
-    [
-     "M",
-     "E",
-     "O",
-     "M",
-     "A",
+     "U",
+     "S",
      "L"
     ],
     [
+     "P",
      "E",
-     "B",
+     "E",
+     "L",
+     "T",
+     "L"
+    ],
+    [
      "R",
-     "R",
-     "A",
-     "P"
+     "D",
+     "S",
+     "S",
+     "H",
+     "D"
     ]
    ],
    "links": [
@@ -7211,62 +7701,67 @@
    ],
    "seized": [],
    "start": [
-    2,
+    5,
+    5,
     5,
     0,
-    5,
-    4
+    2
    ],
    "par": {
     "combination": 4,
     "full": 7
    },
    "id": "2026-12-04",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "WOULD",
+    "POSTS",
+    "CELLS"
+   ]
   },
   {
    "number": 96,
    "date": "2026-12-05",
    "rings": [
     [
-     "E",
-     "E",
-     "G",
-     "P",
      "S",
-     "H"
+     "S",
+     "I",
+     "V",
+     "L",
+     "B"
+    ],
+    [
+     "P",
+     "C",
+     "H",
+     "I",
+     "E",
+     "R"
     ],
     [
      "A",
-     "U",
-     "C",
+     "O",
      "I",
-     "H",
-     "I"
-    ],
-    [
-     "R",
      "T",
-     "E",
-     "E",
-     "U",
-     "N"
+     "V",
+     "A"
     ],
     [
-     "C",
-     "E",
      "E",
      "T",
-     "M",
-     "G"
+     "A",
+     "E",
+     "C",
+     "D"
     ],
     [
      "E",
-     "H",
-     "W",
+     "G",
      "R",
-     "I",
-     "R"
+     "L",
+     "L",
+     "E"
     ]
    ],
    "links": [
@@ -7288,65 +7783,70 @@
    ],
    "seized": [],
    "start": [
-    0,
     3,
     1,
     5,
-    1
+    3,
+    3
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "theme": {
     "clue": "Tools"
    },
    "id": "2026-12-05",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "LEVEL",
+    "BRACE",
+    "SPADE"
+   ]
   },
   {
    "number": 97,
    "date": "2026-12-06",
    "rings": [
     [
-     "F",
-     "E",
-     "I",
+     "Y",
+     "R",
      "T",
+     "S",
      "A",
-     "G"
+     "T"
     ],
     [
      "O",
-     "A",
-     "W",
-     "T",
-     "E",
-     "B"
-    ],
-    [
-     "H",
-     "O",
      "I",
-     "U",
-     "E",
+     "O",
+     "L",
+     "N",
      "E"
     ],
     [
-     "M",
-     "T",
-     "U",
+     "G",
      "N",
-     "L",
-     "D"
+     "G",
+     "W",
+     "E",
+     "U"
     ],
     [
+     "D",
+     "N",
+     "M",
      "T",
+     "N",
+     "H"
+    ],
+    [
+     "H",
      "G",
      "T",
-     "E",
-     "S",
-     "R"
+     "I",
+     "N",
+     "O"
     ]
    ],
    "links": [
@@ -7370,18 +7870,23 @@
     2
    ],
    "start": [
-    2,
+    0,
     5,
-    4,
+    1,
     5,
-    1
+    4
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
    "id": "2026-12-06",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "TEETH",
+    "YOUNG",
+    "RIGHT"
+   ]
   },
   {
    "number": 98,
@@ -7389,41 +7894,41 @@
    "rings": [
     [
      "S",
+     "W",
+     "A",
+     "W",
+     "S",
+     "O"
+    ],
+    [
+     "S",
+     "H",
      "C",
-     "N",
-     "Y",
+     "H",
      "B",
      "O"
     ],
     [
-     "U",
      "E",
-     "R",
-     "H",
-     "B",
-     "L"
-    ],
-    [
-     "A",
      "O",
      "A",
      "T",
-     "I",
-     "R"
+     "U",
+     "S"
     ],
     [
-     "S",
+     "E",
      "R",
-     "O",
+     "U",
      "B",
      "W",
-     "C"
+     "L"
     ],
     [
-     "K",
+     "D",
+     "T",
      "E",
-     "S",
-     "K",
+     "T",
      "D",
      "N"
     ]
@@ -7456,11 +7961,16 @@
     4
    ],
    "par": {
-    "combination": 6,
+    "combination": 5,
     "full": 10
    },
    "id": "2026-12-07",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "WOULD",
+    "ASSET",
+    "WHERE"
+   ]
   },
   {
    "number": 99,
@@ -7470,41 +7980,41 @@
      "D",
      "B",
      "B",
-     "G",
-     "O",
+     "Y",
+     "B",
      "E"
     ],
     [
      "A",
-     "R",
-     "R",
+     "E",
+     "O",
      "B",
      "R",
      "U"
     ],
     [
+     "A",
      "O",
-     "D",
      "E",
      "U",
      "G",
      "N"
     ],
     [
-     "U",
-     "E",
+     "R",
+     "K",
      "I",
      "M",
      "L",
      "J"
     ],
     [
-     "R",
+     "S",
      "W",
      "S",
      "E",
      "O",
-     "P"
+     "S"
     ]
    ],
    "links": [
@@ -7521,11 +8031,11 @@
    ],
    "seized": [],
    "start": [
+    0,
     5,
-    5,
-    3,
+    1,
     4,
-    0
+    1
    ],
    "par": {
     "combination": 3,
@@ -7535,51 +8045,56 @@
     "clue": "Make some noise"
    },
    "id": "2026-12-08",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "DRUMS",
+    "BUGLE",
+    "BANJO"
+   ]
   },
   {
    "number": 100,
    "date": "2026-12-09",
    "rings": [
     [
-     "S",
+     "T",
      "O",
-     "D",
+     "B",
      "O",
-     "E",
-     "F"
+     "A",
+     "T"
     ],
     [
      "R",
      "T",
-     "N",
-     "E",
-     "N",
+     "U",
+     "R",
+     "I",
      "U"
     ],
     [
-     "N",
      "A",
+     "R",
      "E",
      "I",
      "H",
-     "T"
+     "D"
     ],
     [
      "E",
+     "I",
+     "S",
      "E",
-     "C",
-     "K",
      "W",
-     "N"
+     "E"
     ],
     [
-     "E",
-     "E",
+     "H",
+     "S",
      "G",
-     "K",
+     "F",
      "R",
-     "R"
+     "O"
     ]
    ],
    "links": [
@@ -7596,62 +8111,67 @@
    ],
    "seized": [],
    "start": [
-    4,
-    0,
+    3,
     1,
     3,
-    4
+    2,
+    2
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-12-09",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "OTHER",
+    "AUDIO",
+    "TRASH"
+   ]
   },
   {
    "number": 101,
    "date": "2026-12-10",
    "rings": [
     [
-     "V",
-     "B",
-     "U",
-     "L",
-     "E",
-     "S"
-    ],
-    [
-     "X",
-     "A",
-     "I",
      "R",
-     "G",
-     "A"
-    ],
-    [
-     "R",
-     "C",
+     "F",
+     "S",
      "M",
-     "D",
-     "I",
-     "H"
+     "W",
+     "C"
     ],
     [
-     "O",
-     "E",
-     "N",
-     "D",
-     "R",
-     "E"
-    ],
-    [
-     "A",
-     "O",
-     "G",
      "H",
-     "Y",
-     "L"
+     "O",
+     "I",
+     "A",
+     "H",
+     "R"
+    ],
+    [
+     "L",
+     "C",
+     "Z",
+     "R",
+     "I",
+     "O"
+    ],
+    [
+     "O",
+     "U",
+     "E",
+     "C",
+     "L",
+     "P"
+    ],
+    [
+     "E",
+     "S",
+     "N",
+     "S",
+     "D",
+     "H"
     ]
    ],
    "links": [
@@ -7668,62 +8188,67 @@
    ],
    "seized": [],
    "start": [
-    3,
-    3,
-    3,
     4,
-    0
+    5,
+    1,
+    5,
+    4
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-12-10",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "SIZED",
+    "MARCH",
+    "WHILE"
+   ]
   },
   {
    "number": 102,
    "date": "2026-12-11",
    "rings": [
     [
-     "T",
-     "A",
-     "A",
-     "V",
-     "P",
-     "M"
+     "E",
+     "N",
+     "C",
+     "M",
+     "S",
+     "H"
     ],
     [
-     "O",
-     "L",
-     "A",
+     "C",
      "I",
-     "E",
-     "R"
-    ],
-    [
-     "E",
-     "U",
      "T",
-     "D",
-     "E",
-     "T"
+     "L",
+     "O",
+     "E"
     ],
     [
-     "L",
+     "A",
+     "D",
+     "O",
+     "G",
+     "W",
+     "S"
+    ],
+    [
+     "N",
+     "N",
      "C",
      "A",
-     "N",
-     "L",
-     "R"
+     "R",
+     "H"
     ],
     [
-     "N",
-     "T",
-     "T",
      "H",
      "L",
-     "D"
+     "E",
+     "S",
+     "E",
+     "E"
     ]
    ],
    "links": [
@@ -7740,65 +8265,70 @@
    ],
    "seized": [],
    "start": [
-    3,
-    0,
-    0,
-    3,
-    3
+    5,
+    5,
+    1,
+    2,
+    0
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "theme": {
     "clue": "Game day"
    },
    "id": "2026-12-11",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "COACH",
+    "MEDAL",
+    "SCORE"
+   ]
   },
   {
    "number": 103,
    "date": "2026-12-12",
    "rings": [
     [
-     "A",
-     "W",
+     "D",
+     "S",
      "C",
-     "H",
-     "P",
-     "U"
+     "C",
+     "T",
+     "P"
     ],
     [
+     "A",
+     "L",
+     "K",
+     "L",
+     "A",
+     "T"
+    ],
+    [
+     "T",
      "O",
-     "R",
      "G",
      "A",
-     "N",
-     "F"
-    ],
-    [
-     "D",
-     "T",
      "U",
-     "O",
-     "E",
-     "R"
+     "I"
     ],
     [
-     "S",
-     "T",
-     "I",
+     "C",
+     "C",
+     "U",
      "E",
-     "E",
-     "L"
+     "Z",
+     "E"
     ],
     [
-     "S",
-     "R",
-     "R",
+     "H",
      "D",
-     "S",
-     "F"
+     "M",
+     "A",
+     "E",
+     "K"
     ]
    ],
    "links": [
@@ -7816,91 +8346,91 @@
    "seized": [],
    "start": [
     2,
-    2,
-    4,
     0,
-    1
+    1,
+    0,
+    2
    ],
    "par": {
-    "combination": 4,
+    "combination": 5,
     "full": 8
    },
    "id": "2026-12-12",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "STICK",
+    "CATCH",
+    "CLOUD"
+   ]
   },
   {
    "number": 104,
    "date": "2026-12-13",
    "rings": [
     [
-     "T",
-     "S",
-     "M",
+     "C",
+     "W",
      "F",
-     "F",
-     "T"
-    ],
-    [
-     "L",
-     "O",
      "A",
-     "V",
-     "T",
-     "H"
+     "S",
+     "S"
     ],
     [
-     "S",
-     "N",
-     "O",
-     "U",
-     "M",
+     "I",
+     "F",
+     "H",
+     "H",
+     "H",
      "E"
     ],
     [
-     "U",
-     "N",
-     "P",
-     "E",
      "F",
-     "C"
+     "B",
+     "O",
+     "A",
+     "E",
+     "L"
     ],
     [
-     "E",
-     "R",
-     "D",
-     "A",
+     "T",
      "M",
-     "B"
+     "A",
+     "L",
+     "T",
+     "M"
+    ],
+    [
+     "P",
+     "S",
+     "Y",
+     "I",
+     "S",
+     "E"
     ]
    ],
    "links": [
     {
-     "from": 4,
-     "to": 0,
-     "sign": -1
-    },
-    {
-     "from": 2,
-     "to": 3,
-     "sign": 1
-    },
-    {
-     "from": 4,
-     "to": 3,
+     "from": 3,
+     "to": 4,
      "sign": -1
     },
     {
      "from": 2,
      "to": 0,
+     "sign": -1
+    },
+    {
+     "from": 2,
+     "to": 1,
      "sign": 1
     }
    ],
    "seized": [
-    0
+    4
    ],
    "start": [
-    4,
-    2,
+    1,
+    3,
     0,
     4,
     4
@@ -7910,137 +8440,147 @@
     "full": 10
    },
    "id": "2026-12-13",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "CHEAP",
+    "WELLS",
+    "FIFTY"
+   ]
   },
   {
    "number": 105,
    "date": "2026-12-14",
    "rings": [
     [
-     "O",
-     "B",
-     "X",
-     "A",
-     "Y",
-     "A"
-    ],
-    [
-     "L",
-     "S",
-     "I",
      "U",
-     "D",
-     "L"
-    ],
-    [
-     "E",
-     "D",
-     "W",
-     "T",
+     "F",
+     "B",
      "A",
-     "S"
+     "B",
+     "O"
     ],
     [
-     "R",
      "S",
-     "I",
-     "E",
      "L",
-     "I"
+     "N",
+     "N",
+     "U",
+     "O"
     ],
     [
-     "D",
+     "O",
+     "J",
+     "N",
+     "N",
+     "S",
+     "O"
+    ],
+    [
+     "C",
      "T",
-     "V",
+     "R",
+     "D",
+     "D",
+     "E"
+    ],
+    [
+     "T",
      "K",
-     "W",
-     "T"
+     "N",
+     "A",
+     "S",
+     "S"
     ]
    ],
    "links": [
     {
-     "from": 3,
-     "to": 2,
+     "from": 0,
+     "to": 3,
      "sign": 1
     },
     {
-     "from": 1,
-     "to": 0,
-     "sign": -1
+     "from": 2,
+     "to": 1,
+     "sign": 1
     },
     {
      "from": 1,
      "to": 3,
-     "sign": -1
+     "sign": 1
     },
     {
-     "from": 1,
-     "to": 2,
+     "from": 0,
+     "to": 1,
      "sign": 1
     }
    ],
    "seized": [
-    2
+    3
    ],
    "start": [
-    2,
     4,
+    5,
     4,
     2,
-    2
+    1
    ],
    "par": {
-    "combination": 6,
+    "combination": 5,
     "full": 10
    },
    "theme": {
     "clue": "Money matters"
    },
    "id": "2026-12-14",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "FUNDS",
+    "BONDS",
+    "ASSET"
+   ]
   },
   {
    "number": 106,
    "date": "2026-12-15",
    "rings": [
     [
-     "L",
-     "Q",
-     "Y",
-     "H",
-     "P",
-     "C"
-    ],
-    [
-     "O",
-     "I",
-     "O",
-     "U",
-     "R",
-     "O"
-    ],
-    [
-     "O",
-     "E",
-     "N",
-     "M",
-     "O",
-     "S"
-    ],
-    [
-     "L",
-     "C",
      "K",
-     "U",
      "E",
+     "T",
+     "W",
+     "N",
+     "U"
+    ],
+    [
+     "R",
+     "O",
+     "N",
+     "I",
+     "K",
      "E"
     ],
     [
+     "T",
+     "N",
+     "Q",
+     "R",
      "O",
+     "R"
+    ],
+    [
+     "I",
+     "D",
+     "E",
+     "M",
+     "T",
+     "T"
+    ],
+    [
+     "N",
      "S",
      "E",
-     "P",
-     "S",
+     "H",
+     "L",
      "S"
     ]
    ],
@@ -8058,62 +8598,67 @@
    ],
    "seized": [],
    "start": [
-    0,
-    0,
+    3,
+    4,
     5,
-    2,
-    2
+    4,
+    5
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-12-15",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "TERMS",
+    "WROTE",
+    "NORTH"
+   ]
   },
   {
    "number": 107,
    "date": "2026-12-16",
    "rings": [
     [
-     "W",
-     "W",
-     "R",
-     "S",
+     "F",
+     "D",
+     "I",
+     "C",
      "H",
-     "N"
+     "S"
     ],
     [
-     "E",
-     "O",
+     "A",
      "I",
-     "A",
-     "A",
+     "R",
+     "D",
+     "E",
      "E"
     ],
     [
-     "V",
-     "U",
-     "D",
-     "T",
      "L",
+     "R",
+     "I",
+     "E",
+     "N",
      "F"
     ],
     [
      "I",
      "E",
-     "L",
-     "T",
-     "E",
-     "E"
+     "S",
+     "N",
+     "A",
+     "T"
     ],
     [
-     "D",
-     "H",
-     "D",
-     "M",
+     "T",
+     "K",
+     "S",
+     "S",
      "O",
-     "R"
+     "S"
     ]
    ],
    "links": [
@@ -8125,18 +8670,23 @@
    ],
    "seized": [],
    "start": [
+    1,
+    1,
+    0,
     4,
-    5,
-    4,
-    2,
-    0
+    5
    ],
    "par": {
-    "combination": 4,
+    "combination": 3,
     "full": 5
    },
    "id": "2026-12-16",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "SALES",
+    "FIRST",
+    "DRINK"
+   ]
   },
   {
    "number": 108,
@@ -8144,43 +8694,43 @@
    "rings": [
     [
      "A",
-     "D",
-     "A",
+     "N",
+     "E",
+     "T",
      "S",
-     "M",
-     "H"
+     "R"
     ],
     [
-     "N",
-     "R",
-     "I",
-     "W",
+     "L",
+     "E",
      "O",
+     "Y",
+     "N",
      "E"
     ],
     [
+     "B",
+     "S",
      "N",
-     "I",
-     "U",
      "A",
      "K",
-     "O"
-    ],
-    [
-     "R",
-     "L",
-     "V",
-     "R",
-     "N",
-     "T"
+     "R"
     ],
     [
      "G",
-     "H",
-     "T",
-     "E",
-     "E",
+     "N",
+     "L",
+     "V",
+     "O",
      "T"
+    ],
+    [
+     "S",
+     "S",
+     "N",
+     "E",
+     "E",
+     "W"
     ]
    ],
    "links": [
@@ -8203,63 +8753,68 @@
    "seized": [],
    "start": [
     2,
-    1,
-    5,
+    3,
+    0,
     0,
     5
    ],
    "par": {
     "combination": 4,
-    "full": 8
+    "full": 7
    },
    "theme": {
     "clue": "Anatomy"
    },
    "id": "2026-12-17",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "ANKLE",
+    "NERVE",
+    "ELBOW"
+   ]
   },
   {
    "number": 109,
    "date": "2026-12-18",
    "rings": [
     [
+     "A",
+     "V",
+     "B",
+     "S",
+     "R",
+     "R"
+    ],
+    [
+     "L",
      "I",
-     "Y",
-     "L",
-     "U",
-     "S",
-     "S"
-    ],
-    [
-     "O",
-     "L",
-     "T",
-     "P",
-     "E",
-     "D"
-    ],
-    [
-     "U",
-     "T",
-     "Y",
-     "O",
+     "R",
      "H",
-     "N"
+     "O",
+     "E"
     ],
     [
-     "R",
-     "L",
-     "R",
-     "P",
-     "L",
-     "I"
-    ],
-    [
-     "S",
-     "A",
-     "E",
+     "Y",
      "T",
+     "O",
+     "D",
+     "O",
+     "A"
+    ],
+    [
+     "E",
+     "O",
+     "F",
      "A",
+     "R",
+     "Y"
+    ],
+    [
+     "O",
+     "O",
+     "K",
+     "T",
+     "L",
      "O"
     ]
    ],
@@ -8277,62 +8832,67 @@
    ],
    "seized": [],
    "start": [
+    4,
     1,
     0,
-    3,
-    4,
-    2
+    2,
+    1
    ],
    "par": {
-    "combination": 4,
+    "combination": 5,
     "full": 7
    },
    "id": "2026-12-18",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "VIDEO",
+    "BROOK",
+    "SHAFT"
+   ]
   },
   {
    "number": 110,
    "date": "2026-12-19",
    "rings": [
     [
-     "L",
-     "R",
-     "U",
-     "A",
+     "T",
      "H",
-     "E"
-    ],
-    [
-     "B",
      "E",
-     "J",
-     "O",
-     "E",
-     "N"
-    ],
-    [
-     "I",
-     "O",
-     "A",
-     "I",
-     "V",
-     "D"
-    ],
-    [
-     "U",
-     "R",
-     "W",
-     "E",
-     "I",
-     "T"
-    ],
-    [
      "S",
-     "D",
-     "Y",
+     "S",
+     "M"
+    ],
+    [
+     "N",
      "T",
-     "T",
+     "E",
+     "A",
+     "U",
      "O"
+    ],
+    [
+     "Y",
+     "R",
+     "R",
+     "J",
+     "T",
+     "C"
+    ],
+    [
+     "O",
+     "N",
+     "A",
+     "B",
+     "N",
+     "S"
+    ],
+    [
+     "Y",
+     "Y",
+     "R",
+     "E",
+     "S",
+     "E"
     ]
    ],
    "links": [
@@ -8350,17 +8910,22 @@
    "seized": [],
    "start": [
     1,
-    1,
-    1,
+    3,
+    4,
     2,
-    3
+    1
    ],
    "par": {
     "combination": 5,
     "full": 8
    },
    "id": "2026-12-19",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "MAYBE",
+    "TURNS",
+    "HORSE"
+   ]
   },
   {
    "number": 111,
@@ -8368,65 +8933,65 @@
    "rings": [
     [
      "C",
-     "D",
-     "O",
-     "T",
-     "G",
-     "S"
+     "I",
+     "A",
+     "L",
+     "C",
+     "G"
     ],
     [
      "U",
-     "W",
-     "O",
-     "E",
-     "F",
-     "U"
-    ],
-    [
-     "U",
-     "I",
-     "T",
-     "S",
-     "I",
+     "L",
+     "R",
+     "N",
+     "Y",
      "O"
     ],
     [
-     "E",
-     "H",
-     "L",
+     "G",
      "R",
-     "R",
-     "H"
+     "U",
+     "I",
+     "U",
+     "B"
     ],
     [
+     "E",
+     "W",
+     "L",
+     "I",
+     "R",
+     "L"
+    ],
+    [
+     "F",
+     "E",
+     "C",
      "T",
-     "N",
      "T",
-     "H",
-     "N",
-     "J"
+     "S"
     ]
    ],
    "links": [
     {
-     "from": 4,
+     "from": 0,
      "to": 3,
      "sign": -1
     },
     {
-     "from": 4,
+     "from": 0,
      "to": 2,
      "sign": 1
     },
     {
      "from": 0,
      "to": 4,
-     "sign": -1
+     "sign": 1
     },
     {
      "from": 1,
      "to": 0,
-     "sign": -1
+     "sign": 1
     }
    ],
    "seized": [
@@ -8434,64 +8999,69 @@
    ],
    "start": [
     4,
+    2,
     3,
-    0,
-    4,
-    1
+    1,
+    4
    ],
    "par": {
-    "combination": 6,
+    "combination": 5,
     "full": 10
    },
    "theme": {
     "clue": "Whodunnit"
    },
    "id": "2026-12-20",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "COURT",
+    "GUILT",
+    "CLUES"
+   ]
   },
   {
    "number": 112,
    "date": "2026-12-21",
    "rings": [
     [
-     "U",
-     "U",
-     "I",
-     "W",
-     "F",
-     "E"
-    ],
-    [
-     "I",
-     "O",
+     "N",
+     "L",
+     "T",
      "S",
-     "A",
-     "O",
+     "I",
      "M"
     ],
     [
-     "K",
-     "T",
-     "S",
-     "L",
-     "R",
-     "A"
+     "V",
+     "A",
+     "V",
+     "O",
+     "H",
+     "T"
     ],
     [
-     "U",
-     "I",
+     "E",
+     "E",
      "O",
      "N",
-     "U",
-     "K"
+     "Y",
+     "V"
     ],
     [
+     "A",
+     "F",
      "S",
-     "M",
-     "L",
-     "D",
+     "P",
+     "R",
+     "O"
+    ],
+    [
      "T",
-     "E"
+     "E",
+     "S",
+     "Y",
+     "R",
+     "L"
     ]
    ],
    "links": [
@@ -8515,61 +9085,66 @@
     1
    ],
    "start": [
-    0,
+    5,
     4,
-    2,
-    1,
+    0,
+    5,
     3
    ],
    "par": {
-    "combination": 6,
+    "combination": 7,
     "full": 10
    },
    "id": "2026-12-21",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "THESE",
+    "STEPS",
+    "IVORY"
+   ]
   },
   {
    "number": 113,
    "date": "2026-12-22",
    "rings": [
     [
-     "C",
+     "P",
+     "M",
      "T",
-     "T",
-     "L",
-     "S",
-     "N"
+     "I",
+     "F",
+     "S"
     ],
     [
      "X",
+     "M",
      "E",
-     "T",
      "E",
-     "R",
-     "R"
-    ],
-    [
-     "A",
-     "I",
-     "A",
-     "A",
-     "R",
-     "W"
-    ],
-    [
-     "L",
-     "Z",
-     "E",
-     "D",
      "R",
      "A"
     ],
     [
+     "O",
+     "L",
+     "A",
+     "A",
+     "E",
+     "T"
+    ],
+    [
+     "U",
+     "O",
+     "E",
+     "D",
+     "G",
+     "L"
+    ],
+    [
      "J",
-     "N",
+     "E",
+     "S",
      "P",
-     "Y",
-     "Y",
+     "F",
      "S"
     ]
    ],
@@ -8582,62 +9157,67 @@
    ],
    "seized": [],
    "start": [
-    1,
-    3,
     0,
-    4,
-    2
+    2,
+    0,
+    2,
+    3
    ],
    "par": {
     "combination": 3,
     "full": 5
    },
    "id": "2026-12-22",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "SETUP",
+    "PROOF",
+    "MALES"
+   ]
   },
   {
    "number": 114,
    "date": "2026-12-23",
    "rings": [
     [
-     "U",
-     "S",
-     "G",
-     "M",
-     "C",
-     "W"
-    ],
-    [
-     "U",
      "H",
-     "O",
-     "N",
-     "T",
-     "U"
-    ],
-    [
-     "I",
-     "U",
-     "I",
-     "O",
      "S",
-     "G"
-    ],
-    [
-     "L",
-     "O",
-     "R",
-     "T",
-     "G",
-     "D"
-    ],
-    [
-     "A",
-     "D",
-     "N",
+     "S",
+     "S",
      "M",
-     "S",
-     "Y"
+     "C"
+    ],
+    [
+     "H",
+     "H",
+     "U",
+     "L",
+     "T",
+     "H"
+    ],
+    [
+     "I",
+     "M",
+     "E",
+     "O",
+     "A",
+     "A"
+    ],
+    [
+     "T",
+     "L",
+     "I",
+     "E",
+     "R",
+     "F"
+    ],
+    [
+     "W",
+     "L",
+     "D",
+     "T",
+     "E",
+     "T"
     ]
    ],
    "links": [
@@ -8649,11 +9229,11 @@
    ],
    "seized": [],
    "start": [
+    3,
+    2,
     1,
-    4,
-    4,
-    1,
-    1
+    0,
+    2
    ],
    "par": {
     "combination": 3,
@@ -8663,51 +9243,56 @@
     "clue": "Weather report"
    },
    "id": "2026-12-23",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "CHILL",
+    "HUMID",
+    "SLEET"
+   ]
   },
   {
    "number": 115,
    "date": "2026-12-24",
    "rings": [
     [
-     "T",
-     "A",
-     "W",
-     "O",
-     "S",
-     "U"
-    ],
-    [
-     "T",
-     "T",
+     "C",
+     "C",
      "V",
-     "A",
-     "L",
-     "O"
+     "B",
+     "W",
+     "H"
     ],
     [
-     "E",
-     "N",
-     "L",
-     "O",
+     "A",
+     "U",
      "H",
+     "S",
+     "A",
      "U"
     ],
     [
-     "H",
-     "K",
-     "O",
-     "D",
-     "E",
-     "F"
+     "U",
+     "B",
+     "B",
+     "L",
+     "I",
+     "I"
+    ],
+    [
+     "V",
+     "L",
+     "C",
+     "L",
+     "I",
+     "I"
     ],
     [
      "S",
-     "R",
-     "F",
+     "N",
+     "C",
      "E",
-     "S",
-     "W"
+     "D",
+     "H"
     ]
    ],
    "links": [
@@ -8724,62 +9309,67 @@
    ],
    "seized": [],
    "start": [
+    2,
+    2,
     3,
     4,
-    4,
-    4,
-    4
+    0
    ],
    "par": {
     "combination": 4,
     "full": 7
    },
    "id": "2026-12-24",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "CUBIC",
+    "VALVE",
+    "BUILD"
+   ]
   },
   {
    "number": 116,
    "date": "2026-12-25",
    "rings": [
     [
-     "F",
-     "W",
-     "S",
-     "N",
-     "A",
-     "R"
-    ],
-    [
-     "D",
-     "I",
-     "A",
-     "E",
-     "P",
-     "H"
-    ],
-    [
-     "C",
-     "D",
-     "G",
-     "I",
-     "A",
-     "O"
-    ],
-    [
-     "H",
-     "L",
-     "O",
      "K",
-     "I",
-     "E"
+     "S",
+     "U",
+     "Y",
+     "V",
+     "M"
+    ],
+    [
+     "O",
+     "A",
+     "O",
+     "C",
+     "V",
+     "O"
     ],
     [
      "D",
      "T",
+     "V",
+     "R",
+     "U",
+     "E"
+    ],
+    [
      "S",
-     "O",
      "E",
-     "W"
+     "E",
+     "M",
+     "N",
+     "B"
+    ],
+    [
+     "S",
+     "A",
+     "D",
+     "E",
+     "S",
+     "S"
     ]
    ],
    "links": [
@@ -8801,18 +9391,23 @@
    ],
    "seized": [],
    "start": [
-    1,
+    5,
     3,
-    1,
-    1,
-    3
+    5,
+    4,
+    1
    ],
    "par": {
     "combination": 4,
     "full": 8
    },
    "id": "2026-12-25",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "MOVES",
+    "KARMA",
+    "SOUND"
+   ]
   },
   {
    "number": 117,
@@ -8820,43 +9415,43 @@
    "rings": [
     [
      "U",
-     "I",
-     "C",
-     "A",
-     "G",
-     "L"
-    ],
-    [
-     "L",
-     "N",
-     "A",
-     "O",
-     "M",
-     "R"
-    ],
-    [
-     "B",
-     "E",
-     "E",
-     "D",
-     "I",
-     "R"
-    ],
-    [
-     "Y",
-     "A",
-     "E",
-     "E",
      "S",
+     "T",
+     "L",
+     "B",
+     "C"
+    ],
+    [
+     "O",
+     "O",
+     "I",
+     "H",
+     "E",
      "E"
     ],
     [
-     "A",
-     "L",
+     "D",
+     "E",
+     "M",
+     "I",
      "R",
+     "H"
+    ],
+    [
+     "O",
+     "G",
+     "A",
+     "A",
+     "E",
+     "S"
+    ],
+    [
+     "L",
+     "H",
+     "S",
+     "E",
      "N",
-     "N",
-     "R"
+     "E"
     ]
    ],
    "links": [
@@ -8878,11 +9473,11 @@
    ],
    "seized": [],
    "start": [
+    5,
     4,
-    3,
-    1,
     0,
-    5
+    4,
+    0
    ],
    "par": {
     "combination": 4,
@@ -8892,130 +9487,56 @@
     "clue": "Shades"
    },
    "id": "2026-12-26",
-   "difficulty": "medium"
+   "difficulty": "medium",
+   "answer": [
+    "LEMON",
+    "BEIGE",
+    "CORAL"
+   ]
   },
   {
    "number": 118,
    "date": "2026-12-27",
    "rings": [
     [
-     "R",
-     "A",
-     "L",
      "P",
-     "P",
-     "D"
-    ],
-    [
-     "O",
-     "A",
-     "S",
-     "S",
-     "H",
-     "R"
-    ],
-    [
-     "I",
-     "R",
-     "O",
-     "I",
-     "V",
-     "N"
-    ],
-    [
-     "E",
-     "G",
-     "A",
-     "F",
      "N",
-     "C"
-    ],
-    [
-     "A",
-     "E",
-     "E",
-     "R",
-     "E",
-     "N"
-    ]
-   ],
-   "links": [
-    {
-     "from": 2,
-     "to": 1,
-     "sign": -1
-    },
-    {
-     "from": 0,
-     "to": 2,
-     "sign": 1
-    },
-    {
-     "from": 3,
-     "to": 2,
-     "sign": -1
-    }
-   ],
-   "seized": [
-    1
-   ],
-   "start": [
-    2,
-    2,
-    2,
-    1,
-    5
-   ],
-   "par": {
-    "combination": 5,
-    "full": 10
-   },
-   "id": "2026-12-27",
-   "difficulty": "hard"
-  },
-  {
-   "number": 119,
-   "date": "2026-12-28",
-   "rings": [
-    [
-     "G",
-     "L",
+     "O",
+     "B",
      "T",
-     "V",
-     "H",
-     "M"
+     "O"
     ],
     [
-     "A",
+     "C",
+     "R",
+     "E",
      "H",
-     "U",
-     "H",
-     "O",
-     "U"
+     "R",
+     "O"
+    ],
+    [
+     "W",
+     "C",
+     "I",
+     "W",
+     "T",
+     "I"
     ],
     [
      "E",
-     "I",
-     "M",
+     "S",
+     "C",
      "N",
-     "Y",
+     "U",
      "C"
     ],
     [
-     "X",
-     "K",
+     "S",
      "R",
-     "C",
-     "A",
-     "G"
-    ],
-    [
-     "N",
-     "A",
-     "L",
-     "Y",
      "E",
-     "E"
+     "R",
+     "B",
+     "K"
     ]
    ],
    "links": [
@@ -9026,17 +9547,17 @@
     },
     {
      "from": 4,
-     "to": 2,
-     "sign": 1
-    },
-    {
-     "from": 4,
      "to": 1,
-     "sign": 1
+     "sign": -1
     },
     {
      "from": 1,
      "to": 0,
+     "sign": 1
+    },
+    {
+     "from": 4,
+     "to": 3,
      "sign": -1
     }
    ],
@@ -9045,61 +9566,155 @@
    ],
    "start": [
     2,
-    0,
-    4,
     5,
-    5
+    3,
+    3,
+    3
    ],
    "par": {
     "combination": 5,
     "full": 10
    },
+   "id": "2026-12-27",
+   "difficulty": "hard",
+   "answer": [
+    "TOWNS",
+    "OCCUR",
+    "PRICE"
+   ]
+  },
+  {
+   "number": 119,
+   "date": "2026-12-28",
+   "rings": [
+    [
+     "C",
+     "H",
+     "F",
+     "C",
+     "A",
+     "T"
+    ],
+    [
+     "H",
+     "B",
+     "R",
+     "S",
+     "Y",
+     "U"
+    ],
+    [
+     "N",
+     "A",
+     "O",
+     "A",
+     "H",
+     "H"
+    ],
+    [
+     "U",
+     "S",
+     "O",
+     "T",
+     "N",
+     "S"
+    ],
+    [
+     "T",
+     "H",
+     "N",
+     "M",
+     "Y",
+     "E"
+    ]
+   ],
+   "links": [
+    {
+     "from": 3,
+     "to": 0,
+     "sign": -1
+    },
+    {
+     "from": 2,
+     "to": 0,
+     "sign": -1
+    },
+    {
+     "from": 2,
+     "to": 1,
+     "sign": 1
+    },
+    {
+     "from": 2,
+     "to": 4,
+     "sign": 1
+    }
+   ],
+   "seized": [
+    0
+   ],
+   "start": [
+    0,
+    0,
+    4,
+    2,
+    5
+   ],
+   "par": {
+    "combination": 6,
+    "full": 10
+   },
    "id": "2026-12-28",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "answer": [
+    "FUNNY",
+    "CHASE",
+    "ABOUT"
+   ]
   },
   {
    "number": 120,
    "date": "2026-12-29",
    "rings": [
     [
-     "N",
-     "S",
-     "S",
-     "A",
+     "C",
+     "F",
      "L",
-     "A"
-    ],
-    [
-     "B",
-     "E",
-     "T",
-     "P",
-     "L",
+     "C",
+     "S",
      "O"
     ],
     [
-     "O",
-     "E",
-     "A",
-     "A",
-     "I",
-     "G"
-    ],
-    [
-     "U",
-     "E",
+     "N",
      "R",
-     "C",
-     "E",
-     "I"
+     "A",
+     "U",
+     "O",
+     "P"
     ],
     [
      "N",
-     "T",
-     "Y",
-     "S",
+     "M",
+     "A",
+     "M",
+     "I",
+     "R"
+    ],
+    [
+     "C",
+     "M",
+     "M",
+     "A",
      "E",
-     "N"
+     "C"
+    ],
+    [
+     "E",
+     "S",
+     "R",
+     "T",
+     "E",
+     "H"
     ]
    ],
    "links": [
@@ -9116,11 +9731,11 @@
    ],
    "seized": [],
    "start": [
-    4,
     1,
+    4,
+    5,
     2,
-    2,
-    4
+    5
    ],
    "par": {
     "combination": 3,
@@ -9130,7 +9745,12 @@
     "clue": "Look up"
    },
    "id": "2026-12-29",
-   "difficulty": "easy"
+   "difficulty": "easy",
+   "answer": [
+    "LUNAR",
+    "COMET",
+    "SPACE"
+   ]
   }
  ]
 }

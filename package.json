@@ -8,7 +8,9 @@
     "start": "node scripts/serve.mjs",
     "test": "node --test \"test/*.test.js\"",
     "bake": "node scripts/bake-dailies.mjs",
-    "gen": "node scripts/generate.mjs"
+    "gen": "node scripts/generate.mjs",
+    "build:words": "node scripts/build-wordlists.mjs",
+    "build:themes": "node scripts/build-themes.mjs"
   },
   "engines": {
     "node": ">=20"

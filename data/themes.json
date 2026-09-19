@@ -14,7 +14,8 @@
       "whisk",
       "pasta",
       "sauce",
-      "toast"
+      "toast",
+      "bacon"
     ]
   },
   {
@@ -31,7 +32,8 @@
       "drift",
       "chill",
       "gusts",
-      "muggy"
+      "humid",
+      "foggy"
     ]
   },
   {
@@ -183,7 +185,7 @@
       "weary",
       "cheer",
       "grief",
-      "joyed"
+      "eager"
     ]
   },
   {
@@ -265,7 +267,8 @@
       "screw",
       "spade",
       "brace",
-      "gauge"
+      "gauge",
+      "bench"
     ]
   }
 ]

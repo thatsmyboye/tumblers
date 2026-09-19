@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { applyMove } from '../src/engine.js';
 import { Game } from '../src/game.js';
 import { ringsFromRows, valid } from './helpers.js';
 
 const rings = ringsFromRows(['crane', 'slate', 'pound', 'gizmo', 'flick', 'hurdy']);
+const applyMoveOnce = (lock, offsets, wheel, dir) => applyMove(lock, offsets, wheel, dir);
 
 const lock = {
   rings,
@@ -16,9 +18,10 @@ test('turning counts a move and reports the whole chain', () => {
   const game = new Game(lock, 'full', valid.has);
   const moved = game.turn(0, 1);
   assert.equal(game.moves, 1);
+  // Wheel 1 went up; its reversed chain pulled wheel 4 down.
   assert.deepEqual(
-    moved.filter((entry) => entry.moved).map((entry) => entry.wheel),
-    [0, 3],
+    moved.map((entry) => entry.delta),
+    [1, 0, 0, -1, 0],
   );
   assert.deepEqual(game.offsets, [3, 2, 2, 1, 2]);
 });
@@ -76,4 +79,41 @@ test('solving depends on the mode, and the mode can change mid-lock', () => {
   assert.equal(game.solved, true);
   game.setMode('full');
   assert.equal(game.solved, false);
+});
+
+test('a turn across the ring seam still reports a one-step delta', () => {
+  const seam = { ...lock, links: [], start: [5, 0, 0, 0, 0] };
+  const game = new Game(seam, 'full', valid.has);
+  assert.deepEqual(game.turn(0, 1).map((entry) => entry.delta), [1, 0, 0, 0, 0]);
+  assert.equal(game.offsets[0], 0);
+  assert.deepEqual(game.turn(0, -1).map((entry) => entry.delta), [-1, 0, 0, 0, 0]);
+});
+
+test('a snapshot brings a session back exactly', () => {
+  const game = new Game(lock, 'full', valid.has);
+  game.turn(0, 1);
+  game.turn(2, -1);
+  game.turn(4, 1);
+  game.undo();
+  game.useHint();
+  const snapshot = game.snapshot();
+
+  const restored = new Game(lock, 'full', valid.has);
+  assert.equal(restored.restore(snapshot), true);
+  assert.deepEqual(restored.offsets, game.offsets);
+  assert.equal(restored.moves, 2);
+  assert.equal(restored.undos, 1);
+  assert.equal(restored.hints, 1);
+  assert.equal(restored.undo(), true, 'history survives, so undo still works');
+  assert.deepEqual(restored.offsets, applyMoveOnce(lock, lock.start, 0, 1));
+});
+
+test('a snapshot that does not fit the lock is refused', () => {
+  const game = new Game(lock, 'full', valid.has);
+  game.turn(1, 1);
+  const before = game.offsets.slice();
+  assert.equal(game.restore({ history: [{ wheel: 9, dir: 1 }] }), false);
+  assert.equal(game.restore({ history: [{ wheel: 0, dir: 2 }] }), false);
+  assert.equal(game.restore(null), false);
+  assert.deepEqual(game.offsets, before, 'a refused restore changes nothing');
 });
