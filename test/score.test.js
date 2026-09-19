@@ -45,5 +45,21 @@ test('a finished daily shares both legs and the bonus star', () => {
       'Undos 2 ↩️',
     ].join('\n'),
   );
-  assert.equal(totalStars([{ moves: 4, par: 4 }, { moves: 11, par: 9 }], true), 6);
+  assert.equal(totalStars([{ moves: 4, par: 4 }, { moves: 11, par: 9 }], { bonusStar: true }), 6);
+});
+
+test('a hint caps the lock at two stars and shows in the share', () => {
+  assert.equal(starsFor(9, 9, { hinted: true }), 2);
+  assert.equal(starsFor(11, 9, { hinted: true }), 2);
+  assert.equal(starsFor(20, 9, { hinted: true }), 1);
+  assert.equal(
+    shareText({ number: 3, mode: 'full', moves: 9, par: 9, undos: 0, hints: 2, themeRevealed: true }),
+    ['Tumblers #3 · Full Lock 🔓', 'Moves 9 / par 9 ⭐⭐', 'Undos 0 ↩️ · Hints 2 🔍 💡'].join('\n'),
+  );
+  assert.equal(totalStars([{ moves: 4, par: 4 }], { hinted: true }), 2);
+});
+
+test('a practice lock shares without a puzzle number', () => {
+  const text = shareText({ number: null, mode: 'combination', moves: 5, par: 4 });
+  assert.equal(text.split('\n')[0], 'Tumblers · Combination 🔐');
 });

@@ -15,10 +15,14 @@ test('the baked pack is complete and in order', () => {
   });
 });
 
-test('no baked lock gives away its answer', () => {
+test('each baked lock carries its answer rows and nothing else from the generator', () => {
   for (const puzzle of dailies.puzzles) {
-    assert.equal(puzzle.solution, undefined, `daily ${puzzle.number} ships its answer`);
-    assert.equal(puzzle.words, undefined, `daily ${puzzle.number} ships its answer`);
+    assert.equal(puzzle.solution, undefined, `daily ${puzzle.number} ships generator offsets`);
+    assert.equal(puzzle.stats, undefined, `daily ${puzzle.number} ships generator stats`);
+    assert.equal(puzzle.answer.length, 3, `daily ${puzzle.number} has no answer rows`);
+    for (const word of puzzle.answer) {
+      assert.ok(valid.has(word), `daily ${puzzle.number} answer ${word} is not a word`);
+    }
   }
 });
 

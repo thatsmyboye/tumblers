@@ -1,13 +1,27 @@
 /**
  * Board rendering and input: the five drums, the three-row window, and the
- * link chains. Touch first — swipe a wheel, or use the arrows above and below.
+ * link chains. Touch first — drag a wheel and it follows your finger, with
+ * everything it is chained to moving alongside; or use the arrows.
  */
 
-import { RING_SIZE, WHEEL_COUNT, WINDOW_ROWS, isSeized, mod, wheelRole } from './engine.js';
+import { RING_SIZE, WHEEL_COUNT, WINDOW_ROWS, isSeized, mod, moveMatrix, wheelRole } from './engine.js';
 
-/** Display slots run one ring position above the window to two below. */
-const SLOT_OFFSET = -1;
-const SWIPE_THRESHOLD = 16;
+/**
+ * Each drum strip holds two spare cells beyond the six on show — one above,
+ * one below — so a drag of up to a full cell in either direction always has
+ * a letter to reveal. Slot `s` shows ring position `offset + s + SLOT_OFFSET`.
+ */
+const STRIP_SLOTS = RING_SIZE + 2;
+const SLOT_OFFSET = -2;
+/** Window rows occupy these strip slots. */
+const FIRST_WINDOW_SLOT = 2;
+
+/** How far (as a fraction of a cell) a drag must travel to count as a turn. */
+const COMMIT_FRACTION = 0.3;
+/** Movement below this is a press, not a drag. */
+const DRAG_SLOP = 4;
+/** Longest we wait for a CSS transition before carrying on regardless. */
+const SETTLE_MS = 180;
 
 const CHAIN_COLORS = ['#e0a33a', '#54b8e0', '#c47ae0', '#63c98a', '#e07a7a', '#8ea0ff'];
 
@@ -51,15 +65,21 @@ function el(tag, className, text) {
 export class Board {
   /**
    * @param {HTMLElement} root
-   * @param {{ onTurn: (wheel: number, dir: 1 | -1) => void }} handlers
+   * @param {{
+   *   onTurn: (wheel: number, dir: 1 | -1, options?: { silent?: boolean }) => boolean,
+   *   canTurn?: (wheel: number) => boolean,
+   * }} handlers
    */
   constructor(root, handlers) {
     this.root = root;
     this.handlers = handlers;
     this.lock = null;
+    this.matrix = null;
     this.hideRings = false;
     /** @type {SVGPathElement[]} */
     this.chainPaths = [];
+    /** @type {{ wheel: number, pointerId: number, startY: number, dy: number, active: boolean } | null} */
+    this.drag = null;
     this.build();
   }
 
@@ -80,6 +100,7 @@ export class Board {
 
     this.cells = [];
     this.drumNodes = [];
+    this.strips = [];
     this.roleNodes = [];
 
     for (let wheel = 0; wheel < WHEEL_COUNT; wheel += 1) {
@@ -92,14 +113,20 @@ export class Board {
 
       const drum = el('div', 'drum');
       drum.dataset.wheel = String(wheel);
+      drum.style.setProperty('--i', String(wheel));
+      const strip = el('div', 'strip');
       const cells = [];
-      for (let slot = 0; slot < RING_SIZE; slot += 1) {
-        const inWindow = slot >= -SLOT_OFFSET && slot < -SLOT_OFFSET + WINDOW_ROWS;
+      for (let slot = 0; slot < STRIP_SLOTS; slot += 1) {
+        const windowRow = slot - FIRST_WINDOW_SLOT;
+        const inWindow = windowRow >= 0 && windowRow < WINDOW_ROWS;
         const cell = el('div', `cell${inWindow ? ' cell-window' : ' cell-back'}`);
+        if (inWindow) cell.dataset.row = String(windowRow);
         cells.push(cell);
-        drum.append(cell);
+        strip.append(cell);
       }
+      drum.append(strip);
       this.cells.push(cells);
+      this.strips.push(strip);
       this.drumNodes.push(drum);
       this.drums.append(drum);
       this.attachDrag(drum, wheel);
@@ -134,37 +161,152 @@ export class Board {
     return button;
   }
 
-  /** Swipe up or down anywhere on a drum; pressing without swiping previews. */
+  /* ------------------------------------------------------------------ drag */
+
+  /** One cell's height in pixels, read from the live layout. */
+  cellHeight() {
+    return this.cells[0][FIRST_WINDOW_SLOT].getBoundingClientRect().height || 48;
+  }
+
+  /**
+   * Dragging a drum moves its strip with the finger, and moves every strip
+   * its chains reach by the same amount in the direction of the link. Letting
+   * go past the commit threshold turns the wheel; short of it, everything
+   * springs back. Pressing without moving just previews.
+   */
   attachDrag(drum, wheel) {
-    let startY = null;
     drum.addEventListener('pointerdown', (event) => {
-      startY = event.clientY;
-      drum.setPointerCapture(event.pointerId);
+      if (this.drag || event.button !== 0) return;
       this.preview(wheel);
+      if (isSeized(this.lock, wheel)) return;
+      if (this.handlers.canTurn && !this.handlers.canTurn(wheel)) return;
+      drum.setPointerCapture(event.pointerId);
+      this.drag = { wheel, pointerId: event.pointerId, startY: event.clientY, dy: 0, active: false };
     });
-    drum.addEventListener('pointerup', (event) => {
-      if (startY == null) return;
-      const dy = event.clientY - startY;
-      startY = null;
+
+    drum.addEventListener('pointermove', (event) => {
+      const drag = this.drag;
+      if (!drag || drag.pointerId !== event.pointerId) return;
+      const raw = event.clientY - drag.startY;
+      if (!drag.active && Math.abs(raw) < DRAG_SLOP) return;
+      drag.active = true;
+      const cell = this.cellHeight();
+      drag.dy = Math.max(-cell, Math.min(cell, raw));
+      this.setDragOffsets(drag.wheel, drag.dy);
+    });
+
+    const release = (event) => {
+      const drag = this.drag;
+      if (!drag || drag.pointerId !== event.pointerId) return;
+      this.drag = null;
       this.preview(null);
-      if (Math.abs(dy) < SWIPE_THRESHOLD) return;
-      this.handlers.onTurn(wheel, dy < 0 ? 1 : -1);
+      if (!drag.active) return;
+
+      const cell = this.cellHeight();
+      if (event.type !== 'pointercancel' && Math.abs(drag.dy) >= cell * COMMIT_FRACTION) {
+        this.commitDrag(drag.wheel, drag.dy < 0 ? 1 : -1, cell);
+      } else {
+        this.settleDrag(drag.wheel, 0);
+      }
+    };
+    drum.addEventListener('pointerup', release);
+    drum.addEventListener('pointercancel', release);
+
+    drum.addEventListener('pointerenter', () => {
+      if (!this.drag) this.preview(wheel);
     });
-    drum.addEventListener('pointercancel', () => {
-      startY = null;
-      this.preview(null);
-    });
-    drum.addEventListener('pointerenter', () => this.preview(wheel));
     drum.addEventListener('pointerleave', () => {
-      if (startY == null) this.preview(null);
+      if (!this.drag) this.preview(null);
     });
   }
+
+  /** Wheels that move when `wheel` is driven, each with its direction sign. */
+  chainOf(wheel) {
+    const out = [];
+    for (let c = 0; c < WHEEL_COUNT; c += 1) {
+      if (this.matrix[wheel][c] !== 0) out.push({ wheel: c, sign: this.matrix[wheel][c] });
+    }
+    return out;
+  }
+
+  setDragOffsets(wheel, dy) {
+    for (const { wheel: c, sign } of this.chainOf(wheel)) {
+      this.strips[c].style.setProperty('--drag', `${sign * dy}px`);
+    }
+  }
+
+  /** Ease every strip in the chain to a drag offset and resolve when settled. */
+  settleDrag(wheel, dy) {
+    const strips = this.chainOf(wheel).map(({ wheel: c }) => this.strips[c]);
+    return this.settle(strips, (strip) => {
+      const sign = this.matrix[wheel][Number(strip.parentElement.dataset.wheel)];
+      strip.style.setProperty('--drag', `${sign * dy}px`);
+    });
+  }
+
+  /**
+   * Finish a drag as a real turn: glide the strips the rest of the way, then
+   * let the game apply the move. The re-render lands the new letters exactly
+   * where the strips have come to rest, so snapping the offsets back to zero
+   * in the same frame is invisible.
+   */
+  async commitDrag(wheel, dir, cell) {
+    await this.settleDrag(wheel, -dir * cell);
+    const accepted = this.handlers.onTurn(wheel, dir, { silent: true });
+    if (accepted) {
+      for (const { wheel: c } of this.chainOf(wheel)) this.strips[c].style.setProperty('--drag', '0px');
+    } else {
+      await this.settleDrag(wheel, 0);
+    }
+  }
+
+  /**
+   * Apply `mutate` to each strip under a transition, resolving on
+   * transitionend or after a deadline — reduced-motion users get no
+   * transition and must not be left waiting.
+   */
+  settle(strips, mutate) {
+    return new Promise((resolve) => {
+      let pending = strips.length;
+      if (pending === 0) {
+        resolve();
+        return;
+      }
+      const finish = () => {
+        pending = 0;
+        for (const strip of strips) strip.classList.remove('settling');
+        resolve();
+      };
+      const timer = setTimeout(finish, SETTLE_MS);
+      for (const strip of strips) {
+        strip.classList.add('settling');
+        strip.addEventListener(
+          'transitionend',
+          () => {
+            pending -= 1;
+            if (pending === 0) {
+              clearTimeout(timer);
+              finish();
+            }
+          },
+          { once: true },
+        );
+        mutate(strip);
+      }
+    });
+  }
+
+  /* ------------------------------------------------------------------ setup */
 
   /** @param {import('./engine.js').Lock} lock */
   setLock(lock, { hideRings = false } = {}) {
     this.lock = lock;
+    this.matrix = moveMatrix(lock);
     this.hideRings = hideRings;
+    this.drag = null;
     this.preview(null);
+    this.clearHint();
+    for (const strip of this.strips) strip.style.setProperty('--drag', '0px');
 
     const drivers = new Set(lock.links.map((link) => link.from));
 
@@ -199,17 +341,25 @@ export class Board {
     this.drawChains();
   }
 
+  /* -------------------------------------------------------------- rendering */
+
   /**
    * @param {number[]} offsets
    * @param {{ word: string, required: boolean, valid: boolean }[]} rowStatus
    */
   render(offsets, rowStatus) {
     for (let wheel = 0; wheel < WHEEL_COUNT; wheel += 1) {
-      for (let slot = 0; slot < RING_SIZE; slot += 1) {
+      for (let slot = 0; slot < STRIP_SLOTS; slot += 1) {
         const ringIndex = mod(offsets[wheel] + slot + SLOT_OFFSET, RING_SIZE);
         const cell = this.cells[wheel][slot];
-        const inWindow = cell.classList.contains('cell-window');
+        const inWindow = cell.dataset.row != null;
         cell.textContent = this.hideRings && !inWindow ? '' : this.lock.rings[wheel][ringIndex];
+        if (inWindow) {
+          const status = rowStatus[Number(cell.dataset.row)];
+          // Rows the mode does not care about step back; solved rows light up.
+          cell.classList.toggle('cell-optional', !status.required);
+          cell.classList.toggle('cell-valid', status.required && status.valid);
+        }
       }
     }
 
@@ -227,17 +377,52 @@ export class Board {
     );
   }
 
-  /** Brief snap animation on the wheels a turn actually moved. */
-  animate(moved, dir) {
-    for (const { wheel, moved: didMove } of moved) {
-      if (!didMove) continue;
-      const drum = this.drumNodes[wheel];
-      drum.classList.remove('turning-up', 'turning-down');
-      // Force a reflow so the animation restarts on repeated taps.
-      void drum.offsetWidth;
-      drum.classList.add(dir > 0 ? 'turning-up' : 'turning-down');
+  /**
+   * Glide the wheels a turn moved from where they were to where they are.
+   * The letters have already been re-rendered in their new slots, so each
+   * strip starts one cell back and eases home.
+   * @param {{ wheel: number, delta: -1 | 0 | 1 }[]} deltas
+   */
+  animate(deltas) {
+    const cell = this.cellHeight();
+    const moved = deltas.filter((entry) => entry.delta !== 0);
+    const strips = moved.map((entry) => this.strips[entry.wheel]);
+    for (const { wheel, delta } of moved) {
+      const strip = this.strips[wheel];
+      strip.classList.remove('settling');
+      strip.style.setProperty('--drag', `${delta * cell}px`);
     }
+    // Force a reflow so the start position is committed before the transition.
+    void this.drums.offsetWidth;
+    this.settle(strips, (strip) => strip.style.setProperty('--drag', '0px'));
   }
+
+  /** The window flashes and the letters take a bow. */
+  celebrate() {
+    this.root.classList.remove('unlocked');
+    void this.root.offsetWidth;
+    this.root.classList.add('unlocked');
+    setTimeout(() => this.root.classList.remove('unlocked'), 1400);
+  }
+
+  /** Point at the next move: the arrow to press pulses until the player moves. */
+  showHint(wheel, dir) {
+    this.clearHint();
+    const row = dir > 0 ? this.upRow : this.downRow;
+    row.children[wheel].classList.add('hinted');
+    this.drumNodes[wheel].classList.add('hinted');
+  }
+
+  clearHint() {
+    for (const node of this.root.querySelectorAll('.hinted')) node.classList.remove('hinted');
+  }
+
+  /** Keyboard focus ring for the wheel the arrow keys will turn. */
+  setSelected(wheel) {
+    this.drumNodes.forEach((drum, index) => drum.classList.toggle('selected', index === wheel));
+  }
+
+  /* ---------------------------------------------------------------- preview */
 
   /**
    * Light up what a turn would set in motion: the wheel under the finger, every
@@ -262,6 +447,8 @@ export class Board {
       this.chainPaths[index]?.classList.add('live');
     });
   }
+
+  /* ----------------------------------------------------------------- chains */
 
   /**
    * Draw each link as a coloured chain from the wheel that drives it to the

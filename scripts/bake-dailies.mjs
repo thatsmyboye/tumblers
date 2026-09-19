@@ -56,7 +56,9 @@ for (let index = 0; index < count; index += 1) {
     continue;
   }
 
-  puzzles.push({ number: index + 1, date, ...stripSolution(lock) });
+  // The row words ride along so the result panel can show what the lock was.
+  // Offsets and generator stats stay out: they are noise, not a reveal.
+  puzzles.push({ number: index + 1, date, ...stripSolution(lock), answer: lock.words });
   process.stdout.write(`\r${puzzles.length}/${count} baked`);
 }
 

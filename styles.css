@@ -13,6 +13,7 @@
   --cell: clamp(40px, 12.5vw, 56px);
   --gap: clamp(4px, 1.6vw, 8px);
   --radius: 12px;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.3, 1);
 }
 
 * {
@@ -31,6 +32,7 @@ body {
 body {
   min-height: 100dvh;
   background: radial-gradient(120% 60% at 50% 0%, #1a2233 0%, var(--bg) 60%);
+  overscroll-behavior-y: contain;
 }
 
 .app {
@@ -42,7 +44,14 @@ body {
   gap: 14px;
 }
 
+/* Header */
 .topbar {
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  align-items: center;
+}
+
+.topbar-title {
   text-align: center;
 }
 
@@ -60,6 +69,19 @@ h1 {
   color: var(--muted);
   font-size: 14px;
   font-variant-numeric: tabular-nums;
+}
+
+.icon-btn {
+  appearance: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--edge);
+  background: var(--panel);
+  color: var(--steel);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* Tabs */
@@ -177,7 +199,6 @@ select {
   border-radius: 18px;
   padding: 10px var(--gap) 12px;
   box-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
-  touch-action: pan-y;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -271,18 +292,69 @@ select {
 }
 
 .drum {
-  display: grid;
-  grid-template-rows: repeat(6, var(--cell));
+  position: relative;
+  height: calc(var(--cell) * 6);
   border-radius: 10px;
   background: linear-gradient(90deg, #0b0e14 0%, #202939 18%, #2b3546 50%, #202939 82%, #0b0e14 100%);
   overflow: hidden;
   cursor: grab;
+  /* The drum owns vertical gestures; the page keeps scrolling everywhere else. */
+  touch-action: none;
+  transition: opacity 120ms, box-shadow 120ms;
+}
+
+.drum:active {
+  cursor: grabbing;
 }
 
 .drum.seized {
   background: linear-gradient(90deg, #0b0e14 0%, #262323 18%, #3a3128 50%, #262323 82%, #0b0e14 100%);
   box-shadow: inset 0 0 0 1px rgb(224 163 58 / 0.3);
   cursor: not-allowed;
+}
+
+/*
+ * The strip is eight cells tall, two more than the drum shows, and rests one
+ * cell up so a spare letter waits just off both edges. --drag slides it live
+ * under a finger; .settling eases it home.
+ */
+.strip {
+  display: grid;
+  grid-template-rows: repeat(8, var(--cell));
+  transform: translateY(calc(var(--cell) * -1 + var(--drag, 0px)));
+  will-change: transform;
+}
+
+.strip.settling {
+  transition: transform 150ms var(--ease-out);
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  font-size: calc(var(--cell) * 0.46);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--steel);
+  transition: color 160ms;
+}
+
+.cell-back {
+  color: #55637a;
+  font-size: calc(var(--cell) * 0.36);
+}
+
+.cell-window {
+  color: var(--text);
+}
+
+/* In Combination mode the outer rows do not count: let them step back. */
+.cell-window.cell-optional {
+  color: #7c889b;
+}
+
+.cell-window.cell-valid {
+  color: var(--good);
 }
 
 /* Preview: the wheel being driven, and everything its chains drag along. */
@@ -298,46 +370,30 @@ select {
   opacity: 0.45;
 }
 
-.drum {
-  transition: opacity 120ms, box-shadow 120ms;
+/* Keyboard: the wheel the arrow keys will turn. */
+.drum.selected {
+  box-shadow: inset 0 0 0 2px var(--steel);
 }
 
-.cell {
-  display: grid;
-  place-items: center;
-  font-size: calc(var(--cell) * 0.46);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--steel);
-}
-
-.cell-back {
-  color: #55637a;
-  font-size: calc(var(--cell) * 0.36);
-}
-
-.cell-window {
-  color: var(--text);
-}
-
-@keyframes turn-up {
-  from {
-    transform: translateY(var(--cell));
+/* Hint: the arrow to press pulses until the player moves. */
+@keyframes hint-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(224 163 58 / 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgb(224 163 58 / 0);
   }
 }
 
-@keyframes turn-down {
-  from {
-    transform: translateY(calc(var(--cell) * -1));
-  }
+.turn.hinted {
+  color: var(--brass);
+  border-color: var(--brass);
+  animation: hint-pulse 1.1s ease-out infinite;
 }
 
-.drum.turning-up .cell {
-  animation: turn-up 130ms ease-out;
-}
-
-.drum.turning-down .cell {
-  animation: turn-down 130ms ease-out;
+.drum.hinted {
+  box-shadow: inset 0 0 0 2px rgb(224 163 58 / 0.6);
 }
 
 /* The three-row window, framed over the drums. */
@@ -355,6 +411,35 @@ select {
 .window-solved {
   border-color: var(--good);
   box-shadow: 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 26px rgb(95 214 138 / 0.22) inset;
+}
+
+/* The unlock moment: the frame flares and the letters take a bow, column by column. */
+@keyframes window-flare {
+  0% {
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 0 0 rgb(95 214 138 / 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 0 18px rgb(95 214 138 / 0);
+  }
+}
+
+@keyframes letter-bow {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  35% {
+    transform: translateY(-14%) scale(1.14);
+  }
+}
+
+.unlocked .window {
+  animation: window-flare 900ms ease-out;
+}
+
+.unlocked .cell-window:not(.cell-optional) {
+  animation: letter-bow 560ms var(--ease-out);
+  animation-delay: calc(var(--i) * 55ms);
 }
 
 .rowmark {
@@ -389,22 +474,11 @@ select {
   content: "";
 }
 
-.lock-info {
+.lock-info,
+.hint-note {
   margin: -4px 0 0;
   text-align: center;
   font-size: 13px;
-  color: var(--brass);
-}
-
-.help .k-free {
-  color: #6b7789;
-}
-
-.help .k-linked {
-  color: var(--steel);
-}
-
-.help .k-seized {
   color: var(--brass);
 }
 
@@ -453,7 +527,7 @@ select {
 
 .controls {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 
@@ -461,17 +535,23 @@ button.ghost,
 button.primary {
   appearance: none;
   border-radius: 10px;
-  padding: 11px 12px;
+  padding: 11px 8px;
   font: inherit;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 button.ghost {
   background: var(--panel);
   border: 1px solid var(--edge);
   color: var(--text);
+}
+
+button.ghost.armed {
+  border-color: #e07a7a;
+  color: #e07a7a;
 }
 
 button.primary {
@@ -486,12 +566,20 @@ button:disabled {
 }
 
 /* Result */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
 .result {
   background: var(--panel);
   border: 1px solid var(--edge);
   border-radius: var(--radius);
   padding: 14px;
   text-align: center;
+  animation: rise-in 260ms var(--ease-out);
 }
 
 .result h2 {
@@ -503,6 +591,17 @@ button:disabled {
   margin: 0 0 8px;
   font-size: 24px;
   letter-spacing: 0.1em;
+}
+
+.answer {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.answer b {
+  color: var(--text);
+  letter-spacing: 0.08em;
 }
 
 .share {
@@ -522,26 +621,63 @@ button:disabled {
   gap: 8px;
 }
 
-/* Help + loading */
+/* Help dialog */
 .help {
-  color: var(--muted);
-  font-size: 13px;
-  border-top: 1px solid var(--edge);
-  padding-top: 10px;
+  width: min(92vw, 440px);
+  max-height: 88dvh;
+  overflow: auto;
+  border: 1px solid var(--edge);
+  border-radius: 16px;
+  background: var(--panel);
+  color: var(--text);
+  padding: 18px 18px 14px;
+  font-size: 14px;
 }
 
-.help summary {
-  cursor: pointer;
-  color: var(--text);
-  font-weight: 600;
+.help::backdrop {
+  background: rgb(6 8 12 / 0.7);
+  backdrop-filter: blur(3px);
+}
+
+.help h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--brass);
 }
 
 .help p {
   margin: 8px 0 0;
+  color: #c6cfdd;
 }
 
 .help b {
+  color: var(--text);
+}
+
+.help .k-free {
+  color: #6b7789;
+}
+
+.help .k-drives,
+.help .k-pulled {
   color: var(--steel);
+}
+
+.help .k-seized {
+  color: var(--brass);
+}
+
+.help-keys {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.help form {
+  margin-top: 14px;
+}
+
+.help button {
+  width: 100%;
 }
 
 .loading {
@@ -555,8 +691,12 @@ button:disabled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .drum.turning-up .cell,
-  .drum.turning-down .cell {
+  .strip.settling,
+  .result,
+  .unlocked .window,
+  .unlocked .cell-window,
+  .turn.hinted {
+    transition: none;
     animation: none;
   }
 }

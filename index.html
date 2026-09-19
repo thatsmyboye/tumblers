@@ -9,17 +9,24 @@
     <title>Tumblers — crack the letter lock</title>
     <meta name="description" content="A word puzzle about cracking a letter lock. Turn the wheels to spell words — but the wheels are linked." />
     <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0e1118" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tumblers" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.svg" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🔓</text></svg>"
-    />
   </head>
   <body>
     <div class="app">
       <header class="topbar">
-        <h1>Tumblers</h1>
-        <p class="subtitle" id="subtitle">Loading…</p>
+        <span class="topbar-spacer" aria-hidden="true"></span>
+        <div class="topbar-title">
+          <h1>Tumblers</h1>
+          <p class="subtitle" id="subtitle">Loading…</p>
+        </div>
+        <button type="button" class="icon-btn" id="help-btn" aria-label="How to play">?</button>
       </header>
 
       <nav class="tabs" id="tabs" aria-label="Game mode">
@@ -43,6 +50,7 @@
       <div id="board"></div>
 
       <p class="lock-info" id="lock-info" hidden></p>
+      <p class="hint-note" id="hint-note" hidden></p>
 
       <div class="theme" id="theme-row" hidden>
         <button type="button" id="theme-btn" class="ghost">💡 Reveal theme</button>
@@ -57,50 +65,60 @@
 
       <div class="controls">
         <button type="button" id="undo" class="ghost">↩️ Undo</button>
-        <button type="button" id="reset" class="ghost">Reset lock</button>
+        <button type="button" id="hint" class="ghost">🔍 Hint</button>
+        <button type="button" id="reset" class="ghost">Reset</button>
       </div>
 
       <section class="result" id="result" hidden aria-live="polite">
         <h2 id="result-title">Cracked it</h2>
         <p class="stars" id="result-stars"></p>
+        <p class="answer" id="result-answer" hidden></p>
         <pre class="share" id="share-text"></pre>
         <div class="result-actions">
           <button type="button" id="continue" class="primary" hidden>Continue to Full Lock 🌟</button>
-          <button type="button" id="share" class="primary">Copy share text</button>
+          <button type="button" id="share" class="primary">Share result</button>
+          <button type="button" id="share-lock" class="ghost" hidden>Send this lock to a friend</button>
           <button type="button" id="again" class="ghost">New lock</button>
         </div>
       </section>
 
-      <details class="help">
-        <summary>How to play</summary>
-        <p>
-          Five wheels, six letters each, three rows showing. Swipe a wheel or use the arrows to
-          turn it one step.
-        </p>
-        <p>
-          Wheels are chained. A chain runs from an <b>open collar</b> — the wheel you turn — to an
-          <b>arrowhead</b> on the wheel it drags along. <b>↑↑</b> means that wheel turns the same
-          way, <b>↑↓</b> the opposite way.
-        </p>
-        <p>
-          The strip above the wheels says what each column can do.
-          <b class="k-free">free</b> turns alone.
-          <b class="k-linked">linked</b> still turns on its own — it just pulls, or gets pulled,
-          as well. <b class="k-seized">seized</b> has no arrows at all: it moves only in lockstep
-          with whatever drives it, and its chain is drawn as a thick bar-ended coupling.
-        </p>
-        <p>
-          Press and hold any wheel to light up exactly what moves with it. Hold a seized wheel to
-          see which wheel you have to turn instead.
-        </p>
-        <p>
-          <b>Combination</b> needs the middle row to spell a word. <b>Full Lock</b> needs all three
-          rows at once. Par is the fewest moves possible; undos are free but counted.
-        </p>
-      </details>
-
       <p class="loading" id="loading">Loading word list…</p>
     </div>
+
+    <dialog class="help" id="help-dialog" aria-labelledby="help-title">
+      <h2 id="help-title">How to play</h2>
+      <p>
+        Five wheels, six letters each, three rows showing. <b>Drag a wheel</b> up or down, or tap
+        the arrows, to turn it one step.
+      </p>
+      <p>
+        Wheels are chained. A chain runs from an <b>open collar</b> — the wheel you turn — to an
+        <b>arrowhead</b> on the wheel it drags along. <b>↑↑</b> means that wheel turns the same
+        way, <b>↑↓</b> the opposite way.
+      </p>
+      <p>
+        The strip above the wheels says what each column can do.
+        <b class="k-free">free</b> turns alone.
+        <b class="k-drives">○ drives</b> turns alone and pulls another — nothing pulls it back.
+        <b class="k-pulled">▼ pulled</b> still turns on its own but drifts when its partner moves.
+        <b class="k-seized">🔒 seized</b> has no arrows at all: it moves only in lockstep with
+        whatever drives it.
+      </p>
+      <p>
+        <b>Combination</b> needs the middle row to spell a word. <b>Full Lock</b> needs all three
+        rows at once. The <b>Daily</b> is one lock played both ways: crack the Combination, then
+        carry on to open the Full Lock for a bonus star.
+      </p>
+      <p>
+        <b>Par</b> is the fewest moves possible. Match it for three stars. Undo is free but
+        counted; a hint points at the next move and caps you at two stars. Press and hold any
+        wheel to light up what moves with it.
+      </p>
+      <p class="help-keys">Keyboard: 1–5 pick a wheel, ← → move, ↑ ↓ turn, Z undo, H hint.</p>
+      <form method="dialog">
+        <button type="submit" class="primary" id="help-close">Got it</button>
+      </form>
+    </dialog>
 
     <script type="module" src="src/app.js"></script>
   </body>

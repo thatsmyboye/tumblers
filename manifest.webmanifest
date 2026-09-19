@@ -1,0 +1,14 @@
+{
+  "name": "Tumblers",
+  "short_name": "Tumblers",
+  "description": "Crack the letter lock. Turn the wheels to spell words — but the wheels are linked.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e1118",
+  "theme_color": "#0e1118",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
