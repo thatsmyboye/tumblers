@@ -89,6 +89,33 @@ export function applyMove(lock, offsets, wheel, dir) {
   return applyMoveWith(offsets, moveMatrix(lock), wheel, dir);
 }
 
+/**
+ * How a wheel behaves relative to the links — the thing a player has to know
+ * before planning a move.
+ *
+ * - `free`: turns alone; nothing moves it and it moves nothing.
+ * - `drives`: turns alone and pulls others, but nothing pulls it, so it holds
+ *   its position while you work elsewhere.
+ * - `pulled`: turns on its own, but another wheel moves it too, so it drifts.
+ *   (It may drive something as well.)
+ * - `seized`: has no turn of its own and only ever moves in lockstep with
+ *   whatever drives it.
+ *
+ * @param {Lock} lock
+ * @returns {'free' | 'drives' | 'pulled' | 'seized'}
+ */
+export function wheelRole(lock, wheel) {
+  if (isSeized(lock, wheel)) return 'seized';
+  if (lock.links.some((link) => link.to === wheel)) return 'pulled';
+  if (lock.links.some((link) => link.from === wheel)) return 'drives';
+  return 'free';
+}
+
+/** The wheels whose turns move `wheel` — everything chained into it. */
+export function driversOf(lock, wheel) {
+  return lock.links.filter((link) => link.to === wheel).map((link) => link.from);
+}
+
 /** Letter shown in window row `row` of `wheel`. */
 export function letterAt(lock, offsets, wheel, row) {
   return lock.rings[wheel][mod(offsets[wheel] + row, RING_SIZE)];

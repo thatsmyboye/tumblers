@@ -16,10 +16,19 @@ npm run bake  # re-bake the pack of dailies
 ## How it plays
 
 - **Swipe** a wheel up or down, or use the arrows above and below it.
-- Wheels are joined by coloured chains. **↑↑** means the linked wheel turns the
-  same way; **↑↓** means it turns the opposite way. Links are one hop: driving A
-  turns everything A is chained to, but does not carry on through *their* chains.
-- A **seized** wheel has no arrows. It only moves when another wheel drags it.
+- Wheels are joined by coloured chains, running from an **open collar** (the end
+  you turn) to an **arrowhead** (the wheel it drags along). **↑↑** means that
+  wheel turns the same way; **↑↓** means the opposite way. Links are one hop:
+  driving A turns everything A is chained to, but does not carry on through
+  *their* chains.
+- The strip above the wheels says what each column can do, using the same marks:
+  `free` turns alone, `○ drives` turns alone *and* pulls another (nothing pulls
+  it, so it holds still while you work elsewhere), `▼ pulled` still turns on its
+  own but drifts when its partner moves, and `🔒 seized` has no arrows at all —
+  it only ever moves in lockstep with whatever drives it, and its chain is drawn
+  as a thick bar-ended coupling.
+- Press and hold any wheel to light up exactly what moves with it. Hold a seized
+  wheel to see which wheels you have to turn instead.
 - **Combination** mode needs the middle row to spell a word. **Full Lock** needs
   all three rows at once.
 - The **Daily** is one lock played twice: crack the Combination, then continue
@@ -72,7 +81,7 @@ for practice locks, and used offline to pre-bake the dailies.
 | `src/solver.js` | BFS over the state space — exact par and optimal line |
 | `src/generator.js` | Backward generation and the difficulty thresholds |
 | `src/game.js` | One play session: moves, undo history, reset |
-| `src/board.js` | Drums, window and chains; touch and keyboard input |
+| `src/board.js` | Drums, window, chains and role marks; touch and keyboard input |
 | `src/app.js` | Modes, the daily's two legs, results and share |
 | `src/score.js` | Stars and the share block |
 | `src/daily.js` | Calendar day → puzzle number → lock |
@@ -107,8 +116,9 @@ produces the same pack.
 separately written BFS), the generator's guarantees, scoring, and the baked pack
 — every daily's recorded par is re-derived from scratch.
 
-`test/browser-smoke.mjs` drives the real page in Chromium: turning, undo, both
-legs of the daily, the share text, and in-browser generation. It is kept out of
+`test/browser-smoke.mjs` drives the real page in Chromium: turning, undo, the
+role strip and press-preview, both legs of the daily, the share text, and
+in-browser generation. It is kept out of
 `npm test` because it needs Playwright, which the game itself does not:
 
 ```

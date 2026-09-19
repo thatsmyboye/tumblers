@@ -123,6 +123,52 @@ select {
   font-size: 14px;
 }
 
+/* Per-wheel role strip: what each column can and cannot do. */
+.roles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--gap);
+  padding-right: 22px;
+  margin-bottom: 5px;
+}
+
+.role {
+  /* Flex, not grid: the mark and the word must share one line. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 18px;
+  white-space: nowrap;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.role-free {
+  color: #6b7789;
+}
+
+.role-drives {
+  color: var(--steel);
+  background: rgb(159 176 198 / 0.09);
+}
+
+.role-pulled {
+  color: #b9c6dc;
+  background: rgb(159 176 198 / 0.16);
+  border-color: rgb(159 176 198 / 0.28);
+}
+
+.role-seized {
+  color: var(--brass);
+  background: rgb(224 163 58 / 0.14);
+  border-color: rgb(224 163 58 / 0.4);
+}
+
 /* Board */
 .board {
   position: relative;
@@ -139,7 +185,7 @@ select {
 .chains {
   display: block;
   width: 100%;
-  height: 58px;
+  height: 76px;
 }
 
 .chain {
@@ -147,6 +193,25 @@ select {
   stroke-width: 2.5;
   stroke-linecap: round;
   opacity: 0.9;
+}
+
+/* A chain into a seized wheel is the only way that wheel ever moves. */
+.chain-rigid {
+  stroke-width: 4;
+  opacity: 1;
+}
+
+/* While previewing a turn, fade the chains it will not pull. */
+.previewing .chain,
+.previewing .chain-head,
+.previewing .chain-label {
+  opacity: 0.18;
+  transition: opacity 120ms;
+}
+
+.previewing .chain.live {
+  opacity: 1;
+  stroke-width: 4.5;
 }
 
 .chain-label {
@@ -184,7 +249,8 @@ select {
 }
 
 .turn:disabled {
-  opacity: 0.25;
+  opacity: 0.5;
+  color: #5b667a;
   cursor: not-allowed;
 }
 
@@ -215,7 +281,25 @@ select {
 
 .drum.seized {
   background: linear-gradient(90deg, #0b0e14 0%, #262323 18%, #3a3128 50%, #262323 82%, #0b0e14 100%);
+  box-shadow: inset 0 0 0 1px rgb(224 163 58 / 0.3);
   cursor: not-allowed;
+}
+
+/* Preview: the wheel being driven, and everything its chains drag along. */
+.drum.driver {
+  box-shadow: inset 0 0 0 2px var(--brass), 0 0 16px rgb(224 163 58 / 0.25);
+}
+
+.drum.dragged {
+  box-shadow: inset 0 0 0 2px var(--steel), 0 0 16px rgb(159 176 198 / 0.2);
+}
+
+.previewing .drum:not(.driver):not(.dragged) {
+  opacity: 0.45;
+}
+
+.drum {
+  transition: opacity 120ms, box-shadow 120ms;
 }
 
 .cell {
@@ -303,6 +387,25 @@ select {
 
 .rowmark.required.valid::before {
   content: "";
+}
+
+.lock-info {
+  margin: -4px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--brass);
+}
+
+.help .k-free {
+  color: #6b7789;
+}
+
+.help .k-linked {
+  color: var(--steel);
+}
+
+.help .k-seized {
+  color: var(--brass);
 }
 
 /* Theme clue */
